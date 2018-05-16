@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>驗證登入後首頁的頁面資訊</description>
+   <name>TC_VerifyMasterLoginAndCheckIndexPageInfo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>abf415d6-074d-4b9e-afd2-37dcf8f891b4</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>总存取款汇出</description>
+   <name>link_TotalWithdrawalAndDeposit</name>
+   <tag></tag>
+   <elementGuidId>12a5e66e-806b-4964-aae6-180f7b707f0f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li:nth-child(2)>ul>li:nth-child(11)>a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

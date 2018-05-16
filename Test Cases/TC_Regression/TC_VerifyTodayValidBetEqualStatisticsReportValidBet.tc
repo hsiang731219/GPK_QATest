@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>線上問題:首頁的今日有效投注金額顯示為0與統計報表中的有效投注金額不一致</description>
+   <name>TC_VerifyTodayValidBetEqualStatisticsReportValidBet</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>26685006-aa69-4b2d-9913-41e1d338b4cc</testCaseGuid>
+</TestCaseEntity>

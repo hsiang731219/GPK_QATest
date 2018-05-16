@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>驗證管端幫會員進行提款類型與金額(人工存提)</description>
+   <name>TC_VerifyMasterWithdrawFunction01</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0c7b531d-3561-45d9-a263-e6c36aff75bd</testCaseGuid>
+</TestCaseEntity>

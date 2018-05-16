@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_PromotionEvent</name>
+   <tag></tag>
+   <elementGuidId>b61288a6-2b5e-4705-96aa-14dd640c42a7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>div:nth-child(8)>div>label:nth-child(5)</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div:nth-child(8)>div>label:nth-child(5)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>div:nth-child(8)>div>label:nth-child(5)</value>
+   </webElementProperties>
+</WebElementEntity>

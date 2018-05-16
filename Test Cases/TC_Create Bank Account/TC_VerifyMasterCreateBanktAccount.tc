@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>建立公司入款帳戶有(備註無填寫東西的)</description>
+   <name>TC_VerifyMasterCreateBanktAccount</name>
+   <tag></tag>
+   <comment>新增完畢後，要驗證新增完資訊是否和剛剛填寫的一樣</comment>
+   <testCaseGuid>aba6dfc7-4b3f-446a-ba61-f79f8eb88447</testCaseGuid>
+</TestCaseEntity>

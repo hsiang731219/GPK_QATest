@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>驗證管端幫會員進行提款類型與金額(补发派彩)</description>
+   <name>TC_VerifyMasterWithdrawFunction04</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6d0b8edd-ff01-45ef-b3f1-904196d55b96</testCaseGuid>
+</TestCaseEntity>

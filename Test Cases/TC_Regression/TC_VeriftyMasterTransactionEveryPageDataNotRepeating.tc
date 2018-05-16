@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>線上問題:交易紀錄查詢後每頁都呈現第一頁的資料</description>
+   <name>TC_VeriftyMasterTransactionEveryPageDataNotRepeating</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df7c129a-5ef9-483a-91b9-3693aeb1e642</testCaseGuid>
+</TestCaseEntity>

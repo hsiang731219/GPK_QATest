@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>驗證管端幫會員進行存款類型與金額(免稽核_優惠活動)</description>
+   <name>TC_VerifyMasterDepositFunction02</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb4feeeb-9005-4bf6-9a3d-b5d274e23ef0</testCaseGuid>
+</TestCaseEntity>
