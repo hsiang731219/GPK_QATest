@@ -30,6 +30,7 @@ Thread.sleep(5000)
 ActualMessage = WebUI.getText(findTestObject('Home/Index_Page/txt_AccountName'))
 // 與預期結果比對
 WebUI.verifyMatch(ActualMessage, '哈罗!! QAautomation 您好', false)
+
 // 關閉瀏覽器
 WebUI.closeBrowser()
 

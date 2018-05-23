@@ -1,22 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>遊戲類型選項清空</description>
+   <description></description>
    <name>button_Clear</name>
    <tag></tag>
-   <elementGuidId>5e717f9c-4916-4363-b3a4-7d446be858d9</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-   </selectorCollection>
+   <elementGuidId>45de27cd-63cb-43f8-9078-86f41d7b605f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-default btn-xs ng-binding</value>
+   </webElementProperties>
+   <webElementProperties>
       <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-click</name>
+      <type>Main</type>
+      <value>self.allCategories(false)</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-bind</name>
+      <type>Main</type>
+      <value>self.langs.BETRECORDQUERY_ChoiseClean</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>清空</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;quick&quot;)/div[@class=&quot;btn-group&quot;]/button[@class=&quot;btn btn-default btn-xs ng-binding&quot;][2]</value>
+      <value>id(&quot;quick&quot;)/div[@class=&quot;btn-group&quot;]/button[@class=&quot;btn btn-default btn-xs ng-binding&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

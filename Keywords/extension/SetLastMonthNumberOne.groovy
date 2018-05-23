@@ -26,26 +26,26 @@ import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 import java.text.SimpleDateFormat as SimpleDateFormat
 // 將日期定於上個月一號
-public class SetLastMonthNumberOne 
+public class SetLastMonthNumberOne
 {
 	@Keyword
 	def setLastDayMonth()
 	{
 		'查詢時間(起)，即為上個月的1號'
 		Calendar ca = Calendar.getInstance()
-		
+
 		Date now = ca.getTime()
-		
+
 		'月份減1'
 		ca.add(Calendar.MONTH, -1)
-		
+
 		'取得結果'
 		Date lastMonth = ca.getTime()
-		
+
 		SimpleDateFormat sf = new SimpleDateFormat('yyyy/MM/01')
-		
+
 		return sf.format(lastMonth)
-			
+
 	}
 
 }

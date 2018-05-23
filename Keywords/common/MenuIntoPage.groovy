@@ -40,7 +40,7 @@ public class MenuIntoPage {
 			WebUI.click(findTestObject('Shared/link_SystmeAndManagementMeenu'))
 			getdropdownC(y)
 		} else {
-			WebUI.click(findTestObject('Shared/ReportsMeenu'))
+			WebUI.click(findTestObject('Shared/link_ReportsMeenu'))
 			getdropdownD(y)
 		}
 	}
@@ -55,27 +55,27 @@ public class MenuIntoPage {
 
 		} else if (z == 2)
 		{ //代理商查詢
-			WebUI.click('Shared/list_MemberAndAgent/link_SearchForAgent')
+			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_SearchForAgent'))
 
 		} else if (z == 3)
 		{ //新增會員
-			WebUI.click('Shared/list_MemberAndAgent/link_CreateNewMember')
+			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_CreateNewMember'))
 
 		} else if (z == 4)
 		{ //會員匯入
-			WebUI.click('Shared/list_MemberAndAgent/link_MemberImport')
+			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_MemberImport'))
 
 		} else if (z == 5)
 		{ //新增代理商
-			WebUI.click('Shared/list_MemberAndAgent/link_CreateNewAgent')
+			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_CreateNewAgent'))
 
 		} else if (z == 6)
 		{ //代理申請審核
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyAgentApplication')
+			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_VerifyAgentApplication'))
 
 		} else if (z == 7)
 		{ //試玩審核
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
+			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_VerifyTrialAccount'))
 		}
 	}
 
@@ -84,38 +84,38 @@ public class MenuIntoPage {
 	{
 		if (z == 1)
 		{ //公司入款審核
-			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_SearchForMember'))
+			WebUI.click(findTestObject('Shared/list_AccountManagement/link_VerifyBankDesposit'))
 
 		} else if (z == 2)
 		{ //線上支付看板
-			WebUI.click('Shared/list_MemberAndAgent/link_SearchForAgent')
+			WebUI.click(findTestObject('Shared/list_AccountManagement/link_OnlinePaymentList'))
 
 		} else if (z == 3)
 		{ //取款申請查詢
-			WebUI.click('Shared/list_MemberAndAgent/link_CreateNewMember')
+			WebUI.click(findTestObject('Shared/list_AccountManagement/link_VerifyWithdrawalApplication'))
 
 		} else if (z == 4)
 		{ //交易紀錄查詢
-			WebUI.click('Shared/list_MemberAndAgent/link_MemberImport')
+			WebUI.click(findTestObject('Shared/list_AccountManagement/link_SearchForTransactionRecords'))
 
 		} else if (z == 5)
 		{ //返水計算
-			WebUI.click('Shared/list_MemberAndAgent/link_CreateNewAgent')
+			WebUI.click(findTestObject('Shared/list_AccountManagement/link_RebateCalculation'))
 
 		} else if (z == 6)
 		{ //傭金計算
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyAgentApplication')
+			WebUI.click(findTestObject('Shared/list_AccountManagement/link_CommissionCalculation'))
 
 		} else if (z == 7)
 		{ //轉帳額度確認
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
+			WebUI.click(findTestObject('Shared/list_AccountManagement/link_TransferAmountConfirmatiom'))
 		} else if (z == 8)
 		{ //優惠匯入
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
-			
+			WebUI.click(findTestObject('Shared/list_AccountManagement/link_PromotionImport'))
+
 		} else
 		{ //總存取款匯出
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
+			WebUI.click(findTestObject('Shared/list_AccountManagement/link_TotalWithdrawalAndDeposit'))
 		}
 	}
 
@@ -124,52 +124,52 @@ public class MenuIntoPage {
 	{
 		if (z == 1)
 		{
-			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_SearchForMember'))
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_MemberLevelManagement'))
 
 		} else if (z == 2)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_SearchForAgent')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_BankDepositAccountManagment'))
 
 		} else if (z == 3)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_CreateNewMember')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_OnlinePaymentAccountManagment'))
 
 		} else if (z == 4)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_MemberImport')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_ProtalSetting'))
 
 		} else if (z == 5)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_CreateNewAgent')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_RebateSetting'))
 
 		} else if (z == 6)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyAgentApplication')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_CommissionSetting'))
 
 		} else if (z == 7)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_GameProviderMangement'))
 		} else if (z == 8)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_InternalMail'))
 		} else if (z == 9)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_PromotionManagment'))
 		} else if (z == 10)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_SubAccountManagement'))
 		} else if (z == 11)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_WebsiteSystemConfigure'))
 		} else if (z == 12)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_WebsiteSettingConfigure'))
 		} else if (z == 13)
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_EventSetting'))
 		} else
 		{
-			WebUI.click('Shared/list_MemberAndAgent/link_VerifyTrialAccount')
+			WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_CountryBlockManagementt'))
 		}
 	}
 
@@ -183,31 +183,31 @@ public class MenuIntoPage {
 
 		} else if (z == 2)
 		{ //投注紀錄查詢
-			WebUI.click('Shared/list_MemberAndAgent/list_Reports/link_SearchForBettingRecords')
+			WebUI.click(findTestObject('Shared/list_Reports/link_SearchForBettingRecords'))
 
 		} else if (z == 3)
 		{ //歷史投注紀錄查詢
-			WebUI.click('Shared/list_MemberAndAgent/list_Reports/link_SearchForHistoricalBettingRecords')
+			WebUI.click(findTestObject('Shared/list_Reports/link_SearchForHistoricalBettingRecords'))
 
 		} else if (z == 4)
 		{ //登入記錄查詢
-			WebUI.click('Shared/list_MemberAndAgent/list_Reports/link_SearchForLoginRecords')
+			WebUI.click(findTestObject('Shared/list_Reports/link_SearchForLoginRecords'))
 
 		} else if (z == 5)
 		{ //娛樂城轉帳紀錄查詢
-			WebUI.click('Shared/list_MemberAndAgent/list_Reports/link_SearchForGameProviderTransferRecords')
+			WebUI.click(findTestObject('Shared/list_Reports/link_SearchForGameProviderTransferRecords'))
 
 		} else if (z == 6)
 		{ //AG交易紀錄匯出
-			WebUI.click('Shared/list_MemberAndAgent/list_Reports/link_AGTransactionRecord')
+			WebUI.click(findTestObject('Shared/list_Reports/link_AGTransactionRecord'))
 
 		} else if (z == 7)
 		{ //報表連結
-			WebUI.click('Shared/list_MemberAndAgent/list_Reports/link_ReportLink')
-			
-		} else 
+			WebUI.click(findTestObject('Shared/list_Reports/link_ReportLink'))
+
+		} else
 		{ //貢獻金
-			WebUI.click('Shared/list_MemberAndAgent/list_Reports/')
+			WebUI.click(findTestObject('Shared/list_MemberAndAgent/list_Reports/'))
 		}
 	}
 }

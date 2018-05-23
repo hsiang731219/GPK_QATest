@@ -6,13 +6,21 @@
    <elementGuidId>55f96c02-f026-4240-9aa5-0880de44236e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#account</value>
+         <key>BASIC</key>
+         <value>//*[@id = 'account']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>account</value>
+   </webElementProperties>
 </WebElementEntity>

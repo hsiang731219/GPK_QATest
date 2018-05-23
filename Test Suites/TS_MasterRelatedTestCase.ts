@@ -24,24 +24,6 @@
       <testCaseId>Test Cases/TC_Login Function/TC_VerifyMasterLoginAndCheckIndexPageInfo</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>767af606-0a5a-427b-aad8-e4a4ced3ad51</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_GameID/TC_VerifyMasterSearchGameNumberForAGPeople</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b7679a93-3b50-478e-90e2-409abe54f848</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_GameID/TC_VerifyMasterSearchGameNumberForCQ9Fish</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>549cb0bd-0fff-4b96-b597-0f873f0113de</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_GameID/TC_VerifyMasterSearchGameNumberForPNGSlot</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>c43b8cc6-dabf-4a0d-b80b-0e8c6de2c5fa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -196,5 +178,23 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC_Create Bank Account/TC_VerifyMasterCreateBanktAccountWithMemo</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7dd4af94-c650-49c9-812f-d98d2e9baa81</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_GameID/TC_VerifyMasterSearchGameNumberForAGPeople</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e78ad8e0-e694-44d5-8296-ea910770017b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_GameID/TC_VerifyMasterSearchGameNumberForCQ9Slot</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>382e53dc-ad41-4212-8ede-19de0b072149</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_GameID/TC_VerifyMasterSearchGameNumberForPNGSlot</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -4,7 +4,7 @@
    <name>TS_GameID</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-03-28T17:10:26</lastRun>
+   <lastRun>2018-05-23T16:16:16</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -12,21 +12,27 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>6079803d-e5cf-4056-bdf1-51d24308bf5d</testSuiteGuid>
    <testCaseLink>
-      <guid>ba734b48-a427-47cd-abc8-61eb0dc80db5</guid>
+      <guid>162d2594-45d7-458b-a740-c9779e9b2317</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC_GameID/TC_VerifyMasterSearchGameNumberForAGPeople</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>dcf3274e-9a1a-46d6-bb69-240ffe7b7d63</guid>
+      <guid>d211cabc-e869-4039-bfde-f45761e9a09f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_GameID/TC_VerifyMasterSearchGameNumberForCQ9Fish</testCaseId>
+      <testCaseId>Test Cases/TC_GameID/TC_VerifyMasterSearchGameNumberForCQ9Slot</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ed147a0c-aee5-428e-9357-09cae3d2939d</guid>
+      <guid>d6257978-dd90-4c6d-a73f-71e89a6a47e1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC_GameID/TC_VerifyMasterSearchGameNumberForPNGSlot</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5354df5f-c197-439f-b1fd-fb2417ddf28d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_GameID/TC_VerifyMasterSearchGameNumberForGPKSlot</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

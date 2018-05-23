@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>驗證CQ9電子局號查詢功能</description>
-   <name>TC_VerifyMasterSearchGameNumberForCQ9Fish</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>56a3d3e4-86dc-458c-af76-f9373a98b334</testCaseGuid>
-</TestCaseEntity>
