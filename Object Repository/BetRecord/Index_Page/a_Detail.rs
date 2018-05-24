@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Detail</name>
+   <tag></tag>
+   <elementGuidId>26a952b2-1268-4041-bede-00dcc3c7247f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href = '/BetRecord/554624' and (text() = '详细' or . = '详细')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#result > div > div.panel-body > div > table > tbody > tr:first-child> td.pagedata-detail > a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-href</name>
+      <type>Main</type>
+      <value>/BetRecord/554624</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-bind</name>
+      <type>Main</type>
+      <value>self.langs.GENERAL_Detail</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ng-binding</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/BetRecord/554624</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>详细</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;result&quot;)/div[@class=&quot;panel panel-default&quot;]/div[@class=&quot;panel-body&quot;]/div[@class=&quot;table-responsive ng-scope&quot;]/table[@class=&quot;table table-hover ng-scope&quot;]/tbody[1]/tr[@class=&quot;ng-scope&quot;]/td[@class=&quot;pagedata-detail&quot;]/a[@class=&quot;ng-binding&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>
