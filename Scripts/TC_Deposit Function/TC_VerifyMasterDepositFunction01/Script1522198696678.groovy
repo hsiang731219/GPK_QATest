@@ -23,7 +23,7 @@ import org.openqa.selenium.Keys as Keys
 import java.lang.String as String
 import java.lang.StringCoding as StringCoding
 
-def info= WebUI.callTestCase(findTestCase('Test Cases/Common/PrepareDatas'), [:], FailureHandling.STOP_ON_FAILURE)
+def info= WebUI.callTestCase(findTestCase('Common/PrepareData'), [:], FailureHandling.STOP_ON_FAILURE)
 def dAndWInfo = info[2]
 
 

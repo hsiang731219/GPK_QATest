@@ -24,17 +24,18 @@ import org.openqa.selenium.Keys as Keys
 import java.lang.String as String
 import java.lang.StringCoding as StringCoding
 
-def info = WebUI.callTestCase(findTestCase('Test Cases/Common/PrepareDatas'), [:], FailureHandling.STOP_ON_FAILURE)
+def info = WebUI.callTestCase(findTestCase('Common/PrepareData'), [:], FailureHandling.STOP_ON_FAILURE)
 
 def dAndWInfo = info[2]
 
-for( x = 2; x <= 3 ; x++){
+for( x = 1; x <= 1 ; x++){
 	
 	def choose_audit = Integer.toString(x)
 	
-for (i = 1; i <= 5; i++) {
+for (i = 1; i <= 2; i++) {
 	
     def choose_type = dAndWInfo[('type' + Integer.toString(i))]
+	def choose_type1 = Integer.toString(i)
 
     WebUI.openBrowser('')
 
@@ -52,6 +53,9 @@ for (i = 1; i <= 5; i++) {
     GetBeforePoint = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Index_Page/txt_BalanceText')))
 
     CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Member/Index_Page/link_Account'), 1)
+	
+	'取得實際存款前次數'
+	GetBeforeCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Index_Page/txt_ActualDepositCount')))
 
     WebUI.click(findTestObject('Member/Detail_Page/button_Deposit'))
 
@@ -76,7 +80,7 @@ for (i = 1; i <= 5; i++) {
 		WebUI.check(findTestObject('Object Repository/Member/Deposit_Page/inputRadio_PromotionAudit'))
 	}
 	
-	if (choose_type != '1')
+	if (choose_audit != '1')
 	{
 		WebUI.setText(findTestObject('Member/Deposit_Page/input_AuditAmount'), Integer.toString(dAndWInfo.auditAmount))	
 	}
@@ -85,8 +89,16 @@ for (i = 1; i <= 5; i++) {
     '人工存提'
     WebUI.selectOptionByLabel(findTestObject('Member/Deposit_Page/select_DepositOption'), choose_type, false)
 
-    '不勾選實際存提'
-    WebUI.uncheck(findTestObject('Member/Deposit_Page/isSelect_RealDepositAndWithdrawal'))
+	if (choose_audit == '1' && choose_type1 == '1')
+	{
+		'勾選實際存提'
+		WebUI.check(findTestObject('Member/Deposit_Page/isSelect_RealDepositAndWithdrawal'))
+	} else 
+	{
+		'不勾選實際存提'
+		WebUI.uncheck(findTestObject('Member/Deposit_Page/isSelect_RealDepositAndWithdrawal'))
+	}
+	
 
     '輸入存款密碼'
     WebUiBuiltInKeywords.setText(findTestObject('Member/Deposit_Page/input_DepositPassword'), dAndWInfo.depositpassword)
@@ -102,6 +114,9 @@ for (i = 1; i <= 5; i++) {
 
     WebUI.acceptAlert()
 
+	'取得實際存款後次數'
+	GetAfterCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Index_Page/txt_ActualDepositCount')))
+	
     '點擊會員詳細頁面中的"交易紀錄"'
     WebUI.click(findTestObject('Member/Detail_Page/a_MemberTransaction'))
 
@@ -110,6 +125,11 @@ for (i = 1; i <= 5; i++) {
 
     GetAfterTransactionType = WebUI.getText(findTestObject('Object Repository/MemberTransaction/Index_Page/txt_DepositAndWithdrawType'))
 
+	if (choose_audit == '1' && choose_type1 == '1')
+	{
+		WebUI.verifyEqual(GetAfterCount, GetBeforeCount + Integer.parseInt('1'))
+	}
+	
     WebUI.verifyEqual(GetAfterTransactionType, choose_type)
 
     WebUI.verifyEqual(GetAfterPoint, GetBeforePoint + dAndWInfo.amount)

@@ -29,7 +29,7 @@ import WebUiBuiltInKeywords as WebUI
 public void getLogin() {
 
 
-	def (urlinfo , logininfo) = WebUI.callTestCase(findTestCase('Test Cases/Common/PrepareDatas'), [:], FailureHandling.STOP_ON_FAILURE)
+	def (urlinfo , logininfo) = WebUI.callTestCase(findTestCase('Common/PrepareData'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	def url = urlinfo.masterurl
 	def username = logininfo.username
