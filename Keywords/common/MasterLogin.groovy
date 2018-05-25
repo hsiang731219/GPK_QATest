@@ -28,12 +28,12 @@ import WebUiBuiltInKeywords as WebUI
 @Keyword
 public void getLogin() {
 
-
-	def (urlinfo , logininfo) = WebUI.callTestCase(findTestCase('Common/PrepareData'), [:], FailureHandling.STOP_ON_FAILURE)
-
-	def url = urlinfo.masterurl
-	def username = logininfo.username
-	def password = logininfo.password
+    def urlInfo = WebUI.callTestCase(findTestCase('Common/TestEnvironmenInfoData'), [:], FailureHandling.STOP_ON_FAILURE)
+	def loginInfo = WebUI.callTestCase(findTestCase('Common/TestUserLoginData'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	def url = urlInfo.Gpk_master 
+	def username = loginInfo.username
+	def password = loginInfo.password
 
 	WebUI.navigateToUrl(url)
 

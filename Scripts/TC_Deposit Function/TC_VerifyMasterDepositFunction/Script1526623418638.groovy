@@ -24,9 +24,7 @@ import org.openqa.selenium.Keys as Keys
 import java.lang.String as String
 import java.lang.StringCoding as StringCoding
 
-def info = WebUI.callTestCase(findTestCase('Common/PrepareData'), [:], FailureHandling.STOP_ON_FAILURE)
-
-def dAndWInfo = info[2]
+def Info = WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
 
 for( x = 1; x <= 1 ; x++){
 	
@@ -34,7 +32,7 @@ for( x = 1; x <= 1 ; x++){
 	
 for (i = 1; i <= 2; i++) {
 	
-    def choose_type = dAndWInfo[('type' + Integer.toString(i))]
+    def choose_type = Info[('type' + Integer.toString(i))]
 	def choose_type1 = Integer.toString(i)
 
     WebUI.openBrowser('')
@@ -45,7 +43,7 @@ for (i = 1; i <= 2; i++) {
     CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(1, 1)
 
     '輸入搜尋帳號'
-    WebUI.sendKeys(findTestObject('Member/Index_Page/input_SearchAccount'), dAndWInfo.account)
+    WebUI.sendKeys(findTestObject('Member/Index_Page/input_SearchAccount'), Info.account)
 
     WebUI.click(findTestObject('Member/Index_Page/button_Query'))
 
@@ -60,10 +58,10 @@ for (i = 1; i <= 2; i++) {
     WebUI.click(findTestObject('Member/Detail_Page/button_Deposit'))
 
     '輸入存款帳號'
-    WebUI.setText(findTestObject('Member/Deposit_Page/input_DepositAccount'), dAndWInfo.account)
+    WebUI.setText(findTestObject('Member/Deposit_Page/input_DepositAccount'), Info.account)
 
     '輸入存款金額'
-    WebUI.setText(findTestObject('Member/Deposit_Page/input_DepositAmount'), Integer.toString(dAndWInfo.amount))
+    WebUI.setText(findTestObject('Member/Deposit_Page/input_DepositAmount'), Integer.toString(Info.amount))
 
     '稽核方式'
 	
@@ -82,7 +80,7 @@ for (i = 1; i <= 2; i++) {
 	
 	if (choose_audit != '1')
 	{
-		WebUI.setText(findTestObject('Member/Deposit_Page/input_AuditAmount'), Integer.toString(dAndWInfo.auditAmount))	
+		WebUI.setText(findTestObject('Member/Deposit_Page/input_AuditAmount'), Integer.toString(Info.auditAmount))	
 	}
 	
 	
@@ -101,7 +99,7 @@ for (i = 1; i <= 2; i++) {
 	
 
     '輸入存款密碼'
-    WebUiBuiltInKeywords.setText(findTestObject('Member/Deposit_Page/input_DepositPassword'), dAndWInfo.depositpassword)
+    WebUiBuiltInKeywords.setText(findTestObject('Member/Deposit_Page/input_DepositPassword'), Info.depositpassword)
 
     '填寫備註'
     WebUI.setText(findTestObject('Member/Deposit_Page/textarea_DepositMemo'), '')
@@ -132,7 +130,7 @@ for (i = 1; i <= 2; i++) {
 	
     WebUI.verifyEqual(GetAfterTransactionType, choose_type)
 
-    WebUI.verifyEqual(GetAfterPoint, GetBeforePoint + dAndWInfo.amount)
+    WebUI.verifyEqual(GetAfterPoint, GetBeforePoint + Info.amount)
 
     WebUI.closeBrowser()
 

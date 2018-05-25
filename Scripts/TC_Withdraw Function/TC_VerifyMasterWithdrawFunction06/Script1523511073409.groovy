@@ -20,6 +20,8 @@ import com.sun.media.sound.SoftReverb.Delay as Delay
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+def Info= WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.openBrowser('')
 
 CustomKeywords.'common.MasterLogin.getLogin'()
@@ -28,7 +30,7 @@ CustomKeywords.'common.MasterLogin.getLogin'()
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(1, 1)
 
 '輸入搜尋帳號'
-WebUI.sendKeys(findTestObject('Member/Index_Page/input_SearchAccount'), 'QAUser')
+WebUI.sendKeys(findTestObject('Member/Index_Page/input_SearchAccount'), Info.account)
 
 WebUI.click(findTestObject('Member/Index_Page/button_Query'))
 
@@ -41,17 +43,16 @@ System.out.println(GetBeforeCount)
 
 WebUI.click(findTestObject('Member/Detail_Page/button_ Withdraw'))
 
-WebUI.setText(findTestObject('Member/Withdraw_Page/input_WithdrawAmount'), findTestData('DepositAndWithdrawData').getValue('Amount', 
-        1))
+WebUI.setText(findTestObject('Member/Withdraw_Page/input_WithdrawAmount'), Integer.toString(Info.amount))
 
-WebUI.selectOptionByLabel(findTestObject('Member/Withdraw_Page/select_WithdrawOption'), '人工存提', false)
+WebUI.selectOptionByLabel(findTestObject('Member/Withdraw_Page/select_WithdrawOption'), Info.type1, false)
 
 '勾選實際存提'
 WebUI.check(findTestObject('Member/Withdraw_Page/isSelect_RealDepositAndWithdrawal'))
 
 WebUI.setText(findTestObject('Member/Withdraw_Page/textarea_WithdrawMemo'), '')
 
-WebUI.setText(findTestObject('Member/Withdraw_Page/input_WithdrawPassword'), '123456')
+WebUI.setText(findTestObject('Member/Withdraw_Page/input_WithdrawPassword'), Info.withdrawpassword)
 
 WebUI.click(findTestObject('Member/Withdraw_Page/button_Submit'))
 

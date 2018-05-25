@@ -19,6 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+def Info= WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.openBrowser('')
 
 CustomKeywords.'common.MasterLogin.getLogin'()
@@ -27,7 +29,7 @@ CustomKeywords.'common.MasterLogin.getLogin'()
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(1, 1)
 
 '輸入搜尋帳號'
-WebUI.sendKeys(findTestObject('Member/Index_Page/input_SearchAccount'), 'QAUser')
+WebUI.sendKeys(findTestObject('Member/Index_Page/input_SearchAccount'), Info.account)
 
 WebUI.click(findTestObject('Member/Index_Page/button_Query'))
 
@@ -38,17 +40,16 @@ CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Member/Index_
 
 WebUI.click(findTestObject('Member/Detail_Page/button_ Withdraw'))
 
-WebUI.setText(findTestObject('Member/Withdraw_Page/input_WithdrawAmount'), findTestData('DepositAndWithdrawData').getValue('Amount', 
-        1))
+WebUI.setText(findTestObject('Member/Withdraw_Page/input_WithdrawAmount'), Integer.toString(Info.amount))
 
-WebUI.selectOptionByLabel(findTestObject('Member/Withdraw_Page/select_WithdrawOption'), '补发派彩', false)
+WebUI.selectOptionByLabel(findTestObject('Member/Withdraw_Page/select_WithdrawOption'), Info.type4, false)
 
 '不勾選實際存提'
 WebUI.uncheck(findTestObject('Member/Withdraw_Page/isSelect_RealDepositAndWithdrawal'))
 
 WebUI.setText(findTestObject('Member/Withdraw_Page/textarea_WithdrawMemo'), '')
 
-WebUI.setText(findTestObject('Member/Withdraw_Page/input_WithdrawPassword'), '123456')
+WebUI.setText(findTestObject('Member/Withdraw_Page/input_WithdrawPassword'), Info.withdrawpassword)
 
 WebUI.click(findTestObject('Member/Withdraw_Page/button_Submit'))
 
@@ -63,9 +64,9 @@ GetAfterPoint = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.g
 
 GetAfterTransactionType = WebUI.getText(findTestObject('Object Repository/MemberTransaction/Detail_Page/txt_DepositAndWithdrawType'))
 
-WebUI.verifyEqual(GetAfterTransactionType, '派彩')
+WebUI.verifyEqual(GetAfterTransactionType, Info.type4)
 
-WebUI.verifyEqual(GetAfterPoint, GetBeforePoint - Integer.parseInt(findTestData('DepositAndWithdrawData').getValue('Amount', 1)))
+WebUI.verifyEqual(GetAfterPoint, GetBeforePoint - Info.amount)
 
 WebUI.closeBrowser()
 

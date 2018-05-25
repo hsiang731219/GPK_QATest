@@ -20,8 +20,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
 import org.openqa.selenium.Keys as Keys
+
+import java.awt.TexturePaintContext.Int
 import java.lang.String as String
 import java.lang.StringCoding as StringCoding
+
+def Info= WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.openBrowser('')
 
@@ -31,7 +35,7 @@ CustomKeywords.'common.MasterLogin.getLogin'()
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(1, 1)
 
 '輸入搜尋帳號'
-WebUI.sendKeys(findTestObject('Member/Index_Page/input_SearchAccount'), 'QAUser')
+WebUI.sendKeys(findTestObject('Member/Index_Page/input_SearchAccount'), Info.account)
 
 WebUI.click(findTestObject('Member/Index_Page/button_Query'))
 
@@ -43,26 +47,25 @@ CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Member/Index_
 WebUI.click(findTestObject('Member/Detail_Page/button_Deposit'))
 
 '輸入存款帳號'
-WebUI.setText(findTestObject('Member/Deposit_Page/input_DepositAccount'), 'QAUser')
+WebUI.setText(findTestObject('Member/Deposit_Page/input_DepositAccount'), Info.account)
 
 '輸入存款金額'
-WebUI.setText(findTestObject('Member/Deposit_Page/input_DepositAmount'), findTestData('DepositAndWithdrawData').getValue('Amount', 
-        1))
+WebUI.setText(findTestObject('Member/Deposit_Page/input_DepositAmount'), Integer.toString(Info.amount))
 
 '存款稽核'
 WebUI.click(findTestObject('Member/Deposit_Page/inputRadio_DepositAudit'))
 
 '稽核金額'
-WebUI.setText(findTestObject('Member/Deposit_Page/input_AuditAmount'), '1')
+WebUI.setText(findTestObject('Member/Deposit_Page/input_AuditAmount'), Integer.toString(Info.auditAmount))
 
 '人工存提'
-WebUI.selectOptionByLabel(findTestObject('Member/Deposit_Page/select_DepositOption'), '人工存提', false)
+WebUI.selectOptionByLabel(findTestObject('Member/Deposit_Page/select_DepositOption'), Info.type1, false)
 
 '不勾選實際存提'
 WebUI.uncheck(findTestObject('Member/Deposit_Page/isSelect_RealDepositAndWithdrawal'))
 
 '輸入存款密碼'
-WebUiBuiltInKeywords.setText(findTestObject('Member/Deposit_Page/input_DepositPassword'), '123456')
+WebUiBuiltInKeywords.setText(findTestObject('Member/Deposit_Page/input_DepositPassword'), Info.depositpassword)
 
 '填寫備註'
 WebUI.setText(findTestObject('Member/Deposit_Page/textarea_DepositMemo'), '')
@@ -83,9 +86,9 @@ GetAfterPoint = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.g
 
 GetAfterTransactionType = WebUI.getText(findTestObject('Object Repository/MemberTransaction/Index_Page/txt_DepositAndWithdrawType'))
 
-WebUI.verifyEqual(GetAfterTransactionType, '人工存提')
+WebUI.verifyEqual(GetAfterTransactionType, Info.type1)
 
-WebUI.verifyEqual(GetAfterPoint, GetBeforePoint + Integer.parseInt(findTestData('DepositAndWithdrawData').getValue('Amount', 1)))
+WebUI.verifyEqual(GetAfterPoint, GetBeforePoint + Info.amount)
 
 WebUI.closeBrowser()
 
