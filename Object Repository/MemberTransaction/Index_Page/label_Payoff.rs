@@ -6,18 +6,18 @@
    <elementGuidId>4a602ad4-afc4-4967-bfa3-31016c629a43</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>div:nth-child(8)>div>label:nth-child(7)</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div:nth-child(8)>div>label:nth-child(7)</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;form1&quot;]/div[8]/div/label[7]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -28,6 +28,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>div:nth-child(8)>div>label:nth-child(7)</value>
+      <value>//*[@id=&quot;form1&quot;]/div[8]/div/label[7]</value>
    </webElementProperties>
 </WebElementEntity>

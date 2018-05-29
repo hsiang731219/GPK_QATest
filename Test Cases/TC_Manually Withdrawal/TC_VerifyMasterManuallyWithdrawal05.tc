@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>驗證管端幫會員進行提款類型與金額(其他)</description>
+   <name>TC_VerifyMasterManuallyWithdrawal05</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b6dd7845-1de8-4e4f-97d7-11c97b44f42f</testCaseGuid>
+</TestCaseEntity>

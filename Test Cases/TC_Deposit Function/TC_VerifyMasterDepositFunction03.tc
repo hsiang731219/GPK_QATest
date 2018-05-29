@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>驗證管端幫會員進行存款類型與金額(免稽核_返水)</description>
-   <name>TC_VerifyMasterDepositFunction03</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a94c2a6f-9dd8-4ab8-bd30-2a5d0a33578f</testCaseGuid>
-</TestCaseEntity>

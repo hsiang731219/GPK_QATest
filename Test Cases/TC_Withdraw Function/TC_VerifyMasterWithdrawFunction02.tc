@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>驗證管端幫會員進行提款類型與金額(优惠活動)</description>
-   <name>TC_VerifyMasterWithdrawFunction02</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>491a9841-5ef2-4812-a2f5-bc89d299e4c6</testCaseGuid>
-</TestCaseEntity>

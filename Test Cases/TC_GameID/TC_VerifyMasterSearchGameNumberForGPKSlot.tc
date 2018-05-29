@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>驗證GPK電子局號查詢功能</description>
    <name>TC_VerifyMasterSearchGameNumberForGPKSlot</name>
    <tag></tag>
    <comment></comment>

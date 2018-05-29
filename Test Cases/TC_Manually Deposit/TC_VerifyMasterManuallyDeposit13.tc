@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>驗證管端幫會員進行存款類型與金額(優惠稽核_返水)</description>
+   <name>TC_VerifyMasterManuallyDeposit13</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a9b8616f-6833-497a-be72-3818814b6265</testCaseGuid>
+</TestCaseEntity>
