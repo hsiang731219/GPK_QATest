@@ -23,9 +23,7 @@ import org.openqa.selenium.Keys as Keys
 import java.lang.String as String
 import java.lang.StringCoding as StringCoding
 
-def Info= WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
+def Info = WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'common.MasterLogin.getLogin'()
 
@@ -87,6 +85,4 @@ GetAfterTransactionType = WebUI.getText(findTestObject('Object Repository/Member
 WebUI.verifyEqual(GetAfterTransactionType, Info.type4)
 
 WebUI.verifyEqual(GetAfterPoint, GetBeforePoint + Info.amount)
-
-WebUI.closeBrowser()
 

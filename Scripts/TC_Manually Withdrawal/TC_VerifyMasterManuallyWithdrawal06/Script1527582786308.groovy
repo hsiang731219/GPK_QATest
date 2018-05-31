@@ -20,9 +20,7 @@ import com.sun.media.sound.SoftReverb.Delay as Delay
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-def Info= WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
+def Info = WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'common.MasterLogin.getLogin'()
 
@@ -70,6 +68,4 @@ GetAfterCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.g
 System.out.println(GetAfterCount)
 
 WebUI.verifyEqual(GetAfterCount, GetBeforeCount + Integer.parseInt('1'))
-
-WebUI.closeBrowser()
 

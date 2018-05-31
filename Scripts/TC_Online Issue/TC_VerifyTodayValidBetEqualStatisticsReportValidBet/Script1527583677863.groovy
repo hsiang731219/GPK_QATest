@@ -19,8 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
-
 CustomKeywords.'common.MasterLogin.getLogin'()
 
 def expect_element = 'title'
@@ -30,25 +28,20 @@ element = WebUI.getAttribute(findTestObject('Home/Index_Page/txt_TodayValidBet')
 attribute = CustomKeywords.'extension.SampleCustomKeyword.tryFindElement'(findTestObject('Home/Index_Page/txt_TodayValidBet'))
 
 //System.out.println(attribute)
-
-if (attribute == true )
-{
+if (attribute == true) {
     GetTodayValidBet = CustomKeywords.'extension.StringExtension.CurrencyToInt'(element)
-}else
-{
-	GetTodayValidBet = '0'
+} else {
+    GetTodayValidBet = '0'
 }
 
 //System.out.println(GetTodayValidBet)
-
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(4, 1)
 
 WebUI.click(findTestObject('Statistics/Index_Page/button_Query'))
 
-StatisticsAttribute = WebUI.getAttribute(findTestObject('Statistics/Index_Page/txt_StatisticsValidBet'),expect_element)
+StatisticsAttribute = WebUI.getAttribute(findTestObject('Statistics/Index_Page/txt_StatisticsValidBet'), expect_element)
 
 GetStatisticsValidBet = CustomKeywords.'extension.StringExtension.CurrencyToInt'(StatisticsAttribute)
 
 WebUI.verifyEqual(GetTodayValidBet, GetStatisticsValidBet)
 
-WebUI.closeBrowser()

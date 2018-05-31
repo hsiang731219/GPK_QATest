@@ -22,9 +22,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//開啟瀏覽器
-WebUI.openBrowser('')
-
 // 呼叫登入使用的共用方法
 CustomKeywords.'common.MasterLogin.getLogin'()
 
@@ -36,6 +33,5 @@ ActualPageInfo = WebUI.getText(findTestObject('Home/Index_Page/txt_PageInfo'))
 // 與預期結果比對
 WebUI.verifyMatch(ActualPageInfo, '资讯看板', false)
 
-//關閉瀏覽器
-WebUI.closeBrowser()
+
 

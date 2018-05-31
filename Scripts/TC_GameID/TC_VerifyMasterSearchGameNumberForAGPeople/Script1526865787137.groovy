@@ -19,8 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
-
 CustomKeywords.'common.MasterLogin.getLogin'()
 
 //各式報表 -> 投注紀錄查詢
@@ -91,6 +89,4 @@ WebUI.verifyMatch(txt_AG_People_GameID, txt_AG_People_gameID_Verify, true)
 
 '停個2秒後在關掉Browser'
 WebUI.delay(1)
-
-WebUI.closeBrowser()
 

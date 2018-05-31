@@ -6,12 +6,12 @@
    <elementGuidId>2249f1db-b9b2-4a9a-91b6-7a03fd7475f1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div:nth-child(8)>div>label:nth-child(8)</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@id=&quot;form1&quot;]/div[8]/div/label[8]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div:nth-child(8)>div>label:nth-child(8)</value>
       </entry>
       <entry>
          <key>XPATH</key>

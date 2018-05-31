@@ -21,8 +21,6 @@ import internal.GlobalVariable as GlobalVariable
 
 def Info = WebUI.callTestCase(findTestCase('Common/TransactionType'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.openBrowser('')
-
 CustomKeywords.'common.MasterLogin.getLogin'()
 
 //帳務管理 -> 交易紀錄查詢
@@ -72,6 +70,4 @@ WebUI.verifyEqual(verify_AnyTimeDiscount, Info.anyTimeDiscount)
 verify_Others = WebUI.getText(findTestObject('MemberTransaction/Index_Page/label_Others'))
 
 WebUI.verifyEqual(verify_Others, Info.others)
-
-WebUI.closeBrowser()
 

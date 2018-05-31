@@ -19,8 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
-
 CustomKeywords.'common.MasterLogin.getLogin'()
 
 //各式報表 -> 投注紀錄查詢
@@ -49,6 +47,4 @@ GetSecondTransactionRecord = WebUI.getText(findTestObject('MemberTransaction/Ind
 WebUI.verifyNotMatch(GetFirstPageTransactionTime, GetSecondPageTransactionTime, false)
 
 WebUI.verifyNotMatch(GetFirstTransactionRecord, GetSecondTransactionRecord, false)
-
-WebUI.closeBrowser()
 

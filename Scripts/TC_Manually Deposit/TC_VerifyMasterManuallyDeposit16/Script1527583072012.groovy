@@ -23,9 +23,7 @@ import org.openqa.selenium.Keys as Keys
 import java.lang.String as String
 import java.lang.StringCoding as StringCoding
 
-def Info= WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
+def Info = WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'common.MasterLogin.getLogin'()
 
@@ -81,6 +79,4 @@ GetAfterCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.g
 System.out.println(GetAfterCount)
 
 WebUI.verifyEqual(GetAfterCount, GetBeforeCount + Integer.parseInt('1'))
-
-WebUI.closeBrowser()
 

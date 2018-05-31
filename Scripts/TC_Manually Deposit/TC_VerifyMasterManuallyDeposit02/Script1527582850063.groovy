@@ -25,8 +25,6 @@ import java.lang.StringCoding as StringCoding
 
 def Info= WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.openBrowser('')
-
 CustomKeywords.'common.MasterLogin.getLogin'()
 
 //會員與代理商->會員查詢
@@ -84,6 +82,3 @@ GetAfterTransactionType = WebUI.getText(findTestObject('Object Repository/Member
 WebUI.verifyEqual(GetAfterTransactionType, Info.type1)
 
 WebUI.verifyEqual(GetAfterPoint, GetBeforePoint + Info.amount)
-
-WebUI.closeBrowser()
-

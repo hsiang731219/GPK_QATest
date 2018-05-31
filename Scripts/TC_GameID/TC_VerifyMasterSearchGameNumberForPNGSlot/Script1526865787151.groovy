@@ -20,8 +20,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-WebUI.openBrowser('')
-
 CustomKeywords.'common.MasterLogin.getLogin'()
 
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(4, 2)
@@ -86,6 +84,4 @@ WebUI.verifyMatch(txt_PNG_Slot_GameID, txt_PNG_Slot_gameID_Verify, true)
 
 '停個2秒後在關掉Browser'
 WebUI.delay(1)
-
-WebUI.closeBrowser()
 

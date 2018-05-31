@@ -20,14 +20,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
 import org.openqa.selenium.Keys as Keys
-
-import java.awt.TexturePaintContext.Int
+import java.awt.TexturePaintContext.Int as Int
 import java.lang.String as String
 import java.lang.StringCoding as StringCoding
 
-def Info= WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
+def Info = WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'common.MasterLogin.getLogin'()
 
@@ -89,6 +86,4 @@ GetAfterTransactionType = WebUI.getText(findTestObject('Object Repository/Member
 WebUI.verifyEqual(GetAfterTransactionType, Info.type1)
 
 WebUI.verifyEqual(GetAfterPoint, GetBeforePoint + Info.amount)
-
-WebUI.closeBrowser()
 

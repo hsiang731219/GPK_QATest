@@ -19,8 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
-
 CustomKeywords.'common.MasterLogin.getLogin'()
 
 //系統管理-> 公司入款帳戶管理
@@ -95,6 +93,4 @@ CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Group/Detail_
 WebUI.waitForAlert(500, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.acceptAlert()
-
-WebUI.closeBrowser()
 

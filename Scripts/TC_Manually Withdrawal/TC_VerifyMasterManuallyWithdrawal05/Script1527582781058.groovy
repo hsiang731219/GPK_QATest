@@ -19,9 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-def Info= WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
+def Info = WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'common.MasterLogin.getLogin'()
 
@@ -67,6 +65,4 @@ GetAfterTransactionType = WebUI.getText(findTestObject('Object Repository/Member
 WebUI.verifyEqual(GetAfterTransactionType, Info.type5)
 
 WebUI.verifyEqual(GetAfterPoint, GetBeforePoint - Info.amount)
-
-WebUI.closeBrowser()
 
