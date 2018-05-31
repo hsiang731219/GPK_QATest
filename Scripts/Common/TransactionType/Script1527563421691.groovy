@@ -44,6 +44,4 @@ transactionTypeInfo.payoff = TransactionTypeInfo.getValue(1, 8)
 transactionTypeInfo.anyTimeDiscount = TransactionTypeInfo.getValue(1, 9)
 transactionTypeInfo.others = TransactionTypeInfo.getValue(1, 10)
 
-System.out.println(transactionTypeInfo)
-
 return transactionTypeInfo

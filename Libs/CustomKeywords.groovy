@@ -61,3 +61,9 @@ def static "extension.StringExtension.CurrencyToInt"(
     (new extension.StringExtension()).CurrencyToInt(
         	point)
 }
+
+def static "extension.StringExtension.GetStringSpilt"(
+    	String text	) {
+    (new extension.StringExtension()).GetStringSpilt(
+        	text)
+}

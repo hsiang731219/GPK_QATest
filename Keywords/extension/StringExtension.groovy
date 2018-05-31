@@ -36,4 +36,12 @@ public class StringExtension {
 		def result = Double.valueOf(str)
 		return result;
 	}
+	
+	@Keyword
+	def GetStringSpilt(String text)
+	{
+		def sampleText = text
+		def getValue = sampleText.split()
+		return getValue[0]
+	}
 }
