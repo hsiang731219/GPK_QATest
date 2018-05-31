@@ -36,12 +36,13 @@ public class StringExtension {
 		def result = Double.valueOf(str)
 		return result;
 	}
-	
+
 	@Keyword
-	def GetStringSpilt(String text)
+	//第一個參數為數字，第二個參數為要分割的符號，第三個參數則是傳回的值 (如要傳回第一個，就寫1，第二個就寫2..etc)
+	def GetStringSpilt(String text, String symbol, int returnText)
 	{
 		def sampleText = text
-		def getValue = sampleText.split()
-		return getValue[0]
+		def getValue = sampleText.split(symbol)
+		return getValue[returnText-1];
 	}
 }
