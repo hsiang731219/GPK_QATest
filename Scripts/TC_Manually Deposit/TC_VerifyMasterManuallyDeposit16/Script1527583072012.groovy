@@ -59,13 +59,16 @@ WebUI.selectOptionByLabel(findTestObject('Member/Deposit_Page/select_DepositOpti
 '勾選實際存提'
 WebUI.check(findTestObject('Member/Deposit_Page/isSelect_RealDepositAndWithdrawal'))
 
-'輸入存款密碼'
-WebUiBuiltInKeywords.setText(findTestObject('Member/Deposit_Page/input_DepositPassword'), Info.depositpassword)
+'填寫前台備註'
+WebUI.setText(findTestObject('Object Repository/Member/Deposit_Page/textarea_PortalMemo'), '')
 
 '填寫備註'
 WebUI.setText(findTestObject('Member/Deposit_Page/textarea_DepositMemo'), '')
 
 WebUiBuiltInKeywords.click(findTestObject('Member/Deposit_Page/button_Submit'))
+
+'輸入存款密碼'
+WebUiBuiltInKeywords.setText(findTestObject('Member/Deposit_Page/input_DepositPassword'), Info.depositpassword)
 
 WebUI.acceptAlert()
 
