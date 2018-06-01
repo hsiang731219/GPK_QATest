@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'common.MasterLogin.getLogin'()
+CustomKeywords.'common.MasterLogin.Login'()
 
 //各式報表 -> 投注紀錄查詢
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(4, 2)

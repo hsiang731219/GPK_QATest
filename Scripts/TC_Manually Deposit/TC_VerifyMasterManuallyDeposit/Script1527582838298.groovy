@@ -37,7 +37,7 @@ for (i = 1; i <= 2; i++) {
 
     WebUI.openBrowser('')
 
-    CustomKeywords.'common.MasterLogin.getLogin'()
+    CustomKeywords.'common.MasterLogin.Login'()
 
     //會員與代理商 -> 會員查詢
     CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(1, 1)

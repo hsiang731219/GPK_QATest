@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 
 def Info = WebUI.callTestCase(findTestCase('Common/DepositAndWithdrawData'), [:], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'common.MasterLogin.getLogin'()
+CustomKeywords.'common.MasterLogin.Login'()
 
 //會員與代理商 -> 會員查詢
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(1, 1)

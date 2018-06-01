@@ -26,11 +26,12 @@ import internal.GlobalVariable
 import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
-// 將取到的金額去除'$'& ',' 後轉成字串
+
 public class StringExtension {
 
 	@Keyword
-	public Double CurrencyToInt(String point)
+	// 將取到的金額去除'$'& ',' 後轉成字串
+	def CurrencyToInt(String point)
 	{
 		def str = point.replace('$ ', '').replace(',', '')
 		def result = Double.valueOf(str)

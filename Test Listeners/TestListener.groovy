@@ -22,7 +22,7 @@ import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 
-class NewTestListener {
+class TestListener {
 	
 	def urlInfo = WebUI.callTestCase(findTestCase('Common/TestEnvironmenInfoData'), [:], FailureHandling.STOP_ON_FAILURE)
 	def url = urlInfo.Gpk_master

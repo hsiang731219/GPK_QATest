@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'common.MasterLogin.getLogin'()
+CustomKeywords.'common.MasterLogin.Login'()
 
 //系統管理-> 公司入款帳戶管理
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(3, 2)

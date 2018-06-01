@@ -26,16 +26,14 @@ import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
 @Keyword
-public void getLogin() {
+public void Login() {
 
 	def urlInfo = WebUI.callTestCase(findTestCase('Common/TestEnvironmenInfoData'), [:], FailureHandling.STOP_ON_FAILURE)
 	def loginInfo = WebUI.callTestCase(findTestCase('Common/TestUserLoginData'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	def url = urlInfo.Gpk_master
 	def username = loginInfo.username
-	def password = loginInfo.password	
-
-	
+	def password = loginInfo.password
 
 	WebUI.sendKeys(findTestObject('Account/Login_Page/input_AccountName'), username)
 

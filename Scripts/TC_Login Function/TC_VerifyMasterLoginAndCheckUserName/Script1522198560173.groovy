@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 // 呼叫登入使用的共用方法
-CustomKeywords.'common.MasterLogin.getLogin'()
+CustomKeywords.'common.MasterLogin.Login'()
 
 // 等待
 WebUI.delay(3)

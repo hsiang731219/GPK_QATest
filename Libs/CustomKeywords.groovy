@@ -16,16 +16,16 @@ def static "extension.ClickXpath.clickUsingJS"(
          , 	timeout)
 }
 
-def static "common.MasterLogin.getLogin"() {
-    (new common.MasterLogin()).getLogin()
-}
-
 def static "common.MenuIntoPage.getDropdownMenu"(
     	int x	
      , 	int y	) {
     (new common.MenuIntoPage()).getDropdownMenu(
         	x
          , 	y)
+}
+
+def static "common.MasterLogin.Login"() {
+    (new common.MasterLogin()).Login()
 }
 
 def static "extension.SetLastMonthNumberOne.setLastDayMonth"() {
@@ -63,7 +63,11 @@ def static "extension.StringExtension.CurrencyToInt"(
 }
 
 def static "extension.StringExtension.GetStringSpilt"(
-    	String text	) {
+    	String text	
+     , 	String symbol	
+     , 	int returnText	) {
     (new extension.StringExtension()).GetStringSpilt(
-        	text)
+        	text
+         , 	symbol
+         , 	returnText)
 }

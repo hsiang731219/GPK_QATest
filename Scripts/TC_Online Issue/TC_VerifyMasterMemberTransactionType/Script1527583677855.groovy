@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 def Info = WebUI.callTestCase(findTestCase('Common/TransactionType'), [:], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'common.MasterLogin.getLogin'()
+CustomKeywords.'common.MasterLogin.Login'()
 
 //帳務管理 -> 交易紀錄查詢
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 4)
