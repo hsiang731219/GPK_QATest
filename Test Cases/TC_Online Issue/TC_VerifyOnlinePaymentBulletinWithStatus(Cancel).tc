@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>線上問題:線上支付 搜尋 - 狀態沒有帶到參數(帶入已取消)</description>
    <name>TC_VerifyOnlinePaymentBulletinWithStatus(Cancel)</name>
    <tag></tag>
    <comment></comment>

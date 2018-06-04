@@ -46,4 +46,5 @@ public class StringExtension {
 		def getValue = sampleText.split(symbol)
 		return getValue[returnText-1];
 	}
+
 }

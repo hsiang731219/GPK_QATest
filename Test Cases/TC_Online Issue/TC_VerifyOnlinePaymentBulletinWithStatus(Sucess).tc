@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>線上問題:線上支付 搜尋 - 狀態沒有帶到參數(帶入成功)</description>
    <name>TC_VerifyOnlinePaymentBulletinWithStatus(Sucess)</name>
    <tag></tag>
    <comment></comment>
