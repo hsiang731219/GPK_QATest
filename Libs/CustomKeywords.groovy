@@ -16,16 +16,16 @@ def static "extension.ClickXpath.clickUsingJS"(
          , 	timeout)
 }
 
+def static "common.MasterLogin.Login"() {
+    (new common.MasterLogin()).Login()
+}
+
 def static "common.MenuIntoPage.getDropdownMenu"(
     	int x	
      , 	int y	) {
     (new common.MenuIntoPage()).getDropdownMenu(
         	x
          , 	y)
-}
-
-def static "common.MasterLogin.Login"() {
-    (new common.MasterLogin()).Login()
 }
 
 def static "extension.SetLastMonthNumberOne.setLastDayMonth"() {

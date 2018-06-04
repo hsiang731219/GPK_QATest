@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>text_StatusOfSucess</name>
+   <tag></tag>
+   <elementGuidId>b43bbcc1-80bb-48e8-be54-bf8d427d8dbc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[6]/div/div/label[3]/span</value>
+   </webElementProperties>
+</WebElementEntity>

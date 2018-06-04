@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>checkbox_StatusSucess</name>
+   <tag></tag>
+   <elementGuidId>bf4c7fab-c271-4d0e-8ee9-cd4bd5ef1d95</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[6]/div/div/label[3]/input[count(. | //input[@title = '成功' and @type = 'checkbox']) = count(//input[@title = '成功' and @type = 'checkbox'])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[6]/div/div/label[3]/input</value>
+   </webElementProperties>
+</WebElementEntity>

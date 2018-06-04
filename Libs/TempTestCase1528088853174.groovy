@@ -13,9 +13,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.mobile.contribution.MobileDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\admin\\AppData\\Local\\Temp\\Katalon\\Test Cases\\TC_Manually Deposit\\TC_VerifyMasterManuallyDeposit01\\20180601_142126\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\admin\\AppData\\Local\\Temp\\Katalon\\Test Cases\\TC_Online Payment Bulletin\\TC_OnlinePaymentBulletinWithStatus01\\20180604_130733\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/TC_Manually Deposit/TC_VerifyMasterManuallyDeposit01', new TestCaseBinding('Test Cases/TC_Manually Deposit/TC_VerifyMasterManuallyDeposit01', [:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletinWithStatus01', new TestCaseBinding('Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletinWithStatus01', [:]), FailureHandling.STOP_ON_FAILURE , false)
     
