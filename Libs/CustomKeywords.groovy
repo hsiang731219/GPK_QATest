@@ -56,6 +56,12 @@ def static "extension.SampleCustomKeyword.tryFindElement"(
         	to)
 }
 
+def static "extension.SampleCustomKeyword.DateToInt"(
+    	String point	) {
+    (new extension.SampleCustomKeyword()).DateToInt(
+        	point)
+}
+
 def static "extension.StringExtension.CurrencyToInt"(
     	String point	) {
     (new extension.StringExtension()).CurrencyToInt(

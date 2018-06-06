@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_JoinMemberEnd</name>
+   <tag></tag>
+   <elementGuidId>4c3d7a97-3a10-4e02-935f-a8bba7f735e4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/form/div[2]/div/div/input[2][count(. | //input[@type = 'number' and @ng-model = 'self.balanceEnd']) = count(//input[@type = 'number' and @ng-model = 'self.balanceEnd'])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/form/div[2]/div/div/input[2]</value>
+   </webElementProperties>
+</WebElementEntity>

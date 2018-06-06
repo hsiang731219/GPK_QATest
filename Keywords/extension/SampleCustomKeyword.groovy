@@ -85,4 +85,13 @@ public class SampleCustomKeyword {
 		}
 		return true;
 	}
+
+	// 將取到的日期去除'/'& '/' 後轉成字串
+	@Keyword
+	def DateToInt(String point)
+	{
+		def str = point.replace('/', '')
+		def result = String.valueOf(str)
+		return result;
+	}
 }
