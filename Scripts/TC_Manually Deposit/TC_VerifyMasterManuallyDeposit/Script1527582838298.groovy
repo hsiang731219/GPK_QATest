@@ -53,7 +53,7 @@ for (i = 1; i <= 2; i++) {
     CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Member/Index_Page/link_Account'), 1)
 	
 	'取得實際存款前次數'
-	GetBeforeCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Index_Page/txt_ActualDepositCount')))
+	GetBeforeCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Detail_Page/txt_ActualDepositCount')))
 
     WebUI.click(findTestObject('Member/Detail_Page/button_Deposit'))
 
@@ -113,7 +113,7 @@ for (i = 1; i <= 2; i++) {
     WebUI.acceptAlert()
 
 	'取得實際存款後次數'
-	GetAfterCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Index_Page/txt_ActualDepositCount')))
+	GetAfterCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Detail_Page/txt_ActualDepositCount')))
 	
     '點擊會員詳細頁面中的"交易紀錄"'
     WebUI.click(findTestObject('Member/Detail_Page/a_MemberTransaction'))

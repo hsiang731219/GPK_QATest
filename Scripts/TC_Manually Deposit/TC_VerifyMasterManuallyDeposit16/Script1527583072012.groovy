@@ -38,7 +38,7 @@ WebUI.click(findTestObject('Member/Index_Page/button_Query'))
 CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Member/Index_Page/link_Account'), 1)
 
 '取得實際存款前次數'
-GetBeforeCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Index_Page/txt_ActualDepositCount')))
+GetBeforeCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Detail_Page/txt_ActualDepositCount')))
 
 System.out.println(GetBeforeCount)
 
@@ -77,7 +77,7 @@ WebUI.waitForAlert(500, FailureHandling.STOP_ON_FAILURE)
 WebUI.acceptAlert()
 
 '取得實際存款後次數'
-GetAfterCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Index_Page/txt_ActualDepositCount')))
+GetAfterCount = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Detail_Page/txt_ActualDepositCount')))
 
 System.out.println(GetAfterCount)
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_VerifySearchForMembersWithStatus01</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>76d27aa7-ae35-49bf-8779-bbdc39f6b366</testCaseGuid>
+</TestCaseEntity>
