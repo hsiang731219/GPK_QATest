@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>text_ID</name>
+   <name>link_ID</name>
    <tag></tag>
-   <elementGuidId>bf960c34-2273-43c6-9179-3588246aba2a</elementGuidId>
+   <elementGuidId>cfe11685-213a-40c5-8cb7-557781ae50cd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>CSS</key>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Search</name>
+   <name>input_BankAccount</name>
    <tag></tag>
-   <elementGuidId>785da362-2da0-4e2e-8651-3cdd5e695656</elementGuidId>
+   <elementGuidId>fc789f56-6650-40ef-8f7d-e5719ae41d0c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>#searchModal > div > div > div.modal-body > form > div:nth-child(11) > div > input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,20 +17,13 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-target</name>
-      <type>Main</type>
-      <value>#searchModal</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div[2]/div[2]/div[1]/button</value>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[11]/div/input</value>
    </webElementProperties>
 </WebElementEntity>

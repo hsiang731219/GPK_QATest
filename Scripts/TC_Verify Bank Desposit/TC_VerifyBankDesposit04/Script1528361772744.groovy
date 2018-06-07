@@ -24,8 +24,6 @@ CustomKeywords.'common.MasterLogin.Login'()
 '帳務管理 -> 公司入款审核'
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 1)
 
-beforetext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_ID'))
-
 '搜尋'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_Search'))
 
@@ -34,29 +32,38 @@ WebUI.delay(2)
 '搜寻公司入款审核'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/text_Title'))
 
-'輸入訂單號'
-WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_ID'), beforetext)
+'點擊申請日期'
+WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_ApplicationDateBegin'))
+
+'選取上個月一號'
+date = CustomKeywords.'extension.SetLastMonthNumberOne.setLastDayMonth'()
+
+'輸入上個月一號'
+WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_ApplicationDateBegin'), date)
+
+'轉換上個月1號為數值'
+before = CustomKeywords.'extension.SampleCustomKeyword.DateToInt'(date)
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
 
+beforetext = CustomKeywords.'extension.SampleCustomKeyword.DateToInt'(before)
+
 WebUI.delay(2)
 
 '點擊搜尋結果ID'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_ID'))
+CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'), 2)
 
-after = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_ID'))
+'取得會員申請時間'
+detaildate = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Detail_Page/text_ApplicationTime'))
 
-'轉換只取冒號後的文字'
-//aftertext = CustomKeywords.'keyword.TakeTheValueAfterTheColon.GetStringSpilt'(after)
-aftertext = CustomKeywords.'extension.StringExtension.GetStringSpilt'(after, ':', 2)
+'取得會員申請時間(只取日期)'
+after = CustomKeywords.'extension.StringExtension.GetStringSpilt'(detaildate, ' ' , 1)
 
-
+'轉換日期為數值'
+aftertext = CustomKeywords.'extension.SampleCustomKeyword.DateToInt'(after)
 
 WebUI.delay(2)
 
-'比較訂單號是否相同'
-WebUI.verifyEqual(beforetext, aftertext)
-
-
-
+'比較查詢結果的申請日期是否大於選擇的上個月1號'
+WebUI.verifyGreaterThanOrEqual(aftertext, beforetext)

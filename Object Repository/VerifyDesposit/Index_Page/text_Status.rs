@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Search</name>
+   <name>text_Status</name>
    <tag></tag>
-   <elementGuidId>785da362-2da0-4e2e-8651-3cdd5e695656</elementGuidId>
+   <elementGuidId>e6d236a4-f02e-482c-8fb0-d010a4d6e28f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id=&quot;table1&quot;]/tbody/tr[1]/td[7]/div/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#table1 > tbody > tr:nth-child(1) > td:nth-child(7) > div > span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-target</name>
-      <type>Main</type>
-      <value>#searchModal</value>
+      <value>span</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div[2]/div[2]/div[1]/button</value>
+      <value>//*[@id=&quot;table1&quot;]/tbody/tr[1]/td[7]/div/span</value>
    </webElementProperties>
 </WebElementEntity>

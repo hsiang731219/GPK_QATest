@@ -7,19 +7,11 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[1]/h4[count(. | //div[(text() = '
-                ×
-                搜寻公司入款审核
-            ' or . = '
-                ×
-                搜寻公司入款审核
-            ')]) = count(//div[(text() = '
-                ×
-                搜寻公司入款审核
-            ' or . = '
-                ×
-                搜寻公司入款审核
-            ')])]</value>
+         <value>//*[@id=&quot;searchModal&quot;]/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#searchModal > div > div > div.modal-header > h4</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -36,6 +28,13 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[1]/h4</value>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>searchModal</value>
    </webElementProperties>
 </WebElementEntity>

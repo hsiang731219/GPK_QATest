@@ -20,10 +20,17 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-bind</name>
       <type>Main</type>
       <value>self.langs.GAME_Search</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[12]/div/button[2]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>text_StatusCancel</name>
+   <name>button_MembersLevelCearAll</name>
    <tag></tag>
-   <elementGuidId>e6d236a4-f02e-482c-8fb0-d010a4d6e28f</elementGuidId>
+   <elementGuidId>b06705b6-4e4f-48da-a489-8f2f265b8c40</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,48 +11,48 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>label text-ellipsis inline-block ng-binding label-danger</value>
+      <value>btn btn-default ng-binding</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>title</name>
+      <name>type</name>
       <type>Main</type>
-      <value>已取消</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ng-class</name>
+      <name>ng-click</name>
       <type>Main</type>
-      <value>{ 'label-warning': !datum.IsProcessed, 'label-success': datum.IsProcessed &amp;&amp; datum.IsSuccess, 'label-danger': datum.IsProcessed &amp;&amp; !datum.IsSuccess }</value>
+      <value>self.allMemberLevelChanged(false)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-bind</name>
       <type>Main</type>
-      <value>self.langs[datum.StateString]</value>
+      <value>self.langs.BETRECORDQUERY_ChoiseClean</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>已取消</value>
+      <value>清空</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;table1&quot;)/tbody[1]/tr[@class=&quot;ng-scope&quot;]/td[7]/div[@class=&quot;ng-scope&quot;]/span[@class=&quot;label text-ellipsis inline-block ng-binding label-danger&quot;]</value>
+      <value>id(&quot;memberModal&quot;)/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/div[@class=&quot;div-1&quot;]/button[@class=&quot;btn btn-default ng-binding&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

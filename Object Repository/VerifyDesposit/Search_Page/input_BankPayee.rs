@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Search</name>
+   <name>input_BankPayee</name>
    <tag></tag>
-   <elementGuidId>785da362-2da0-4e2e-8651-3cdd5e695656</elementGuidId>
+   <elementGuidId>fe69bb86-633a-4714-80b3-2092a9a2ba7e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[9]/div/input[count(. | //input[@type = 'text' and @ng-model = 'self.query.GroupAccountPersonName' and @placeholder = '可输入多个，请以半形逗号隔开']) = count(//input[@type = 'text' and @ng-model = 'self.query.GroupAccountPersonName' and @placeholder = '可输入多个，请以半形逗号隔开'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,20 +17,13 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-target</name>
-      <type>Main</type>
-      <value>#searchModal</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div[2]/div[2]/div[1]/button</value>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[9]/div/input</value>
    </webElementProperties>
 </WebElementEntity>

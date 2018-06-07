@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Search</name>
+   <name>input_Amountbegin</name>
    <tag></tag>
-   <elementGuidId>785da362-2da0-4e2e-8651-3cdd5e695656</elementGuidId>
+   <elementGuidId>f8038e0c-739b-4f26-b7b2-4f68db5b2733</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[5]/div/div/input[1][count(. | //input[@type = 'number' and @ng-model = 'self.query.AmountBegin']) = count(//input[@type = 'number' and @ng-model = 'self.query.AmountBegin'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,20 +17,13 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-target</name>
-      <type>Main</type>
-      <value>#searchModal</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div[2]/div[2]/div[1]/button</value>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[5]/div/div/input[1]</value>
    </webElementProperties>
 </WebElementEntity>

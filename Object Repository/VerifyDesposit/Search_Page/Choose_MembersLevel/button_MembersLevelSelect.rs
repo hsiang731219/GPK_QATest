@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Search</name>
+   <name>button_MembersLevelSelect</name>
    <tag></tag>
-   <elementGuidId>785da362-2da0-4e2e-8651-3cdd5e695656</elementGuidId>
+   <elementGuidId>65167d70-8bfd-4146-9d1b-ff74bef2f554</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[3]/div/div/button[count(. | //button[@type = 'button' and (text() = '选取' or . = '选取')]) = count(//button[@type = 'button' and (text() = '选取' or . = '选取')])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,17 +20,10 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-target</name>
-      <type>Main</type>
-      <value>#searchModal</value>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div[2]/div[2]/div[1]/button</value>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[3]/div/div/button</value>
    </webElementProperties>
 </WebElementEntity>
