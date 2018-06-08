@@ -27,8 +27,8 @@ CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 1)
 '取得公司帳戶(銀行 - 收款人)'
 before = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_BankAccountName'))
 
-'取得「銀行」名稱'
-beforetext = CustomKeywords.'extension.StringExtension.GetStringSpilt'(before, ' ', 1)
+'取得「銀行收款人」名稱'
+beforetext = CustomKeywords.'extension.StringExtension.GetStringSpilt'(before, ' ', 3)
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_Search'))
@@ -38,8 +38,8 @@ WebUI.delay(2)
 '搜寻公司入款审核'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/text_Title'))
 
-'輸入銀行名稱'
-WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_BankName'), beforetext)
+'輸入銀行收款人名稱'
+WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_BankPayee'), beforetext)
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
@@ -50,6 +50,6 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'
 
 after = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Detail_Page/text_Bank Account Name'))
 
-aftertext = CustomKeywords.'extension.StringExtension.GetStringSpilt'(after, ' ', 1)
+aftertext = CustomKeywords.'extension.StringExtension.GetStringSpilt'(after, ' ', 3)
 
 WebUI.verifyEqual(beforetext, aftertext)
