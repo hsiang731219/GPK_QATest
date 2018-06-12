@@ -28,6 +28,12 @@ def static "common.MenuIntoPage.getDropdownMenu"(
          , 	y)
 }
 
+def static "extension.ChooseThirdPartyType.chooseType"(
+    	String type	) {
+    (new extension.ChooseThirdPartyType()).chooseType(
+        	type)
+}
+
 def static "extension.SetLastMonthNumberOne.setLastDayMonth"() {
     (new extension.SetLastMonthNumberOne()).setLastDayMonth()
 }

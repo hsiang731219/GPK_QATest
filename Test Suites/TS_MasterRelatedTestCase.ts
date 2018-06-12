@@ -209,4 +209,148 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC_Online Issue/TC_VerifyMasterMemberTransactionType</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>6691b13e-c03f-45ea-afdb-65f06c140667</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Manually Deposit/TC_VerifyMasterManuallyDeposit</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>05a490c0-d605-4a77-82d1-0a0c7a3e6b67</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Search Of Members/TC_VerifySearchForMembers01</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3143c167-f28a-4039-bf80-3a9b72d87fcc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Search Of Members/TC_VerifySearchForMembers02</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dc926c3b-9656-4ab2-8669-b4487e17e4df</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Search Of Members/TC_VerifySearchForMembers03</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>35fd21fb-8770-40e9-bd04-78ebff8ad12d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Search Of Members/TC_VerifySearchForMembers04</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5df207c8-25af-4827-ad78-cd9f747c8465</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Search Of Members/TC_VerifySearchForMembers05</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>77b80821-ab8f-4951-a513-ebdb4a05320f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Search Of Members/TC_VerifySearchForMembers06</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dfbd181b-9a92-4758-a31e-cf906d264cc2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Search Of Members/TC_VerifySearchForMembers07</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>70df90b0-78df-43a6-84ec-e73e1ec83abb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Search Of Members/TC_VerifySearchForMembers08</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>83eef853-6e57-4ba7-9aba-9980bbc6fb4a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Search Of Members/TC_VerifySearchForMembersWithStatus01</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bb11ede1-82a3-4f65-a7e2-25f5d3246039</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Search Of Members/TC_VerifySearchForMembersWithStatus02</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a39e51c6-c965-4aac-be36-3e735edc364d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Search Of Members/TC_VerifySearchForMembersWithStatus03</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b41c6529-1b9a-4830-94d9-d722a3b39fd0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit01</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>be8fae56-abd0-441f-9ea1-2e6d6d3386af</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit02</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bc75a888-babe-4073-939c-7865cc60d20f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit03</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>86534219-f628-4204-a354-21d72a1a20bc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit04</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6bae4727-5575-48b3-8c10-b83c7c5854c2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit05</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>acb98b8b-4152-44b5-9cb3-46e6dcc4be82</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit06</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3b9a2b3c-0b64-4bd2-85f8-8012e20a9711</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit07</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3152f92d-1ea9-41c2-8c85-4504fcdeda5d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit08</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d86c87e8-207f-4708-a740-9407b2300fbc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit09</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>08895bce-880d-4bec-9342-b2dd5ad4e61f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit10</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1c9214ce-bb6a-4c9c-8a4e-8767694556d7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Online Issue/TC_VerifyOnlinePaymentBulletinWithStatus(Cancel)</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0d9dfe1e-ee3a-4907-8f0e-78eaebf43e69</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Online Issue/TC_VerifyOnlinePaymentBulletinWithStatus(Sucess)</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
