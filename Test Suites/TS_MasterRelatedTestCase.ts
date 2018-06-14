@@ -210,6 +210,18 @@
       <testCaseId>Test Cases/TC_Online Issue/TC_VerifyMasterMemberTransactionType</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>0d9dfe1e-ee3a-4907-8f0e-78eaebf43e69</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Online Issue/TC_VerifyOnlinePaymentBulletinWithStatus(Sucess)</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1c9214ce-bb6a-4c9c-8a4e-8767694556d7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Online Issue/TC_VerifyOnlinePaymentBulletinWithStatus(Cancel)</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>6691b13e-c03f-45ea-afdb-65f06c140667</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -340,17 +352,5 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit10</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1c9214ce-bb6a-4c9c-8a4e-8767694556d7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_Online Issue/TC_VerifyOnlinePaymentBulletinWithStatus(Cancel)</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0d9dfe1e-ee3a-4907-8f0e-78eaebf43e69</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_Online Issue/TC_VerifyOnlinePaymentBulletinWithStatus(Sucess)</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
