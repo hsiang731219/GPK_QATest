@@ -31,36 +31,25 @@ WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/butto
 WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 2)
 
 WebUI.delay(2)
-'點擊會員等級'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_MemberLevelSelect'))
 
-WebUI.delay(2)
-'點擊清除所有會員等級'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/button_MembersLevelClearAll'))
+'選取上個月1號'
+LastMonthNumberOne = CustomKeywords.'extension.SampleCustomKeyword.setLastDayMonth'()
 
-'點擊選擇abby-use會員等級'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)'))
+'輸入上個月1號'
+WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_ApplicationDateBegin'),	LastMonthNumberOne)
 
-'取得所選的會員等級文字'
-beforetext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)'))
-
-WebUI.delay(2)
-'關閉選取會員等級'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/button_MemberLevelClose'))
-
-WebUI.delay(2)
 '搜尋'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'))
-
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
 
-WebUI.delay(2)
-'點擊搜尋結果ID'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 2)
+'轉換上個月1號為數值'
+beforetext = CustomKeywords.'extension.SampleCustomKeyword.DateToInt'(LastMonthNumberOne)
 
-'取得线上支付明细「會員等級」'
-aftertext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_MemberLevel'))
+after = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_StatusUpdateDate'))
 
-'比較會員等級是否相同'
-WebUI.verifyEqual(beforetext, aftertext)
+afterdate = CustomKeywords.'extension.StringExtension.GetStringSpilt'(after, ' ', 1)
 
+'轉換上個月1號為數值'
+aftertext = CustomKeywords.'extension.SampleCustomKeyword.DateToInt'(afterdate)
+
+'比較第一筆資料的申請日期是否大於選擇的上個月1號'
+WebUI.verifyGreaterThanOrEqual(aftertext, beforetext)

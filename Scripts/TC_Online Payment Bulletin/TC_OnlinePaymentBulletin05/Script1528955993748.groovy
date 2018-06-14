@@ -31,36 +31,23 @@ WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/butto
 WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 2)
 
 WebUI.delay(2)
-'點擊會員等級'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_MemberLevelSelect'))
 
-WebUI.delay(2)
-'點擊清除所有會員等級'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/button_MembersLevelClearAll'))
+'輸入起始金額'
+WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_AmounBegin'),'1')
 
-'點擊選擇abby-use會員等級'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)'))
+'輸入結束金額'
+WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_AmountEnd'),'3')
 
-'取得所選的會員等級文字'
-beforetext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)'))
-
-WebUI.delay(2)
-'關閉選取會員等級'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/button_MemberLevelClose'))
-
-WebUI.delay(2)
 '搜尋'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'))
-
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
 
 WebUI.delay(2)
-'點擊搜尋結果ID'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 2)
 
-'取得线上支付明细「會員等級」'
-aftertext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_MemberLevel'))
+'轉換查詢結果第一筆餘額扣除$字元'
+aftertext = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_Amount')))
 
-'比較會員等級是否相同'
-WebUI.verifyEqual(beforetext, aftertext)
+'比較結果是否大於輸入的1'
+WebUI.verifyGreaterThanOrEqual(aftertext, '1')
 
+'比較結果是否小於輸入的3'
+WebUI.verifyLessThanOrEqual(aftertext, '3')
