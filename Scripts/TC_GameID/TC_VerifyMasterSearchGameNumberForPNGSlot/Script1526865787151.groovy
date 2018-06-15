@@ -28,7 +28,7 @@ CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(4, 2)
 WebUI.clearText(findTestObject('BetRecord/Index_Page/input_wagersTimeBegin'))
 
 '取得上個月1號'
-lastMonthNumberOne = CustomKeywords.'extension.SetLastMonthNumberOne.setLastDayMonth'()
+lastMonthNumberOne = CustomKeywords.'extension.UIMethod.setLastDayMonth'()
 
 WebUI.delay(1)
 
@@ -57,7 +57,7 @@ WebUI.click(findTestObject('BetRecord/Index_Page/button_ Query'))
 WebUI.waitForElementPresent(findTestObject('BetRecord/Index_Page/a_Detail'), 1)
 
 '等待查詢的結果出來 (用keyword方式)'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
 
 '把PNG Slot 局號存下來'
 txt_PNG_Slot_GameID = WebUI.getText(findTestObject('BetRecord/Detail_Page/div_PNG_Slot_GameID'))
@@ -74,7 +74,7 @@ WebUI.click(findTestObject('BetRecord/Index_Page/button_ Query'))
 WebUI.waitForElementPresent(findTestObject('BetRecord/Index_Page/a_Detail'), 1)
 
 '等待查詢的結果出來 (用keyword方式)'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
 
 '取得PNG Slot 的GameID'
 txt_PNG_Slot_gameID_Verify = WebUI.getText(findTestObject('BetRecord/Detail_Page/div_PNG_Slot_GameID'))

@@ -25,7 +25,8 @@ import org.openqa.selenium.Keys as Keys
 // 呼叫登入使用的共用方法
 CustomKeywords.'common.MasterLogin.Login'()
 
-WebUI.delay(3)
+// 等待元素出現
+WebUI.waitForElementPresent(findTestObject('Home/Index_Page/txt_PageInfo'),2)
 
 // 抓取欲驗證的文字
 ActualPageInfo = WebUI.getText(findTestObject('Home/Index_Page/txt_PageInfo'))

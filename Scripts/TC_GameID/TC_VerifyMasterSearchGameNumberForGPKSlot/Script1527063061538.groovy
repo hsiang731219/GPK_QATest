@@ -30,7 +30,7 @@ WebUI.clearText(findTestObject('BetRecord/Index_Page/input_wagersTimeBegin'))
 WebUI.delay(1)
 
 '取得上個月1號'
-lastMonthNumberOne = CustomKeywords.'extension.SetLastMonthNumberOne.setLastDayMonth'()
+lastMonthNumberOne = CustomKeywords.'extension.UIMethod.setLastDayMonth'()
 
 '把上個月1號的值填入投注時間(起)'
 WebUI.setText(findTestObject('BetRecord/Index_Page/input_wagersTimeBegin'), lastMonthNumberOne)
@@ -54,7 +54,7 @@ WebUI.delay(1)
 WebUI.click(findTestObject('BetRecord/Index_Page/button_ Query'))
 
 '等待查詢的結果出來 (用keyword方式)'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
 
 '把GPK Slot 局號存下來'
 txt_GPK_Slot_GameID = WebUI.getText(findTestObject('BetRecord/Detail_Page/div_GPK_Slot_GameID'))
@@ -68,7 +68,7 @@ WebUI.setText(findTestObject('BetRecord/Index_Page/input_GameID'), txt_GPK_Slot_
 WebUI.click(findTestObject('BetRecord/Index_Page/button_ Query'))
 
 '等待查詢的結果出來 (用keyword方式)'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
 
 '取得GPK Slot 的GameID'
 txt_GPK_Slot_gameID_Verify = WebUI.getText(findTestObject('BetRecord/Detail_Page/div_GPK_Slot_GameID'))

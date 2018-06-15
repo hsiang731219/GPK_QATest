@@ -30,7 +30,7 @@ WebUI.clearText(findTestObject('BetRecord/Index_Page/input_wagersTimeBegin'))
 WebUI.delay(1)
 
 '取得上個月1號'
-lastMonthNumberOne = CustomKeywords.'extension.SetLastMonthNumberOne.setLastDayMonth'()
+lastMonthNumberOne = CustomKeywords.'extension.UIMethod.setLastDayMonth'()
 
 '把上個月1號的值填入投注時間(起)'
 WebUI.setText(findTestObject('BetRecord/Index_Page/input_wagersTimeBegin'), lastMonthNumberOne)
@@ -62,7 +62,7 @@ WebUI.click(findTestObject('BetRecord/Index_Page/button_ Query'))
 WebUI.waitForElementPresent(findTestObject('BetRecord/Index_Page/a_Detail'), 1)
 
 '按下詳細頁面 (用keyword的方式)'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
 
 '把AG局號存下來'
 txt_AG_People_GameID = WebUI.getText(findTestObject('BetRecord/Detail_Page/div_AG_People_GameID'))
@@ -79,7 +79,7 @@ WebUI.click(findTestObject('BetRecord/Index_Page/button_ Query'))
 WebUI.waitForElementPresent(findTestObject('BetRecord/Index_Page/a_Detail'), 1)
 
 '按下詳細頁面 (用keyword的方式)'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('BetRecord/Index_Page/a_Detail'), 10)
 
 '取得AG 真人 的GameID'
 txt_AG_People_gameID_Verify = WebUI.getText(findTestObject('BetRecord/Detail_Page/div_AG_People_GameID'))

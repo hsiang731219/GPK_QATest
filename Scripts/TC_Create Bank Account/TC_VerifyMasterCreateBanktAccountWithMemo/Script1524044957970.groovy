@@ -88,7 +88,7 @@ WebUI.click(findTestObject('Group/Account/Index_Page/a_-FinalCreateBankAccount')
 
 WebUI.waitForElementPresent(findTestObject('Group/Account/Detail_Page/td_BankAccount'), 30)
 
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Group/Account/Detail_Page/btn_Delete'), 0)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Group/Account/Detail_Page/btn_Delete'), 0)
 
 WebUI.waitForAlert(500, FailureHandling.STOP_ON_FAILURE)
 
