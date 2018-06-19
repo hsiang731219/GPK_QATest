@@ -36,7 +36,7 @@ def dAndWInfo = [ 'account' : '' ,
 				  'type4' :'',
 				  'type5' :'']
 
-ExcelData DepositAndWithdrawInfo = ExcelFactory.getExcelDataWithDefaultSheet("D:/TestData.xlsx", "DepositAndWithdrawInfo", false)
+ExcelData DepositAndWithdrawInfo = ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "DepositAndWithdrawInfo", false)
 
 dAndWInfo.account = DepositAndWithdrawInfo.getValue(1, 2)
 dAndWInfo.amount = Integer.parseInt(DepositAndWithdrawInfo.getValue(2, 2))

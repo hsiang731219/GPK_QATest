@@ -32,7 +32,7 @@ def transactionTypeInfo = [ 'bankDeposit' : '' ,
 							'anyTimeDiscount' : '' ,
 							'others' : '' ]
 
-ExcelData TransactionTypeInfo = ExcelFactory.getExcelDataWithDefaultSheet("D:/TestData.xlsx", "TransactionType", false)
+ExcelData TransactionTypeInfo = ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TransactionType", false)
 
 transactionTypeInfo.bankDeposit = TransactionTypeInfo.getValue(1, 2)
 transactionTypeInfo.onlineDeposit = TransactionTypeInfo.getValue(1, 3)

@@ -22,10 +22,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import sun.awt.datatransfer.ClipboardTransferable.DataFactory as DataFactory
 
-def Gpk_Info = [('Gpk_admin') : '', ('Gpk_master') : '', ('Gpk_agent') : '', ('Gpk_protal') : '', ('Gpk_mobile') : '', ('Release_admin') : ''
-    , ('Release_master') : '', ('Release_agent') : '', ('Release_protal') : '', ('Release_mobile') : '']
+def Gpk_Info = [('Gpk_admin') : '', 
+				('Gpk_master') : '',
+				('Gpk_agent') : '', 
+				('Gpk_protal') : '', 
+				('Gpk_mobile') : '', 
+				('Release_admin') : '', 
+				('Release_master') : '', 
+				('Release_agent') : '', 
+				('Release_protal') : '', 
+				('Release_mobile') : '']
 
-ExcelData Url_Info = ExcelFactory.getExcelDataWithDefaultSheet('D:/TestData.xlsx', 'TestEnvironmenInfo', false)
+ExcelData Url_Info = ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", 'TestEnvironmenInfo', false)
 
 Gpk_Info.Gpk_admin = Url_Info.getValue(2, 2)
 

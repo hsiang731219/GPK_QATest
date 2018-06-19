@@ -25,7 +25,7 @@ import sun.awt.datatransfer.ClipboardTransferable.DataFactory as DataFactory
 def loginInfo = [ 'username' : '' ,
 				  'password' : '' ]
 
-ExcelData MasterLoginInfo = ExcelFactory.getExcelDataWithDefaultSheet("D:/TestData.xlsx", "MasterLoginInfo", false)
+ExcelData MasterLoginInfo = ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "MasterLoginInfo", false)
 
 loginInfo.username = MasterLoginInfo.getValue(1, 2)
 loginInfo.password = MasterLoginInfo.getValue(2, 2)
