@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Object Repository/Member/Index_Page/button_Query'))
 
 WebUI.delay(2)
 
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/Member/Index_Page/link_Account'), 2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/Member/Index_Page/link_Account'), 2)
 
 '取得會員的返水等級'
 aftertext = WebUI.getText(findTestObject('Object Repository/Member/Detail_Page/text_RebatsSetting'))

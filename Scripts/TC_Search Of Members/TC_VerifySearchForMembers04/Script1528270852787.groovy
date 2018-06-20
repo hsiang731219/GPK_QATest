@@ -40,7 +40,7 @@ WebUI.delay(2)
 after = WebUI.getText(findTestObject('Object Repository/Member/Index_Page/text_AnyTimeDiscountValue'))
 
 '轉換查詢結果第一筆餘額扣除$字元'
-aftertext = CustomKeywords.'extension.SampleCustomKeyword.currencyToInt'(after)
+aftertext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(after)
 
 WebUI.delay(1)
 

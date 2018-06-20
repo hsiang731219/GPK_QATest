@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Object Repository/Member/Index_Page/button_Query'))
 WebUI.delay(3)
 
 '點擊查詢的會員'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/Member/Index_Page/link_Account'), 2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/Member/Index_Page/link_Account'), 2)
 
 '檢視此會員詳細資料的所有錢包'
 WebUI.click(findTestObject('Object Repository/Member/Detail_Page/button_Wallets'))

@@ -49,7 +49,7 @@ WebUI.delay(2)
 money = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Amount'))
 
 '轉換查詢結果第一筆餘額扣除$字元'
-aftertext = CustomKeywords.'extension.SampleCustomKeyword.currencyToInt'(money)
+aftertext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(money)
 
 System.out.println(aftertext)
 

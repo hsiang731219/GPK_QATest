@@ -36,9 +36,9 @@ WebUI.sendKeys(findTestObject('Member/Index_Page/input_SearchAccount'), Info.acc
 WebUI.click(findTestObject('Member/Index_Page/button_Query'))
 
 '取得存款前金額並進行格式轉換'
-GetBeforePoint = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Member/Index_Page/txt_BalanceText')))
+GetBeforePoint = CustomKeywords.'extension.DataConversion.CurrencyToInt'(WebUI.getText(findTestObject('Member/Index_Page/txt_BalanceText')))
 
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Member/Index_Page/link_Account'), 1)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Member/Index_Page/link_Account'), 1)
 
 WebUI.click(findTestObject('Member/Detail_Page/button_Deposit'))
 
@@ -78,7 +78,7 @@ WebUI.acceptAlert()
 WebUI.click(findTestObject('Member/Detail_Page/a_MemberTransaction'))
 
 '取得存款後金額並進行格式轉換'
-GetAfterPoint = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('MemberTransaction/Index_Page/txt_BalanceText')))
+GetAfterPoint = CustomKeywords.'extension.DataConversion.CurrencyToInt'(WebUI.getText(findTestObject('MemberTransaction/Index_Page/txt_BalanceText')))
 
 GetAfterTransactionType = WebUI.getText(findTestObject('Object Repository/MemberTransaction/Index_Page/txt_DepositAndWithdrawType'))
 

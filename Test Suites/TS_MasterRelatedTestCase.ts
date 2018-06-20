@@ -222,12 +222,6 @@
       <testCaseId>Test Cases/TC_Online Issue/TC_VerifyOnlinePaymentBulletinWithStatus(Cancel)</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6691b13e-c03f-45ea-afdb-65f06c140667</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_Manually Deposit/TC_VerifyMasterManuallyDeposit</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>05a490c0-d605-4a77-82d1-0a0c7a3e6b67</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -352,5 +346,47 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit10</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9c67faf9-004b-47d3-8edc-88b83ca35365</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin01</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5765a584-7dde-4ef5-8b9a-d3b27993ef80</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin02</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>57fc2b4c-41cb-4acd-b862-3a5a93c8c5d1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin03</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f3824a85-07a9-494c-aaf0-3bea7585cb3e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin04</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5b294a9a-7752-482f-bec9-283876cfbff6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin05</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>08c24de6-b20a-4e8e-80da-912ef1abc9df</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin06</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ee3b9d4b-473f-440d-b150-80613856fbc1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin07</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

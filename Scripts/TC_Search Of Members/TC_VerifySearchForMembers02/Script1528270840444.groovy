@@ -25,7 +25,7 @@ CustomKeywords.'common.MasterLogin.Login'()
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(1, 1)
 
 '選取上個月1號'
-LastMonthNumberOne = CustomKeywords.'extension.SampleCustomKeyword.setLastDayMonth'()
+LastMonthNumberOne = CustomKeywords.'extension.UIMethod.setLastDayMonth'()
 
 '輸入上個月1號'
 WebUI.setText(findTestObject('Object Repository/Member/Index_Page/input_JoinMemberBegin'), LastMonthNumberOne)
@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Object Repository/Member/Index_Page/button_Query'))
 WebUI.waitForElementPresent(findTestObject('Object Repository/Member/Index_Page/text_MemberJoinDate'),2)
 
 '轉換上個月1號為數值'
-beforetext = CustomKeywords.'extension.SampleCustomKeyword.DateToInt'(LastMonthNumberOne)
+beforetext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(LastMonthNumberOne)
 
 WebUI.delay(1)
 
@@ -47,7 +47,7 @@ WebUI.delay(1)
 after = WebUI.getText(findTestObject('Object Repository/Member/Index_Page/text_MemberJoinDate'))
 
 '轉換查詢結果第一筆資料的入會日期為數值'
-aftertext = CustomKeywords.'extension.SampleCustomKeyword.DateToInt'(after)
+aftertext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(after)
 
 '比較第一筆資料的入會日期是否大於選擇的上個月1號'
 WebUI.verifyGreaterThanOrEqual(aftertext, beforetext)

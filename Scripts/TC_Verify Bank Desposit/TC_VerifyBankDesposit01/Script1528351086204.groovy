@@ -43,12 +43,12 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_
 WebUI.delay(2)
 
 '點擊搜尋結果ID'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'), 2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'), 2)
 
 after = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Detail_Page/text_ID'))
 
 '轉換只取冒號後的文字'
-aftertext = CustomKeywords.'extension.StringExtension.GetStringSpilt'(after, '：', 2)
+aftertext = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, '：', 2)
 
 WebUI.delay(2)
 

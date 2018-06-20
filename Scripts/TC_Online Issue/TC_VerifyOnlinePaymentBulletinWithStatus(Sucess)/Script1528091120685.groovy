@@ -45,6 +45,8 @@ beforetext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/S
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
 
+WebUI.delay(2)
+
 '取得查詢結果的會員狀態'
 aftertext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_Status'))
 

@@ -31,7 +31,7 @@ WebUI.setText(findTestObject('Object Repository/Member/Index_Page/input_SearchAc
 WebUI.click(findTestObject('Object Repository/Member/Index_Page/button_Query'))
 
 '點擊查詢的會員'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/Member/Index_Page/link_Account'), 2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/Member/Index_Page/link_Account'), 2)
 
 '會員詳細資料取得對應資料'
 afterText = WebUI.getText(findTestObject('Object Repository/Member/Detail_Page/text_DetailAccount'))
