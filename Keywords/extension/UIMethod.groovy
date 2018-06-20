@@ -44,6 +44,20 @@ public class UIMethod {
 		executor.executeScript('arguments[0].click()', element)
 	}
 
+	@Keyword
+	/***
+	 * 判斷元素是否存在
+	 */
+	def tryFindElement(TestObject to){
+		try{
+
+			WebUI.verifyElementHasAttribute(to, 'title', 10)
+		} catch(Exception e) {
+			return false;
+		}
+
+		return true;
+	}
 
 	@Keyword
 	/***

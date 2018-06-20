@@ -16,6 +16,12 @@ def static "extension.UIMethod.clickUsingJS"(
          , 	timeout)
 }
 
+def static "extension.UIMethod.tryFindElement"(
+    	TestObject to	) {
+    (new extension.UIMethod()).tryFindElement(
+        	to)
+}
+
 def static "extension.UIMethod.setLastDayMonth"() {
     (new extension.UIMethod()).setLastDayMonth()
 }

@@ -25,11 +25,11 @@ def expect_element = 'title'
 
 element = WebUI.getAttribute(findTestObject('Home/Index_Page/txt_TodayValidBet'), expect_element)
 
-attribute = CustomKeywords.'extension.SampleCustomKeyword.tryFindElement'(findTestObject('Home/Index_Page/txt_TodayValidBet'))
+attribute = CustomKeywords.'extension.UIMethod.tryFindElement'(findTestObject('Home/Index_Page/txt_TodayValidBet'))
 
 //System.out.println(attribute)
 if (attribute == true) {
-    GetTodayValidBet = CustomKeywords.'extension.StringExtension.CurrencyToInt'(element)
+    GetTodayValidBet = CustomKeywords.'extension.DataConversion.CurrencyToInt'(element)
 } else {
     GetTodayValidBet = '0'
 }
@@ -41,7 +41,7 @@ WebUI.click(findTestObject('Statistics/Index_Page/button_Query'))
 
 StatisticsAttribute = WebUI.getAttribute(findTestObject('Statistics/Index_Page/txt_StatisticsValidBet'), expect_element)
 
-GetStatisticsValidBet = CustomKeywords.'extension.StringExtension.CurrencyToInt'(StatisticsAttribute)
+GetStatisticsValidBet = CustomKeywords.'extension.DataConversion.CurrencyToInt'(StatisticsAttribute)
 
 WebUI.verifyEqual(GetTodayValidBet, GetStatisticsValidBet)
 
