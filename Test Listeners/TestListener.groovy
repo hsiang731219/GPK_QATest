@@ -14,6 +14,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 
 import internal.GlobalVariable as GlobalVariable
+import sun.swing.plaf.synth.SynthFileChooserUI.GlobFilter
 
 import com.kms.katalon.core.annotation.BeforeTestCase
 import com.kms.katalon.core.annotation.BeforeTestSuite
@@ -24,45 +25,40 @@ import com.kms.katalon.core.context.TestSuiteContext
 
 class TestListener {
 	
-	def urlInfo = WebUI.callTestCase(findTestCase('Common/TestEnvironmenInfoData'), [:], FailureHandling.STOP_ON_FAILURE)
-	def url = urlInfo.Gpk_master
+	
 	/**
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
 	 */
 	@BeforeTestCase
-	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
-		WebUI.openBrowser('')
-		WebUI.navigateToUrl(url)
-		WebUI.maximizeWindow()
+	def BeforeTestCase(TestCaseContext testCaseContext) {
+		def Tag = testCaseContext.getTestCaseVariables().values()
+		def urlInfo = WebUI.callTestCase(findTestCase('Common/TestEnvironmenInfoData'), [:], FailureHandling.STOP_ON_FAILURE)
+		def url = urlInfo.Gpk_master
+		
+		if(Tag[0] != "Data"){
+			
+			 WebUI.openBrowser('')
+			 WebUI.navigateToUrl(url)
+			 WebUI.maximizeWindow()
+			 
+		}
 	}
 
 	/**
 	 * Executes after every test case ends.
 	 * @param testCaseContext related information of the executed test case.
 	 */
+	/*
 	@AfterTestCase
-	def sampleAfterTestCase(TestCaseContext testCaseContext) {
-		WebUI.closeBrowser()
+	def AfterTestCase(TestCaseContext testCaseContext) {
+		def Tag = testCaseContext.getTestCaseVariables().values()
+		
+		if(Tag[0] != "Data"){
+			
+			WebUI.closeBrowser()
+		}
+		
 	}
-	
-	/**
-	 * Executes before every test suite starts.
-	 * @param testSuiteContext: related information of the executed test suite.
-	 */
-	@BeforeTestSuite
-	def sampleBeforeTestSuite(TestSuiteContext testSuiteContext) {
-		WebUI.openBrowser('')
-		WebUI.navigateToUrl(url)
-		WebUI.maximizeWindow()
-	}
-
-	/**
-	 * Executes after every test suite ends.
-	 * @param testSuiteContext: related information of the executed test suite.
-	 */
-	@AfterTestSuite
-	def sampleAfterTestSuite(TestSuiteContext testSuiteContext) {
-		WebUI.closeBrowser()
-	}
+	*/
 }

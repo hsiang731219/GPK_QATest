@@ -20,7 +20,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 // 呼叫登入使用的共用方法
 CustomKeywords.'common.MasterLogin.Login'()
 
@@ -31,6 +30,13 @@ WebUI.waitForElementPresent(findTestObject('Home/Index_Page/txt_AccountName'),2)
 ActualMessage = WebUI.getText(findTestObject('Home/Index_Page/txt_AccountName'))
 
 // 與預期結果比對
-WebUI.verifyMatch(ActualMessage, '哈罗!! QAautomation 您好', false)
+WebUI.verifyMatch(ActualMessage, '哈罗!! QAautomation 您好', true)
+
+
+
+
+
+
+
 
 

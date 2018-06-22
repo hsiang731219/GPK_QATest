@@ -26,10 +26,6 @@ def static "extension.UIMethod.setLastDayMonth"() {
     (new extension.UIMethod()).setLastDayMonth()
 }
 
-def static "common.MasterLogin.Login"() {
-    (new common.MasterLogin()).Login()
-}
-
 def static "common.MenuIntoPage.getDropdownMenu"(
     	int x	
      , 	int y	) {
@@ -52,4 +48,8 @@ def static "extension.DataConversion.GetStringSpilt"(
         	text
          , 	symbol
          , 	returnText)
+}
+
+def static "common.MasterLogin.Login"() {
+    (new common.MasterLogin()).Login()
 }
