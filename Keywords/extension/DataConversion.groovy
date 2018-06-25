@@ -46,7 +46,7 @@ public class DataConversion {
 		def getValue = sampleText.split(symbol)
 		return getValue[returnText-1];
 	}
-	
+
 	@Keyword
 	/***
 	 *將取到的日期去除'/'& '/' 後轉成字串
