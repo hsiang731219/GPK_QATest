@@ -39,8 +39,8 @@ class TestListener {
 		if(Tag[0] != "Data"){
 			
 			 WebUI.openBrowser('')
-			 WebUI.navigateToUrl(url)
 			 WebUI.maximizeWindow()
+			 WebUI.navigateToUrl(url)
 			 
 		}
 	}
@@ -49,7 +49,7 @@ class TestListener {
 	 * Executes after every test case ends.
 	 * @param testCaseContext related information of the executed test case.
 	 */
-	/*
+	
 	@AfterTestCase
 	def AfterTestCase(TestCaseContext testCaseContext) {
 		def Tag = testCaseContext.getTestCaseVariables().values()
@@ -60,5 +60,5 @@ class TestListener {
 		}
 		
 	}
-	*/
+	
 }
