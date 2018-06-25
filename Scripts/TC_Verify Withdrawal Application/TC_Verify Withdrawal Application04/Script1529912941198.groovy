@@ -25,46 +25,54 @@ CustomKeywords.'common.MasterLogin.Login'()
 '帳務管理 -> 取款申請審核'
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 3)
 
-'取得欲查詢的「訂單號」'
-beforetext = WebUI.getText(findTestObject('VerifyWithdraw/Index_Page/text_ID'))
-
-System.out.println(beforetext)
-
-WebUI.delay(2)
-
 '搜尋'
 WebUI.click(findTestObject('VerifyWithdraw/Index_Page/button_Search'))
 
 WebUI.delay(2)
 
-'點擊訂單號'
-WebUI.click(findTestObject('VerifyWithdraw/Search_Page/input_ID'))
+'選取上個月1號'
+LastMonthNumberOne = CustomKeywords.'extension.UIMethod.setLastDayMonth'()
 
-'輸入訂單號'
-WebUI.setText(findTestObject('VerifyWithdraw/Search_Page/input_ID'), beforetext)
+'輸入上個月1號'
+WebUI.setText(findTestObject('VerifyWithdraw/Search_Page/input_ApplicationDateBegin'), LastMonthNumberOne)
+
+System.out.println(LastMonthNumberOne)
+
+WebUI.delay(1)
 
 '搜尋'
 WebUI.click(findTestObject('VerifyWithdraw/Search_Page/button_Search'))
 
-WebUI.delay(3)
+WebUI.delay(2)
 
-'點擊搜尋結果ID'
+WebUI.waitForElementPresent(findTestObject('VerifyWithdraw/Search_Page/input_ApplicationDateBegin'), 2)
+
+'轉換上個月1號為數值'
+beforetext = CustomKeywords.'extension.DataConversion.yearmonthdate'(LastMonthNumberOne)
+
+System.out.println(beforetext)
+
+WebUI.delay(2)
+
 CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('VerifyWithdraw/Index_Page/link_ID'), 0)
 
-'取得取款申請審核「訂單號」'
-after = WebUI.getText(findTestObject('VerifyWithdraw/Detail_Page/text_ID'))
+after = WebUI.getText(findTestObject('VerifyWithdraw/Detail_Page/text_ApplicationTime'))
 
 System.out.println(after)
 
-'轉換只取冒號後的文字'
-aftertext = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, '：', 2)
+afterdate = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, ' ', 1)
+
+System.out.println(afterdate)
+
+'轉換上個月1號為數值'
+aftertext = CustomKeywords.'extension.DataConversion.yearmonthdate'(afterdate)
 
 System.out.println(aftertext)
 
 WebUI.delay(2)
 
-'比較訂單號是否相同'
-WebUI.verifyEqual(beforetext, aftertext)
+'比較第一筆資料的申請日期是否大於選擇的上個月1號'
+WebUI.verifyGreaterThanOrEqual(aftertext, beforetext)
 
 WebUI.closeBrowser()
 

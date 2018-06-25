@@ -25,8 +25,8 @@ CustomKeywords.'common.MasterLogin.Login'()
 '帳務管理 -> 取款申請審核'
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 3)
 
-'取得欲查詢的「訂單號」'
-beforetext = WebUI.getText(findTestObject('VerifyWithdraw/Index_Page/text_ID'))
+'取得欲查詢的會員帳號'
+beforetext = WebUI.getText(findTestObject('VerifyWithdraw/Index_Page/text_Member'))
 
 System.out.println(beforetext)
 
@@ -37,33 +37,27 @@ WebUI.click(findTestObject('VerifyWithdraw/Index_Page/button_Search'))
 
 WebUI.delay(2)
 
-'點擊訂單號'
-WebUI.click(findTestObject('VerifyWithdraw/Search_Page/input_ID'))
+'點擊會員帳號'
+WebUI.click(findTestObject('VerifyWithdraw/Search_Page/input_AccountName'))
 
-'輸入訂單號'
-WebUI.setText(findTestObject('VerifyWithdraw/Search_Page/input_ID'), beforetext)
+'輸入會員帳號'
+WebUI.setText(findTestObject('VerifyWithdraw/Search_Page/input_AccountName'), beforetext)
 
 '搜尋'
 WebUI.click(findTestObject('VerifyWithdraw/Search_Page/button_Search'))
 
-WebUI.delay(3)
+WebUI.delay(2)
 
-'點擊搜尋結果ID'
 CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('VerifyWithdraw/Index_Page/link_ID'), 0)
 
-'取得取款申請審核「訂單號」'
-after = WebUI.getText(findTestObject('VerifyWithdraw/Detail_Page/text_ID'))
-
-System.out.println(after)
-
-'轉換只取冒號後的文字'
-aftertext = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, '：', 2)
+'取得取款申請審核「會員帳號」'
+aftertext = WebUI.getText(findTestObject('VerifyWithdraw/Detail_Page/text_Member'))
 
 System.out.println(aftertext)
 
 WebUI.delay(2)
 
-'比較訂單號是否相同'
+'比較會員帳號是否相同'
 WebUI.verifyEqual(beforetext, aftertext)
 
 WebUI.closeBrowser()

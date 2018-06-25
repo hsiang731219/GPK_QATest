@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>處理人員</description>
-   <name>text_Operator</name>
+   <description></description>
+   <name>text_Members Level</name>
    <tag></tag>
-   <elementGuidId>de535963-a54e-4999-8526-82a22defe473</elementGuidId>
+   <elementGuidId>1ce9b5cd-2545-47da-ad3b-1a268ead7bc3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#table1 > tbody > tr:nth-child(1) > td.ng-binding
-</value>
+         <value>#div-1 > form > div:nth-child(3) > div > p > a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

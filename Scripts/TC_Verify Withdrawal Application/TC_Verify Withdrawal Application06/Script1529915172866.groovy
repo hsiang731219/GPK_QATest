@@ -25,8 +25,10 @@ CustomKeywords.'common.MasterLogin.Login'()
 '帳務管理 -> 取款申請審核'
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 3)
 
-'取得欲查詢的「訂單號」'
-beforetext = WebUI.getText(findTestObject('VerifyWithdraw/Index_Page/text_ID'))
+WebUI.waitForElementPresent(findTestObject('VerifyWithdraw/Index_Page/text_Operator'), 0)
+
+'取得欲查詢的「操作人員」'
+beforetext = WebUI.getText(findTestObject('VerifyWithdraw/Index_Page/text_Operator'))
 
 System.out.println(beforetext)
 
@@ -37,33 +39,27 @@ WebUI.click(findTestObject('VerifyWithdraw/Index_Page/button_Search'))
 
 WebUI.delay(2)
 
-'點擊訂單號'
-WebUI.click(findTestObject('VerifyWithdraw/Search_Page/input_ID'))
+'點擊操作人員'
+WebUI.click(findTestObject('VerifyWithdraw/Search_Page/input_Operator'))
 
-'輸入訂單號'
-WebUI.setText(findTestObject('VerifyWithdraw/Search_Page/input_ID'), beforetext)
+'輸入操作人員'
+WebUI.setText(findTestObject('VerifyWithdraw/Search_Page/input_Operator'), beforetext)
 
 '搜尋'
 WebUI.click(findTestObject('VerifyWithdraw/Search_Page/button_Search'))
 
-WebUI.delay(3)
+WebUI.delay(2)
 
-'點擊搜尋結果ID'
 CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('VerifyWithdraw/Index_Page/link_ID'), 0)
 
-'取得取款申請審核「訂單號」'
-after = WebUI.getText(findTestObject('VerifyWithdraw/Detail_Page/text_ID'))
-
-System.out.println(after)
-
-'轉換只取冒號後的文字'
-aftertext = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, '：', 2)
+'取得取款申請審核「操作人員」'
+aftertext = WebUI.getText(findTestObject('VerifyWithdraw/Detail_Page/text_Operator'))
 
 System.out.println(aftertext)
 
 WebUI.delay(2)
 
-'比較訂單號是否相同'
+'比較操作人員是否相同'
 WebUI.verifyEqual(beforetext, aftertext)
 
 WebUI.closeBrowser()
