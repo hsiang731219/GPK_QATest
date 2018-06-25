@@ -53,3 +53,9 @@ def static "extension.DataConversion.GetStringSpilt"(
          , 	symbol
          , 	returnText)
 }
+
+def static "extension.DataConversion.yearmonthdate"(
+    	String point	) {
+    (new extension.DataConversion()).yearmonthdate(
+        	point)
+}

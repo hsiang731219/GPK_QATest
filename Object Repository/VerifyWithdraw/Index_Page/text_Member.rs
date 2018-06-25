@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#table1 > tbody > tr:nth-child(1) > td:nth-child(2) > a</value>
+         <value>#table1 > tbody > tr:nth-child(1) > td:nth-child(3) > a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

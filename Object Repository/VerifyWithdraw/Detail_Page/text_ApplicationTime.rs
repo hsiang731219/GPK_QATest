@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#div-1 > form > div:nth-child(3) > div > table > tbody > tr:nth-child(4) > td</value>
+         <value>#div-1 > form > div:nth-child(5) > div > div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
