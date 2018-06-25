@@ -30,53 +30,39 @@ public class MenuIntoPage {
 
 	@Keyword
 	def getDropdownMenu(int x , int y) {
-		if (x == 1) {
-			WebUI.click(findTestObject('Shared/link_MemberAndAgentMenu'))
-			getdropdownA(y)
-		} else if(x == 2) {
-			WebUI.click(findTestObject('Shared/link_AccountManagementMenu'))
-			getdropdownB(y)
-		} else if(x == 3) {
-			WebUI.click(findTestObject('Shared/link_SystmeAndManagementMeenu'))
-			getdropdownC(y)
-		} else {
-			WebUI.click(findTestObject('Shared/link_ReportsMeenu'))
-			getdropdownD(y)
-		}
+
+		WebUI.click(findTestObject('Shared/menu_Top',[('i'):x]))
+		
+		 if (x == 1) {
+			 //getdropdownA(y)
+			 WebUI.click(findTestObject('Shared/menu_MemberAndAgentList',[('list_num'):y+2]))
+		 } else if(x == 2) {
+			 getdropdownB(y)
+		 } else if(x == 3) {
+			 getdropdownC(y)
+		 } else {
+			 getdropdownD(y)
+		 }
+		 
+		
 	}
 
 
 	// 會員與代理商
 	def getdropdownA(int z)
 	{
-		if (z == 1)
-		{ //會員查詢
-			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_SearchForMember'))
-
-		} else if (z == 2)
-		{ //代理商查詢
-			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_SearchForAgent'))
-
-		} else if (z == 3)
-		{ //新增會員
-			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_CreateNewMember'))
-
-		} else if (z == 4)
-		{ //會員匯入
-			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_MemberImport'))
-
-		} else if (z == 5)
-		{ //新增代理商
-			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_CreateNewAgent'))
-
-		} else if (z == 6)
-		{ //代理申請審核
-			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_VerifyAgentApplication'))
-
-		} else if (z == 7)
-		{ //試玩審核
-			WebUI.click(findTestObject('Shared/list_MemberAndAgent/link_VerifyTrialAccount'))
-		}
+		/***
+		 *1.會員查詢
+		 *2.代理商查詢
+		 *3.新增會員
+		 *4.會員匯入
+		 *5.新增代理商
+		 *6.代理申請審核
+		 *7.試玩審核
+		 * 因元素定位問題因此會有 "+2" 這東西出現
+		 */
+		
+		WebUI.click(findTestObject('Shared/menu_MemberAndAgentList',[('list_num'):z+2]))		
 	}
 
 	// 帳務管理

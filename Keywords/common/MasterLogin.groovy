@@ -40,6 +40,6 @@ public void Login() {
 	WebUI.sendKeys(findTestObject('Account/Login_Page/input_Password'), password)
 
 	WebUI.click(findTestObject('Account/Login_Page/button_Submit'))
-	
+
 	WebUI.delay(3)
 }

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>/html/body/root-component/div/div/div[1]/h2/small</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div/div[2]/div[1]/h2/small</value>
+      <value>/html/body/root-component/div/div/div[1]/h2/small</value>
    </webElementProperties>
 </WebElementEntity>

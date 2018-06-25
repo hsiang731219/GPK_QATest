@@ -6,13 +6,21 @@
    <elementGuidId>60db51f0-efde-4c87-bc47-402cc23124f8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>ul:nth-child(1)>li:nth-child(1)>a>span</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>ul:nth-child(1)>li:nth-child(1)>a>span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>css</name>
+      <type>Main</type>
+      <value>ul:nth-child(1)>li:nth-child(1)>a>span</value>
+   </webElementProperties>
 </WebElementEntity>
