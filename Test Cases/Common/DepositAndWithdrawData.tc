@@ -6,9 +6,15 @@
    <comment></comment>
    <testCaseGuid>5987c576-8362-4534-b48c-aed458ebc827</testCaseGuid>
    <variable>
+<<<<<<< HEAD
       <defaultValue>'data'</defaultValue>
       <description></description>
       <id>fa067aa3-d4c8-4f04-a3a6-d4cdaf72cc78</id>
+=======
+      <defaultValue>'Data'</defaultValue>
+      <description></description>
+      <id>e841d9b3-aa4a-49eb-b7af-bfe0d31716de</id>
+>>>>>>> a89c776f8dc365aada473cb1ecbcd511f76b2167
       <masked>false</masked>
       <name>Tag</name>
    </variable>

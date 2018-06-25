@@ -20,23 +20,51 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-// 呼叫登入使用的共用方法
 CustomKeywords.'common.MasterLogin.Login'()
 
-// 等待元素出現
-WebUI.waitForElementPresent(findTestObject('Home/Index_Page/txt_AccountName'),2)
+'帳務管理 -> 公司入款审核'
+CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 3)
 
-// 抓取欲驗證的文字
-ActualMessage = WebUI.getText(findTestObject('Home/Index_Page/txt_AccountName'))
+'取得欲查詢的「訂單號」'
+beforetext = WebUI.getText(findTestObject('VerifyWithdraw/Index_Page/text_ID'))
 
-// 與預期結果比對
-WebUI.verifyMatch(ActualMessage, '哈罗!! QAautomation 您好', true)
+System.out.println(beforetext)
 
+WebUI.delay(2)
 
+'搜尋'
+WebUI.click(findTestObject('VerifyWithdraw/Index_Page/button_Search'))
 
+WebUI.delay(2)
 
+'點擊訂單號'
+WebUI.click(findTestObject('VerifyWithdraw/Search_Page/input_ID'))
 
+'輸入訂單號'
+WebUI.setText(findTestObject('VerifyWithdraw/Search_Page/input_ID'), beforetext)
 
+'搜尋'
+WebUI.click(findTestObject('VerifyWithdraw/Search_Page/button_Search'))
 
+WebUI.delay(3)
 
+'點擊搜尋結果ID'
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('VerifyWithdraw/Index_Page/link_ID'), 0)
+
+'取得取款申請審核「訂單號」'
+after = WebUI.getText(findTestObject('VerifyWithdraw/Detail_Page/text_ID'))
+
+System.out.println(after)
+
+'轉換只取冒號後的文字'
+aftertext = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, '：', 2)
+
+System.out.println(aftertext)
+
+WebUI.delay(2)
+
+'比較訂單號是否相同'
+WebUI.verifyEqual(beforetext, aftertext)
+
+WebUI.closeBrowser()
 
