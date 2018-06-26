@@ -31,7 +31,7 @@ public class MenuIntoPage {
 	@Keyword
 	def getDropdownMenu(int x , int y) {
 
-		WebUI.click(findTestObject('Shared/menu_Top',[('i'):x]))
+		WebUI.click(findTestObject('Shared/menu_Top',[('top_num'):x]))
 
 		if (x == 1) {
 			// 會員與代理商

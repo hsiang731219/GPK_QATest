@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>menu_MemberAndAgentList</name>
+   <tag></tag>
+   <elementGuidId>c645da0f-78ac-49a0-bba1-e5f87afa42c2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/root-component/menu-component/nav/div/div[2]/ul[1]/li[1]/ul/li[${list_num}]/a</value>
+   </webElementProperties>
+</WebElementEntity>
