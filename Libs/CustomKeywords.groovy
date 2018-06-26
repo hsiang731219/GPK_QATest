@@ -30,14 +30,6 @@ def static "common.MasterLogin.Login"() {
     (new common.MasterLogin()).Login()
 }
 
-def static "common.MenuIntoPage.getDropdownMenu"(
-    	int x	
-     , 	int y	) {
-    (new common.MenuIntoPage()).getDropdownMenu(
-        	x
-         , 	y)
-}
-
 def static "extension.DataConversion.CurrencyToInt"(
     	String point	) {
     (new extension.DataConversion()).CurrencyToInt(
@@ -58,4 +50,12 @@ def static "extension.DataConversion.yearmonthdate"(
     	String point	) {
     (new extension.DataConversion()).yearmonthdate(
         	point)
+}
+
+def static "common.MenuIntoPage.getDropdownMenu"(
+    	int x	
+     , 	int y	) {
+    (new common.MenuIntoPage()).getDropdownMenu(
+        	x
+         , 	y)
 }
