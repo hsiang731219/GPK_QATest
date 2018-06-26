@@ -51,7 +51,6 @@ public class MenuIntoPage {
 		}
 	}
 
-	
 	/***
 	 * *會員與代理商*
 	 *1.會員查詢
