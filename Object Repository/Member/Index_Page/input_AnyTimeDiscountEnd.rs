@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/form/div[4]/div/div/input[2][count(. | //input[@type = 'number' and @ng-model = 'self.anyTimeDiscountEnd']) = count(//input[@type = 'number' and @ng-model = 'self.anyTimeDiscountEnd'])]</value>
+         <value>/html/body/root-component/div/div/div[2]/div[1]/div/div[2]/form/div[4]/div/div/input[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -24,6 +24,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/form/div[4]/div/div/input[2]</value>
+      <value>/html/body/root-component/div/div/div[2]/div[1]/div/div[2]/form/div[4]/div/div/input[2]</value>
    </webElementProperties>
 </WebElementEntity>

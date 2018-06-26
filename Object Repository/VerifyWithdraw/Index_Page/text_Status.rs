@@ -6,12 +6,13 @@
    <elementGuidId>26061287-2ab3-4f6f-bdcb-3e61ccbc630d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id=&quot;table1&quot;]/tbody/tr[1]/td[7]/div/span</value>
+         <key>CSS</key>
+         <value>#table1 > tbody > tr:nth-child(1) > td:nth-child(8) > button
+</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#table1 > tbody > tr:nth-child(1) > td:nth-child(7) > div > span</value>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;table1&quot;]/tbody/tr[1]/td[7]/div/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

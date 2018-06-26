@@ -24,29 +24,32 @@ CustomKeywords.'common.MasterLogin.Login'()
 '帳務管理 -> 線上支付看板'
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 2)
 
+WebUI.waitForElementPresent(findTestObject('ThirdPartyPayment/Index_Page/text_ID'), 0)
+
 '取得欲查詢的「訂單號」'
 beforetext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_ID'))
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/button_Search'))
 
-'线上支付看板--搜寻'
-WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 2)
-
 '輸入訂單號'
-WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_ID'),beforetext)
+WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_ID'), beforetext)
+
+WebUI.delay(2)
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
 
 '點擊搜尋結果ID'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 1)
+CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 
+    1)
 
 '取得线上支付明细「訂單號」'
 after = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Detail_Page/text_PaymentID'))
 
 '轉換只取冒號後的文字'
-aftertext = CustomKeywords.'extension.StringExtension.GetStringSpilt'(after,'：' , 2)
+aftertext = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, '：', 1)
 
 '比較訂單號是否相同'
 WebUI.verifyEqual(beforetext, aftertext)
+

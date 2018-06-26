@@ -66,5 +66,3 @@ WebUI.delay(2)
 '比較訂單號是否相同'
 WebUI.verifyEqual(beforetext, aftertext)
 
-WebUI.closeBrowser()
-

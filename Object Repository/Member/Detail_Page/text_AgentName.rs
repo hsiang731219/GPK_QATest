@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>body > div > div:nth-child(2) > div:nth-child(4) > blockquote > ul > li:nth-child(2) > div:nth-child(4) > a</value>
+         <value>body > root-component > div > div > div:nth-child(4) > blockquote > ul > li:nth-child(2) > div:nth-child(4) > a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

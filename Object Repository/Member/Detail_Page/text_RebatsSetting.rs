@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>/html/body/root-component/div/div/div[2]/blockquote/ul/li[6]/div/a</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div/div[2]/div[2]/blockquote/ul/li[6]/div/a</value>
+      <value>/html/body/root-component/div/div/div[2]/blockquote/ul/li[6]/div/a</value>
    </webElementProperties>
 </WebElementEntity>

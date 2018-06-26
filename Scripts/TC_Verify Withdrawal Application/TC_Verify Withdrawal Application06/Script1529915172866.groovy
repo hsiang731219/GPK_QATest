@@ -62,5 +62,3 @@ WebUI.delay(2)
 '比較操作人員是否相同'
 WebUI.verifyEqual(beforetext, aftertext)
 
-WebUI.closeBrowser()
-

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>body > div.container > div:nth-child(2) > div.row.ng-scope > div.col-md-4 > div > div.panel-body > form > div:nth-child(7) > div > select</value>
+         <value>body > root-component > div > div > div.row.ng-scope > div.col-md-4 > div > div.panel-body > form > div:nth-child(7) > div > select</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

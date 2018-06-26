@@ -68,7 +68,3 @@ WebUI.delay(2)
 '比較會員等級是否相同'
 WebUI.verifyEqual(beforetext, aftertext)
 
-WebUI.delay(2)
-
-WebUI.closeBrowser()
-

@@ -36,10 +36,10 @@ WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/Member/Index_Page/button_Query'))
 
 '等待元素出現'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Member/Index_Page/text_MemberJoinDate'),2)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Member/Index_Page/text_MemberJoinDate'), 2)
 
 '轉換上個月1號為數值'
-beforetext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(LastMonthNumberOne)
+beforetext = CustomKeywords.'extension.DataConversion.yearmonthdate'(LastMonthNumberOne)
 
 WebUI.delay(1)
 
@@ -47,7 +47,8 @@ WebUI.delay(1)
 after = WebUI.getText(findTestObject('Object Repository/Member/Index_Page/text_MemberJoinDate'))
 
 '轉換查詢結果第一筆資料的入會日期為數值'
-aftertext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(after)
+aftertext = CustomKeywords.'extension.DataConversion.yearmonthdate'(after)
 
 '比較第一筆資料的入會日期是否大於選擇的上個月1號'
 WebUI.verifyGreaterThanOrEqual(aftertext, beforetext)
+

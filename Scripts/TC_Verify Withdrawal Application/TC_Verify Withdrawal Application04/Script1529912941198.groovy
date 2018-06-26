@@ -69,10 +69,6 @@ aftertext = CustomKeywords.'extension.DataConversion.yearmonthdate'(afterdate)
 
 System.out.println(aftertext)
 
-WebUI.delay(2)
-
 '比較第一筆資料的申請日期是否大於選擇的上個月1號'
 WebUI.verifyGreaterThanOrEqual(aftertext, beforetext)
-
-WebUI.closeBrowser()
 

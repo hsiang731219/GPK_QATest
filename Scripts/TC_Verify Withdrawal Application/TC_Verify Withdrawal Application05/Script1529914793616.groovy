@@ -58,7 +58,3 @@ WebUI.verifyGreaterThanOrEqual(aftertext, '1')
 '比較結果是否小於輸入的3'
 WebUI.verifyLessThanOrEqual(aftertext, '3')
 
-WebUI.delay(2)
-
-WebUI.closeBrowser()
-
