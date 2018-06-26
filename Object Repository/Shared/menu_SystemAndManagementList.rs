@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>menu_SystemAndManagementList</name>
+   <tag></tag>
+   <elementGuidId>68043d31-ad5d-434b-be64-d2d3c15713c5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/root-component/menu-component/nav/div/div[2]/ul[1]/li[3]/ul/li[${list_num}]/a</value>
+   </webElementProperties>
+</WebElementEntity>
