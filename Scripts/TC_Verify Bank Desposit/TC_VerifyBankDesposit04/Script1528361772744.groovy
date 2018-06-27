@@ -29,9 +29,6 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_S
 
 WebUI.delay(2)
 
-'搜寻公司入款审核'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/text_Title'))
-
 '點擊申請日期'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_ApplicationDateBegin'))
 
@@ -42,7 +39,7 @@ date = CustomKeywords.'extension.UIMethod.setLastDayMonth'()
 WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_ApplicationDateBegin'), date)
 
 '轉換上個月1號為數值'
-before = CustomKeywords.'extension.DataConversion.CurrencyToInt'(date)
+before = CustomKeywords.'extension.DataConversion.yearmonthdate'(date)
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
@@ -52,18 +49,20 @@ beforetext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(before)
 WebUI.delay(2)
 
 '點擊搜尋結果ID'
-CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'), 2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'), 
+    2)
 
 '取得會員申請時間'
 detaildate = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Detail_Page/text_ApplicationTime'))
 
 '取得會員申請時間(只取日期)'
-after = CustomKeywords.'extension.DataConversion.GetStringSpilt'(detaildate, ' ' , 1)
+after = CustomKeywords.'extension.DataConversion.GetStringSpilt'(detaildate, ' ', 1)
 
 '轉換日期為數值'
-aftertext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(after)
+aftertext = CustomKeywords.'extension.DataConversion.yearmonthdate'(after)
 
 WebUI.delay(2)
 
 '比較查詢結果的申請日期是否大於選擇的上個月1號'
 WebUI.verifyGreaterThanOrEqual(aftertext, beforetext)
+

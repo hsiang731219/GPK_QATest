@@ -29,9 +29,6 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_S
 
 WebUI.delay(2)
 
-'搜寻公司入款审核'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/text_Title'))
-
 '點擊取消全部狀態'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Satus'))
 
@@ -45,4 +42,7 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_
 
 aftertext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Status'))
 
+WebUI.delay(3)
+
 WebUI.verifyEqual(beforetext, aftertext)
+

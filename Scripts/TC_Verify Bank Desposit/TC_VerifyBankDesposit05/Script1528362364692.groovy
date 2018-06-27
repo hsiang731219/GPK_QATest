@@ -2,9 +2,7 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import org.junit.After
-
+import org.junit.After as After
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -32,11 +30,8 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_S
 
 WebUI.delay(2)
 
-'搜寻公司入款审核'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/text_Title'))
-
 '輸入起始金額'
-WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_Amountbegin'),	'1')
+WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_Amountbegin'), '1')
 
 '輸入結束金額'
 WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_AmountEnd'), '5')
@@ -60,3 +55,4 @@ WebUI.verifyGreaterThanOrEqual(aftertext, '1')
 
 '比較結果是否小於輸入的5'
 WebUI.verifyLessThanOrEqual(aftertext, '5')
+

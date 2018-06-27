@@ -34,14 +34,15 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/text_Ti
 
 '點擊取消全部狀態'
 WebUI.uncheck(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Satus'))
+
 WebUI.uncheck(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Applying'))
+
 WebUI.uncheck(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Deposited'))
 
 WebUI.delay(5)
 
-'點擊點擊「已取消」'
 //WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Cancel'))
-
+'點擊點擊「已取消」'
 beforetext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Search_Page/label_Cancel'))
 
 '搜尋'
@@ -52,3 +53,4 @@ WebUI.delay(5)
 aftertext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Status'))
 
 WebUI.verifyEqual(beforetext, aftertext)
+

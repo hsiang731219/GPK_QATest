@@ -29,9 +29,6 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_S
 
 WebUI.delay(2)
 
-'搜寻公司入款审核'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/text_Title'))
-
 '點選會員等級'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/Choose_MembersLevel/button_MembersLevelSelect'))
 
@@ -60,3 +57,4 @@ aftertext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index
 
 '驗證「選取的會員等級」與「結果的會員等級」是否相同'
 WebUI.verifyEqual(beforetext, aftertext)
+

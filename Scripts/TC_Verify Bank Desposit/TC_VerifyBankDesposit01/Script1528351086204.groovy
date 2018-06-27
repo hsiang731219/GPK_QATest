@@ -31,9 +31,6 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_S
 
 WebUI.delay(2)
 
-'搜寻公司入款审核'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/text_Title'))
-
 '輸入訂單號'
 WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_ID'), beforetext)
 
@@ -43,7 +40,8 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_
 WebUI.delay(2)
 
 '點擊搜尋結果ID'
-CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'), 2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'), 
+    2)
 
 after = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Detail_Page/text_ID'))
 
@@ -54,6 +52,4 @@ WebUI.delay(2)
 
 '比較訂單號是否相同'
 WebUI.verifyEqual(beforetext, aftertext)
-
-
 
