@@ -29,28 +29,21 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_S
 
 WebUI.delay(2)
 
-'搜寻公司入款审核'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/text_Title'))
-
 '點擊取消全部狀態'
-WebUI.uncheck(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Satus'))
+WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Satus'))
 
-WebUI.uncheck(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Applying'))
-
-WebUI.uncheck(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Deposited'))
-
-WebUI.delay(5)
+'點擊點擊「已取消」'
+WebUI.check(findTestObject('VerifyDesposit/Search_Page/checkbox_Cancel'))
 
 //WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Cancel'))
-'點擊點擊「已取消」'
-beforetext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Search_Page/label_Cancel'))
+beforetext = WebUI.getText(findTestObject('VerifyDesposit/Search_Page/checkbox_Cancel'))
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
 
-WebUI.delay(5)
-
 aftertext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Status'))
+
+WebUI.delay(3)
 
 WebUI.verifyEqual(beforetext, aftertext)
 

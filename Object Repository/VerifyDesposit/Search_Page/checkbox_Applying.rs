@@ -7,19 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[6]/div/div/label[1]/input[count(. | //checkbox[(text() = '
-                                    
-                                    申请中
-                                ' or . = '
-                                    
-                                    申请中
-                                ')]) = count(//checkbox[(text() = '
-                                    
-                                    申请中
-                                ' or . = '
-                                    
-                                    申请中
-                                ')])]</value>
+         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[7]/div/div/label[1]/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -36,6 +24,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[6]/div/div/label[1]/input</value>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[7]/div/div/label[1]/span</value>
    </webElementProperties>
 </WebElementEntity>

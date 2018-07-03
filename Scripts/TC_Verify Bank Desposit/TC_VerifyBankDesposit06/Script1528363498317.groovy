@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbo
 '點擊「已存入」'
 WebUI.check(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Deposited'))
 
-beforetext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Search_Page/label_Deposited'))
+beforetext = WebUI.getText(findTestObject('VerifyDesposit/Search_Page/checkbox_Deposited'))
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))

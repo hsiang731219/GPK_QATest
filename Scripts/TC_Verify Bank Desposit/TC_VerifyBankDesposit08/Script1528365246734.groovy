@@ -31,11 +31,6 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_S
 
 WebUI.delay(2)
 
-'搜寻公司入款审核'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/text_Title'))
-
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Satus'))
-
 '輸入處理人員'
 WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_Operator'), beforetext)
 
@@ -47,3 +42,4 @@ WebUI.delay(2)
 aftertext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Operator'))
 
 WebUI.verifyEqual(beforetext, aftertext)
+

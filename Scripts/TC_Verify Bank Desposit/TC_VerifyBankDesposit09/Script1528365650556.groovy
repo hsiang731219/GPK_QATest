@@ -24,6 +24,8 @@ CustomKeywords.'common.MasterLogin.Login'()
 '帳務管理 -> 公司入款审核'
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 1)
 
+WebUI.waitForElementPresent(findTestObject('VerifyDesposit/Index_Page/text_BankAccountName'), 0)
+
 '取得公司帳戶(銀行 - 收款人)'
 before = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_BankAccountName'))
 
