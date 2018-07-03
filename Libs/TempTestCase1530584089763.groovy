@@ -13,9 +13,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.mobile.contribution.MobileDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\gpk\\AppData\\Local\\Temp\\Katalon\\Test Cases\\TC_Verify Bank Desposit\\TC_VerifyBankDesposit10\\20180627_133545\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\gpk\\AppData\\Local\\Temp\\Katalon\\Test Cases\\TC_Verify Withdrawal Application\\TC_Verify Withdrawal Application06\\20180703_101449\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit10', new TestCaseBinding('Test Cases/TC_Verify Bank Desposit/TC_VerifyBankDesposit10', [:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/TC_Verify Withdrawal Application/TC_Verify Withdrawal Application06', new TestCaseBinding('Test Cases/TC_Verify Withdrawal Application/TC_Verify Withdrawal Application06', [:]), FailureHandling.STOP_ON_FAILURE , false)
     
