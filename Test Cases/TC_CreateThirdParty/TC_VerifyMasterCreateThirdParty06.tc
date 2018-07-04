@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>驗證管端新增線上支付商戶(商戶類型-Wap微信)</description>
+   <name>TC_VerifyMasterCreateThirdParty06</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cf4f2699-deb1-46ea-8e41-3c36f1d0d1fe</testCaseGuid>
+</TestCaseEntity>
