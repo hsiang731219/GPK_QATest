@@ -33,23 +33,24 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPaymen
 WebUI.delay(2)
 
 '選取上個月1號'
-LastMonthNumberOne = CustomKeywords.'extension.SampleCustomKeyword.setLastDayMonth'()
+LastMonthNumberOne = CustomKeywords.'extension.UIMethod.setLastDayMonth'()
 
 '輸入上個月1號'
-WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_ApplicationDateBegin'),	LastMonthNumberOne)
+WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_ApplicationDateBegin'), LastMonthNumberOne)
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
 
 '轉換上個月1號為數值'
-beforetext = CustomKeywords.'extension.SampleCustomKeyword.DateToInt'(LastMonthNumberOne)
+beforetext = CustomKeywords.'extension.DataConversion.yearmonthdate'(LastMonthNumberOne)
 
 after = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_StatusUpdateDate'))
 
-afterdate = CustomKeywords.'extension.StringExtension.GetStringSpilt'(after, ' ', 1)
+afterdate = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, ' ', 1)
 
 '轉換上個月1號為數值'
-aftertext = CustomKeywords.'extension.SampleCustomKeyword.DateToInt'(afterdate)
+aftertext = CustomKeywords.'extension.DataConversion.yearmonthdate'(afterdate)
 
 '比較第一筆資料的申請日期是否大於選擇的上個月1號'
 WebUI.verifyGreaterThanOrEqual(aftertext, beforetext)
+

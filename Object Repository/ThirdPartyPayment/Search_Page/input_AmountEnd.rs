@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[5]/div/div/input[2][count(. | //input[@type = 'number']) = count(//input[@type = 'number'])]</value>
+         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[6]/div/div/input[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -24,6 +24,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[5]/div/div/input[2]</value>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[6]/div/div/input[2]</value>
    </webElementProperties>
 </WebElementEntity>

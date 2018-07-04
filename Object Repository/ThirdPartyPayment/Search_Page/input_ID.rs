@@ -6,12 +6,12 @@
    <elementGuidId>d94f03ab-07e3-4dd3-87f0-9f66ebe95782</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#searchModal > div > div > div.modal-body > form > div:nth-child(1) > div > input</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[1]/div/input[count(. | //input[@type = 'text' and @ng-model = 'self.queryId' and @ng-change = 'self.prepareQueryId(self.queryId)']) = count(//input[@type = 'text' and @ng-model = 'self.queryId' and @ng-change = 'self.prepareQueryId(self.queryId)'])]</value>
+         <key>CSS</key>
+         <value>#searchModal > div > div > div.modal-body > form > div:nth-child(1) > div > input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -24,10 +24,17 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[1]/div/input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>css</name>
+      <type>Main</type>
+      <value>#searchModal > div > div > div.modal-body > form > div:nth-child(1) > div > input</value>
    </webElementProperties>
 </WebElementEntity>

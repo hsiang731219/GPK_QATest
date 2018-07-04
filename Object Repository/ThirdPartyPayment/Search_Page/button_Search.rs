@@ -6,12 +6,11 @@
    <elementGuidId>7bed5226-0e75-48c3-98da-da0c7a232987</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[10]/div/button[1]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[9]/div/button[1]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -28,6 +27,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[9]/div/button[1]</value>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[10]/div/button[1]</value>
    </webElementProperties>
 </WebElementEntity>

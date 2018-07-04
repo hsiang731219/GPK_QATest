@@ -33,21 +33,24 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPaymen
 WebUI.delay(2)
 
 '輸入起始金額'
-WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_AmounBegin'),'1')
+WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_AmounBegin'), '1')
 
 '輸入結束金額'
-WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_AmountEnd'),'3')
+WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_AmountEnd'), '3')
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
 
 WebUI.delay(2)
 
+after = WebUI.getText(findTestObject('ThirdPartyPayment/Index_Page/text_Amount'))
+
 '轉換查詢結果第一筆餘額扣除$字元'
-aftertext = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_Amount')))
+aftertext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(after)
 
 '比較結果是否大於輸入的1'
 WebUI.verifyGreaterThanOrEqual(aftertext, '1')
 
 '比較結果是否小於輸入的3'
 WebUI.verifyLessThanOrEqual(aftertext, '3')
+

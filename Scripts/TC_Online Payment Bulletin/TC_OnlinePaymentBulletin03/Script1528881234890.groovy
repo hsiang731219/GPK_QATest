@@ -31,10 +31,12 @@ WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/butto
 WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 2)
 
 WebUI.delay(2)
+
 '點擊會員等級'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_MemberLevelSelect'))
 
 WebUI.delay(2)
+
 '點擊清除所有會員等級'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/button_MembersLevelClearAll'))
 
@@ -45,18 +47,22 @@ WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choo
 beforetext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)'))
 
 WebUI.delay(2)
+
 '關閉選取會員等級'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/button_MemberLevelClose'))
 
 WebUI.delay(2)
+
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'))
 
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
 
 WebUI.delay(2)
+
 '點擊搜尋結果ID'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 
+    2)
 
 '取得线上支付明细「會員等級」'
 aftertext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_MemberLevel'))

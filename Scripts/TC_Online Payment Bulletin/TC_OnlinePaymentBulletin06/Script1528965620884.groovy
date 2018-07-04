@@ -34,16 +34,18 @@ beforetext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/I
 WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 2)
 
 '輸入商戶'
-WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_ThirdPartyAccount'),beforetext)
+WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_ThirdPartyAccount'), beforetext)
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
 
 '點擊搜尋結果ID'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 
+    2)
 
 '取得线上支付明细「商戶」'
 aftertext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Detail_Page/text_ThirdPartyAccount'))
 
 '比較商戶是否相同'
 WebUI.verifyEqual(beforetext, aftertext)
+

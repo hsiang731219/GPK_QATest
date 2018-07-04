@@ -34,16 +34,17 @@ WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/butto
 WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 2)
 
 '輸入會員帳號'
-WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_MemberName'),beforetext)
+WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_MemberName'), beforetext)
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
 
 '點擊搜尋結果ID'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 1)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('ThirdPartyPayment/Index_Page/link_ID'), 1)
 
 '取得线上支付明细「會員帳號」'
 aftertext = WebUI.getText(findTestObject('ThirdPartyPayment/Detail_Page/text_PaymentMember'))
 
 '比較會員帳號是否相同'
 WebUI.verifyEqual(beforetext, aftertext)
+

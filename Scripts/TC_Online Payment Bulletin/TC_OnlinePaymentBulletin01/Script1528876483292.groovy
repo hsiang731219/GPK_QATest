@@ -32,23 +32,24 @@ beforetext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/I
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/button_Search'))
 
+WebUI.delay(2)
+
+WebUI.waitForElementPresent(findTestObject('ThirdPartyPayment/Search_Page/text_Title'), 0)
+
 '輸入訂單號'
 WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_ID'), beforetext)
-
-WebUI.delay(2)
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
 
 '點擊搜尋結果ID'
-CustomKeywords.'extension.ClickXpath.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 
-    1)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('ThirdPartyPayment/Index_Page/link_ID'), 1)
 
 '取得线上支付明细「訂單號」'
 after = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Detail_Page/text_PaymentID'))
 
 '轉換只取冒號後的文字'
-aftertext = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, '：', 1)
+aftertext = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, '：', 0)
 
 '比較訂單號是否相同'
 WebUI.verifyEqual(beforetext, aftertext)
