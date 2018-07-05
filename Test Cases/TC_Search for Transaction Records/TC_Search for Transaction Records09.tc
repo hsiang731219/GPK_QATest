@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Search for Transaction Records09</name>
+   <tag>驗證管端交易紀錄查詢功能(類型-线上取款)</tag>
+   <comment></comment>
+   <testCaseGuid>f28627fe-0b5f-4f8e-927d-6c83eecbb596</testCaseGuid>
+</TestCaseEntity>

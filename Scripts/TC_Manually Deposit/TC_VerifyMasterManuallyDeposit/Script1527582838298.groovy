@@ -119,9 +119,9 @@ for (i = 1; i <= 2; i++) {
     WebUI.click(findTestObject('Member/Detail_Page/a_MemberTransaction'))
 
     '取得存款後金額並進行格式轉換'
-    GetAfterPoint = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('MemberTransaction/Index_Page/txt_BalanceText')))
+    GetAfterPoint = CustomKeywords.'extension.StringExtension.CurrencyToInt'(WebUI.getText(findTestObject('MemberTransaction/Index_Page/text_BalanceText')))
 
-    GetAfterTransactionType = WebUI.getText(findTestObject('Object Repository/MemberTransaction/Index_Page/txt_DepositAndWithdrawType'))
+    GetAfterTransactionType = WebUI.getText(findTestObject('MemberTransaction/Index_Page/text_DepositAndWithdrawType'))
 
 	if (choose_audit == '1' && choose_type1 == '1')
 	{

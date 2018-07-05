@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Search for Transaction Records05</name>
+   <tag>驗證管端交易紀錄查詢功能(金額)2~5元</tag>
+   <comment></comment>
+   <testCaseGuid>d83cbcd6-822a-4c06-a76d-546c222c4fed</testCaseGuid>
+</TestCaseEntity>

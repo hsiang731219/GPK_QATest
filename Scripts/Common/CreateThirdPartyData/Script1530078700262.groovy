@@ -22,7 +22,7 @@ def createThirdPartyInfo = [ 'name' : '',
 	'OrderKey' :'',
 	'CallbackKey' :'']
 
-ExcelData data = ExcelFactory.getExcelDataWithDefaultSheet("C:/Users/admin/GM Automation Test Data/MasterTestData.xlsx", "CreateThirdPartyInfo", false)
+ExcelData data = ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "CreateThirdPartyInfo", false)
 
 createThirdPartyInfo.name = data.getValue(1, i)
 createThirdPartyInfo.type = data.getValue(2, i)

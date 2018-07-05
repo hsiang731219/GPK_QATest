@@ -78,9 +78,9 @@ WebUI.acceptAlert()
 WebUI.click(findTestObject('Member/Detail_Page/a_MemberTransaction'))
 
 '取得存款後金額並進行格式轉換'
-GetAfterPoint = CustomKeywords.'extension.DataConversion.CurrencyToInt'(WebUI.getText(findTestObject('MemberTransaction/Index_Page/txt_BalanceText')))
+GetAfterPoint = CustomKeywords.'extension.DataConversion.CurrencyToInt'(WebUI.getText(findTestObject('MemberTransaction/Index_Page/text_BalanceText')))
 
-GetAfterTransactionType = WebUI.getText(findTestObject('Object Repository/MemberTransaction/Index_Page/txt_DepositAndWithdrawType'))
+GetAfterTransactionType = WebUI.getText(findTestObject('MemberTransaction/Index_Page/text_DepositAndWithdrawType'))
 
 WebUI.verifyEqual(GetAfterTransactionType, Info.type3)
 

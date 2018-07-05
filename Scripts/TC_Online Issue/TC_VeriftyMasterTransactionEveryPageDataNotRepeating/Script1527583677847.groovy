@@ -26,22 +26,22 @@ CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 4)
 
 WebUI.click(findTestObject('MemberTransaction/Index_Page/button_Query'))
 
-WebUI.waitForElementVisible(findTestObject('MemberTransaction/Index_Page/txt_FirstTransactionTimeText'), 500)
+WebUI.waitForElementVisible(findTestObject('MemberTransaction/Index_Page/text_FirstTransactionTimeText'), 500)
 
-GetFirstPageTransactionTime = WebUI.getText(findTestObject('MemberTransaction/Index_Page/txt_FirstTransactionTimeText'))
+GetFirstPageTransactionTime = WebUI.getText(findTestObject('MemberTransaction/Index_Page/text_FirstTransactionTimeText'))
 
 //System.out.println(GetFirstPageTransactionTime)
-GetFirstTransactionRecord = WebUI.getText(findTestObject('MemberTransaction/Index_Page/txt_BalanceText'))
+GetFirstTransactionRecord = WebUI.getText(findTestObject('MemberTransaction/Index_Page/text_BalanceText'))
 
 //System.out.println(GetFirstTransactionRecord)
 WebUI.click(findTestObject('MemberTransaction/Index_Page/a_TwoPagination'))
 
-WebUI.waitForElementVisible(findTestObject('MemberTransaction/Index_Page/txt_FirstTransactionTimeText'), 500)
+WebUI.waitForElementVisible(findTestObject('MemberTransaction/Index_Page/text_FirstTransactionTimeText'), 500)
 
-GetSecondPageTransactionTime = WebUI.getText(findTestObject('MemberTransaction/Index_Page/txt_FirstTransactionTimeText'))
+GetSecondPageTransactionTime = WebUI.getText(findTestObject('MemberTransaction/Index_Page/text_FirstTransactionTimeText'))
 
 //System.out.println(GetSecondPageTransactionTime)
-GetSecondTransactionRecord = WebUI.getText(findTestObject('MemberTransaction/Index_Page/txt_BalanceText'))
+GetSecondTransactionRecord = WebUI.getText(findTestObject('MemberTransaction/Index_Page/text_BalanceText'))
 
 //System.out.println(GetSecondTransactionRecord)
 WebUI.verifyNotMatch(GetFirstPageTransactionTime, GetSecondPageTransactionTime, false)

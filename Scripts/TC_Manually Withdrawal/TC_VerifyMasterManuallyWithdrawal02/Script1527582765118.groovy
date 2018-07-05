@@ -58,9 +58,9 @@ WebUI.waitForAlert(500, FailureHandling.STOP_ON_FAILURE)
 WebUI.acceptAlert()
 
 '取得存款後金額並進行格式轉換'
-GetAfterPoint = CustomKeywords.'extension.DataConversion.CurrencyToInt'(WebUI.getText(findTestObject('Object Repository/MemberTransaction/Detail_Page/txt_BalanceAfterTheTransaction')))
+GetAfterPoint = CustomKeywords.'extension.DataConversion.CurrencyToInt'(WebUI.getText(findTestObject('MemberTransaction/Detail_Page/text_BalanceAfterTheTransaction')))
 
-GetAfterTransactionType =CustomKeywords.'extension.DataConversion.GetStringSpilt'(WebUI.getText(findTestObject('Object Repository/MemberTransaction/Detail_Page/txt_DepositAndWithdrawType')), ' - ', 1) 
+GetAfterTransactionType =CustomKeywords.'extension.DataConversion.GetStringSpilt'(WebUI.getText(findTestObject('MemberTransaction/Detail_Page/text_DepositAndWithdrawType')), ' - ', 1) 
 
 WebUI.verifyEqual(GetAfterTransactionType, Info.type2)
 

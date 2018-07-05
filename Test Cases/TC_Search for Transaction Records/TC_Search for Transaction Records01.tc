@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Search for Transaction Records01</name>
+   <tag>驗證管端交易紀錄查詢功能(單號)</tag>
+   <comment></comment>
+   <testCaseGuid>11e5bb91-89cb-4a1e-8d19-6f6de2430ea4</testCaseGuid>
+</TestCaseEntity>

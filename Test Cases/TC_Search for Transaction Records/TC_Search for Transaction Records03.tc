@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Search for Transaction Records03</name>
+   <tag>驗證管端交易紀錄查詢功能(所屬代理)</tag>
+   <comment></comment>
+   <testCaseGuid>b0d582b4-b1e3-45d3-9fd6-db884c74194e</testCaseGuid>
+</TestCaseEntity>
