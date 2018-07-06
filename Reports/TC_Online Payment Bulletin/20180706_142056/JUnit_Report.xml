@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TC_Online Payment Bulletin" time="101" tests="4" failures="0" errors="3">
+   <testsuite name="TC_Online Payment Bulletin" tests="4" failures="0" errors="3" time="101" timestamp="2018-07-06 14:20:58" hostname="yuhsiang - DESKTOP-6HCA2VM.xinwang.corp" id="Test Suites/TC_Online Payment Bulletin">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\GM Automation\\GPK_QA\\Reports\\TC_Online Payment Bulletin\\20180706_142056"/>
+         <property name="logFiles" value="D:\\GM Automation\\GPK_QA\\Reports\\TC_Online Payment Bulletin\\20180706_142056\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="yuhsiang - DESKTOP-6HCA2VM.xinwang.corp"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="192.168.88.223"/>
+         <property name="sessionId" value="7ad9db3dd3fc230bbe0afe885db7689c"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin01" classname="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin01" status="PASSED">
+         <system-out><![CDATA[2018-07-06 14:20:58 - [TEST_CASE][PASSED] - Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin01: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin01
+
+2018-07-06 14:20:58 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:20:58 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:20:58 - [TEST_STEP][PASSED] - Statement - urlInfo = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/TestEnvironmenInfoData), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:20:58 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:20:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - url = Gpk_master: null
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:20:59 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-06 14:21:02 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-06 14:21:02 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-06 14:21:02 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-06 14:21:02 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:05 - [MESSAGE][PASSED] - Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - common.MasterLogin.Login: common.MasterLogin.Login is PASSED
+
+2018-07-06 14:21:05 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:21:05 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:21:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:21:05 - [TEST_CASE][PASSED] - Test Cases/Common/TestUserLoginData: Test Cases/Common/TestUserLoginData
+
+2018-07-06 14:21:06 - [TEST_STEP][PASSED] - Statement - loginInfo = ["username":"", "password":""]: null
+
+2018-07-06 14:21:06 - [TEST_STEP][PASSED] - Statement - MasterLoginInfo = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "MasterLoginInfo", false): null
+
+2018-07-06 14:21:06 - [TEST_STEP][PASSED] - Statement - username = MasterLoginInfo.getValue(1, 2): null
+
+2018-07-06 14:21:06 - [TEST_STEP][PASSED] - Statement - password = MasterLoginInfo.getValue(2, 2): null
+
+2018-07-06 14:21:06 - [TEST_STEP][PASSED] - Statement - return loginInfo: null
+
+2018-07-06 14:21:06 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestUserLoginData' successfully
+
+2018-07-06 14:21:06 - [MESSAGE][PASSED] - Keys 'QAautomation' sent to object: 'Object Repository/Account/Login_Page/input_AccountName'
+
+2018-07-06 14:21:06 - [MESSAGE][PASSED] - Keys '123456' sent to object: 'Object Repository/Account/Login_Page/input_Password'
+
+2018-07-06 14:21:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Account/Login_Page/button_Submit' is clicked on
+
+2018-07-06 14:21:09 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-06 14:21:09 - [MESSAGE][PASSED] - common.MasterLogin.Login is PASSED
+
+2018-07-06 14:21:09 - [TEST_STEP][PASSED] - common.MenuIntoPage.getDropdownMenu: common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:21:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_Top' is clicked on
+
+2018-07-06 14:21:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_AccountManagementList' is clicked on
+
+2018-07-06 14:21:09 - [MESSAGE][PASSED] - common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:21:09 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/ThirdPartyPayment/Index_Page/text_ID' is present
+
+2018-07-06 14:21:09 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-07-06 14:21:11 - [MESSAGE][PASSED] - Object 'Object Repository/ThirdPartyPayment/Index_Page/text_ID' is present
+
+2018-07-06 14:21:11 - [TEST_STEP][PASSED] - Statement - beforeText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_ID)): Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_ID' is: '1646'
+
+2018-07-06 14:21:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_ID' is: '1646'
+
+2018-07-06 14:21:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:21:11 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:21:11 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:21:11 - [MESSAGE][PASSED] - Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:21:11 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-06 14:21:13 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-06 14:21:13 - [TEST_STEP][PASSED] - setText: Text '1646' is set on object 'Object Repository/ThirdPartyPayment/Search_Page/input_ID'
+
+2018-07-06 14:21:13 - [MESSAGE][PASSED] - Text '1646' is set on object 'Object Repository/ThirdPartyPayment/Search_Page/input_ID'
+
+2018-07-06 14:21:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_Search' is clicked on
+
+2018-07-06 14:21:13 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_Search' is clicked on
+
+2018-07-06 14:21:13 - [TEST_STEP][PASSED] - extension.UIMethod.clickUsingJS: extension.UIMethod.clickUsingJS is PASSED
+
+2018-07-06 14:21:13 - [MESSAGE][PASSED] - extension.UIMethod.clickUsingJS is PASSED
+
+2018-07-06 14:21:13 - [TEST_STEP][PASSED] - Statement - getPaymentId = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Detail_Page/text_PaymentID)): Text of object 'Object Repository/ThirdPartyPayment/Detail_Page/text_PaymentID' is: '订单号：1646'
+
+2018-07-06 14:21:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/ThirdPartyPayment/Detail_Page/text_PaymentID' is: '订单号：1646'
+
+2018-07-06 14:21:14 - [TEST_STEP][PASSED] - Statement - afterText = CustomKeywords.extension.DataConversion.GetStringSpilt(getPaymentId, "：", 0): extension.DataConversion.GetStringSpilt is PASSED
+
+2018-07-06 14:21:14 - [MESSAGE][PASSED] - extension.DataConversion.GetStringSpilt is PASSED
+
+2018-07-06 14:21:14 - [TEST_STEP][PASSED] - verifyEqual: Actual object '1646' and expected object '1646' are equal
+
+2018-07-06 14:21:14 - [MESSAGE][PASSED] - Actual object '1646' and expected object '1646' are equal
+
+2018-07-06 14:21:14 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-07-06 14:21:14 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:21:14 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Browser is closed
+
+2018-07-06 14:21:14 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-06 14:21:15 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin02" classname="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin02" status="PASSED">
+         <system-out><![CDATA[2018-07-06 14:21:15 - [TEST_CASE][PASSED] - Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin02: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin02
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - urlInfo = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/TestEnvironmenInfoData), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:21:15 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:21:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - url = Gpk_master: null
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:15 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-06 14:21:16 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-06 14:21:16 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-06 14:21:16 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-06 14:21:16 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:19 - [MESSAGE][PASSED] - Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - common.MasterLogin.Login: common.MasterLogin.Login is PASSED
+
+2018-07-06 14:21:19 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:21:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:21:19 - [TEST_CASE][PASSED] - Test Cases/Common/TestUserLoginData: Test Cases/Common/TestUserLoginData
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - loginInfo = ["username":"", "password":""]: null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - MasterLoginInfo = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "MasterLoginInfo", false): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - username = MasterLoginInfo.getValue(1, 2): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - password = MasterLoginInfo.getValue(2, 2): null
+
+2018-07-06 14:21:19 - [TEST_STEP][PASSED] - Statement - return loginInfo: null
+
+2018-07-06 14:21:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestUserLoginData' successfully
+
+2018-07-06 14:21:19 - [MESSAGE][PASSED] - Keys 'QAautomation' sent to object: 'Object Repository/Account/Login_Page/input_AccountName'
+
+2018-07-06 14:21:19 - [MESSAGE][PASSED] - Keys '123456' sent to object: 'Object Repository/Account/Login_Page/input_Password'
+
+2018-07-06 14:21:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Account/Login_Page/button_Submit' is clicked on
+
+2018-07-06 14:21:23 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-06 14:21:23 - [MESSAGE][PASSED] - common.MasterLogin.Login is PASSED
+
+2018-07-06 14:21:23 - [TEST_STEP][PASSED] - common.MenuIntoPage.getDropdownMenu: common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:21:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_Top' is clicked on
+
+2018-07-06 14:21:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_AccountManagementList' is clicked on
+
+2018-07-06 14:21:23 - [MESSAGE][PASSED] - common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:21:23 - [TEST_STEP][PASSED] - Statement - beforeText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_Member)): Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_Member' is: 'abby'
+
+2018-07-06 14:21:25 - [MESSAGE][PASSED] - Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_Member' is: 'abby'
+
+2018-07-06 14:21:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:21:25 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:21:25 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:21:25 - [MESSAGE][PASSED] - Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:21:25 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-06 14:21:27 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-06 14:21:27 - [TEST_STEP][PASSED] - setText: Text 'abby' is set on object 'Object Repository/ThirdPartyPayment/Search_Page/input_MemberName'
+
+2018-07-06 14:21:27 - [MESSAGE][PASSED] - Text 'abby' is set on object 'Object Repository/ThirdPartyPayment/Search_Page/input_MemberName'
+
+2018-07-06 14:21:27 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_Search' is clicked on
+
+2018-07-06 14:21:27 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_Search' is clicked on
+
+2018-07-06 14:21:27 - [TEST_STEP][PASSED] - extension.UIMethod.clickUsingJS: extension.UIMethod.clickUsingJS is PASSED
+
+2018-07-06 14:21:27 - [MESSAGE][PASSED] - extension.UIMethod.clickUsingJS is PASSED
+
+2018-07-06 14:21:27 - [TEST_STEP][PASSED] - Statement - afterText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ThirdPartyPayment/Detail_Page/text_PaymentMember)): Text of object 'Object Repository/ThirdPartyPayment/Detail_Page/text_PaymentMember' is: 'abby'
+
+2018-07-06 14:21:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/ThirdPartyPayment/Detail_Page/text_PaymentMember' is: 'abby'
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - verifyEqual: Actual object 'abby' and expected object 'abby' are equal
+
+2018-07-06 14:21:28 - [MESSAGE][PASSED] - Actual object 'abby' and expected object 'abby' are equal
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Browser is closed
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-06 14:21:28 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin03" classname="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin03" status="ERROR">
+         <error type="ERROR" message="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin03 FAILED because (of) Variable 'afterText' is not defined for test case."/>
+         <system-out><![CDATA[2018-07-06 14:21:28 - [TEST_CASE][ERROR] - Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin03: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin03 FAILED because (of) Variable 'afterText' is not defined for test case.
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - urlInfo = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/TestEnvironmenInfoData), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:21:28 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:21:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - url = Gpk_master: null
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:28 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-06 14:21:30 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-06 14:21:30 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-06 14:21:30 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-06 14:21:30 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:33 - [MESSAGE][PASSED] - Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - common.MasterLogin.Login: common.MasterLogin.Login is PASSED
+
+2018-07-06 14:21:33 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:21:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:21:33 - [TEST_CASE][PASSED] - Test Cases/Common/TestUserLoginData: Test Cases/Common/TestUserLoginData
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - loginInfo = ["username":"", "password":""]: null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - MasterLoginInfo = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "MasterLoginInfo", false): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - username = MasterLoginInfo.getValue(1, 2): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - password = MasterLoginInfo.getValue(2, 2): null
+
+2018-07-06 14:21:33 - [TEST_STEP][PASSED] - Statement - return loginInfo: null
+
+2018-07-06 14:21:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestUserLoginData' successfully
+
+2018-07-06 14:21:33 - [MESSAGE][PASSED] - Keys 'QAautomation' sent to object: 'Object Repository/Account/Login_Page/input_AccountName'
+
+2018-07-06 14:21:33 - [MESSAGE][PASSED] - Keys '123456' sent to object: 'Object Repository/Account/Login_Page/input_Password'
+
+2018-07-06 14:21:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Account/Login_Page/button_Submit' is clicked on
+
+2018-07-06 14:21:37 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-06 14:21:37 - [MESSAGE][PASSED] - common.MasterLogin.Login is PASSED
+
+2018-07-06 14:21:37 - [TEST_STEP][PASSED] - common.MenuIntoPage.getDropdownMenu: common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:21:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_Top' is clicked on
+
+2018-07-06 14:21:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_AccountManagementList' is clicked on
+
+2018-07-06 14:21:37 - [MESSAGE][PASSED] - common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:21:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:21:37 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:21:37 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:21:37 - [MESSAGE][PASSED] - Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:21:37 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-06 14:21:39 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-06 14:21:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_MemberLevelSelect' is clicked on
+
+2018-07-06 14:21:40 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_MemberLevelSelect' is clicked on
+
+2018-07-06 14:21:40 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-06 14:21:42 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-06 14:21:42 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/button_MembersLevelClearAll' is clicked on
+
+2018-07-06 14:21:42 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/button_MembersLevelClearAll' is clicked on
+
+2018-07-06 14:21:42 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)' is clicked on
+
+2018-07-06 14:21:42 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)' is clicked on
+
+2018-07-06 14:21:42 - [TEST_STEP][PASSED] - Statement - beforetext = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use))): Text of object 'Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)' is: 'abby-use'
+
+2018-07-06 14:21:42 - [MESSAGE][PASSED] - Text of object 'Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)' is: 'abby-use'
+
+2018-07-06 14:21:42 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-06 14:21:44 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-06 14:21:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/button_MemberLevelClose' is clicked on
+
+2018-07-06 14:21:44 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/button_MemberLevelClose' is clicked on
+
+2018-07-06 14:21:44 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-06 14:21:46 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-06 14:21:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clicked on
+
+2018-07-06 14:21:46 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clicked on
+
+2018-07-06 14:21:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_Search' is clicked on
+
+2018-07-06 14:21:46 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_Search' is clicked on
+
+2018-07-06 14:21:46 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-06 14:21:48 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-06 14:21:48 - [TEST_STEP][PASSED] - extension.UIMethod.clickUsingJS: extension.UIMethod.clickUsingJS is PASSED
+
+2018-07-06 14:21:48 - [MESSAGE][PASSED] - extension.UIMethod.clickUsingJS is PASSED
+
+2018-07-06 14:21:48 - [TEST_STEP][PASSED] - Statement - aftertext = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_MemberLevel)): Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_MemberLevel' is: 'abby-use'
+
+2018-07-06 14:21:49 - [MESSAGE][PASSED] - Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_MemberLevel' is: 'abby-use'
+
+2018-07-06 14:21:49 - [TEST_STEP][PASSED] - verifyEqual: null
+
+2018-07-06 14:21:49 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-07-06 14:21:49 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:21:49 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Browser is closed
+
+2018-07-06 14:21:49 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-06 14:21:50 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-07-06 14:21:28 - [TEST_CASE][ERROR] - Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin03: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin03 FAILED because (of) Variable 'afterText' is not defined for test case.]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin04" classname="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin04" status="PASSED">
+         <system-out><![CDATA[2018-07-06 14:21:50 - [TEST_CASE][PASSED] - Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin04: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin04
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - urlInfo = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/TestEnvironmenInfoData), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:21:50 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:21:50 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - url = Gpk_master: null
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:50 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-06 14:21:51 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-06 14:21:51 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-06 14:21:51 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-06 14:21:51 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:54 - [MESSAGE][PASSED] - Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - common.MasterLogin.Login: common.MasterLogin.Login is PASSED
+
+2018-07-06 14:21:54 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:21:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:21:54 - [TEST_CASE][PASSED] - Test Cases/Common/TestUserLoginData: Test Cases/Common/TestUserLoginData
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - loginInfo = ["username":"", "password":""]: null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - MasterLoginInfo = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "MasterLoginInfo", false): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - username = MasterLoginInfo.getValue(1, 2): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - password = MasterLoginInfo.getValue(2, 2): null
+
+2018-07-06 14:21:54 - [TEST_STEP][PASSED] - Statement - return loginInfo: null
+
+2018-07-06 14:21:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestUserLoginData' successfully
+
+2018-07-06 14:21:54 - [MESSAGE][PASSED] - Keys 'QAautomation' sent to object: 'Object Repository/Account/Login_Page/input_AccountName'
+
+2018-07-06 14:21:55 - [MESSAGE][PASSED] - Keys '123456' sent to object: 'Object Repository/Account/Login_Page/input_Password'
+
+2018-07-06 14:21:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Account/Login_Page/button_Submit' is clicked on
+
+2018-07-06 14:21:58 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-06 14:21:58 - [MESSAGE][PASSED] - common.MasterLogin.Login is PASSED
+
+2018-07-06 14:21:58 - [TEST_STEP][PASSED] - common.MenuIntoPage.getDropdownMenu: common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:21:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_Top' is clicked on
+
+2018-07-06 14:21:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_AccountManagementList' is clicked on
+
+2018-07-06 14:21:58 - [MESSAGE][PASSED] - common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:21:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:21:59 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:21:59 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:21:59 - [MESSAGE][PASSED] - Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:21:59 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-06 14:22:01 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - Statement - LastMonthNumberOne = CustomKeywords.extension.UIMethod.setLastDayMonth(): extension.UIMethod.setLastDayMonth is PASSED
+
+2018-07-06 14:22:01 - [MESSAGE][PASSED] - extension.UIMethod.setLastDayMonth is PASSED
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - setText: Text '2018/06/01' is set on object 'Object Repository/ThirdPartyPayment/Search_Page/input_ApplicationDateBegin'
+
+2018-07-06 14:22:01 - [MESSAGE][PASSED] - Text '2018/06/01' is set on object 'Object Repository/ThirdPartyPayment/Search_Page/input_ApplicationDateBegin'
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_Search' is clicked on
+
+2018-07-06 14:22:01 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_Search' is clicked on
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - Statement - beforeText = CustomKeywords.extension.DataConversion.yearmonthdate(LastMonthNumberOne): extension.DataConversion.yearmonthdate is PASSED
+
+2018-07-06 14:22:01 - [MESSAGE][PASSED] - extension.DataConversion.yearmonthdate is PASSED
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - Statement - after = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_StatusUpdateDate)): Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_StatusUpdateDate' is: '2018/07/05 (四) 20:47:49 - 6 小时前'
+
+2018-07-06 14:22:01 - [MESSAGE][PASSED] - Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_StatusUpdateDate' is: '2018/07/05 (四) 20:47:49 - 6 小时前'
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - Statement - afterDate = CustomKeywords.extension.DataConversion.GetStringSpilt(after, " ", 1): extension.DataConversion.GetStringSpilt is PASSED
+
+2018-07-06 14:22:01 - [MESSAGE][PASSED] - extension.DataConversion.GetStringSpilt is PASSED
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - Statement - afterText = CustomKeywords.extension.DataConversion.yearmonthdate(afterDate): extension.DataConversion.yearmonthdate is PASSED
+
+2018-07-06 14:22:01 - [MESSAGE][PASSED] - extension.DataConversion.yearmonthdate is PASSED
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - verifyGreaterThanOrEqual: Actual number '20180705' is greater than or equal to expected number '20180601'
+
+2018-07-06 14:22:01 - [MESSAGE][PASSED] - Actual number '20180705' is greater than or equal to expected number '20180601'
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Browser is closed
+
+2018-07-06 14:22:01 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-06 14:22:02 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin05" classname="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin05" status="PASSED">
+         <system-out><![CDATA[2018-07-06 14:22:02 - [TEST_CASE][PASSED] - Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin05: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin05
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - urlInfo = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/TestEnvironmenInfoData), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:22:02 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:22:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - url = Gpk_master: null
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:02 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-06 14:22:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-06 14:22:03 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-06 14:22:04 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-06 14:22:04 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:07 - [MESSAGE][PASSED] - Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - common.MasterLogin.Login: common.MasterLogin.Login is PASSED
+
+2018-07-06 14:22:07 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:22:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:22:07 - [TEST_CASE][PASSED] - Test Cases/Common/TestUserLoginData: Test Cases/Common/TestUserLoginData
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - loginInfo = ["username":"", "password":""]: null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - MasterLoginInfo = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "MasterLoginInfo", false): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - username = MasterLoginInfo.getValue(1, 2): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - password = MasterLoginInfo.getValue(2, 2): null
+
+2018-07-06 14:22:07 - [TEST_STEP][PASSED] - Statement - return loginInfo: null
+
+2018-07-06 14:22:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestUserLoginData' successfully
+
+2018-07-06 14:22:07 - [MESSAGE][PASSED] - Keys 'QAautomation' sent to object: 'Object Repository/Account/Login_Page/input_AccountName'
+
+2018-07-06 14:22:08 - [MESSAGE][PASSED] - Keys '123456' sent to object: 'Object Repository/Account/Login_Page/input_Password'
+
+2018-07-06 14:22:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Account/Login_Page/button_Submit' is clicked on
+
+2018-07-06 14:22:11 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-06 14:22:11 - [MESSAGE][PASSED] - common.MasterLogin.Login is PASSED
+
+2018-07-06 14:22:11 - [TEST_STEP][PASSED] - common.MenuIntoPage.getDropdownMenu: common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:22:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_Top' is clicked on
+
+2018-07-06 14:22:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_AccountManagementList' is clicked on
+
+2018-07-06 14:22:11 - [MESSAGE][PASSED] - common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:22:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:22:12 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:22:12 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:22:12 - [MESSAGE][PASSED] - Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:22:12 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-06 14:22:14 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-06 14:22:14 - [TEST_STEP][PASSED] - setText: Text '1' is set on object 'Object Repository/ThirdPartyPayment/Search_Page/input_AmounBegin'
+
+2018-07-06 14:22:14 - [MESSAGE][PASSED] - Text '1' is set on object 'Object Repository/ThirdPartyPayment/Search_Page/input_AmounBegin'
+
+2018-07-06 14:22:14 - [TEST_STEP][PASSED] - setText: Text '3' is set on object 'Object Repository/ThirdPartyPayment/Search_Page/input_AmountEnd'
+
+2018-07-06 14:22:14 - [MESSAGE][PASSED] - Text '3' is set on object 'Object Repository/ThirdPartyPayment/Search_Page/input_AmountEnd'
+
+2018-07-06 14:22:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_Search' is clicked on
+
+2018-07-06 14:22:14 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Search_Page/button_Search' is clicked on
+
+2018-07-06 14:22:14 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-06 14:22:16 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-06 14:22:16 - [TEST_STEP][PASSED] - Statement - after = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ThirdPartyPayment/Index_Page/text_Amount)): Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_Amount' is: '$ 1'
+
+2018-07-06 14:22:17 - [MESSAGE][PASSED] - Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_Amount' is: '$ 1'
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - afterText = CustomKeywords.extension.DataConversion.CurrencyToInt(after): extension.DataConversion.CurrencyToInt is PASSED
+
+2018-07-06 14:22:17 - [MESSAGE][PASSED] - extension.DataConversion.CurrencyToInt is PASSED
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - verifyGreaterThanOrEqual: Actual number '1' is greater than or equal to expected number '1'
+
+2018-07-06 14:22:17 - [MESSAGE][PASSED] - Actual number '1' is greater than or equal to expected number '1'
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - verifyLessThanOrEqual: Actual number '1' is less than or equal to expected number '3'
+
+2018-07-06 14:22:17 - [MESSAGE][PASSED] - Actual number '1' is less than or equal to expected number '3'
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Browser is closed
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-06 14:22:17 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin06" classname="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin06" status="ERROR">
+         <error type="ERROR" message="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin06 FAILED because (of) Variable 'beforetext' is not defined for test case."/>
+         <system-out><![CDATA[2018-07-06 14:22:17 - [TEST_CASE][ERROR] - Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin06: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin06 FAILED because (of) Variable 'beforetext' is not defined for test case.
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - urlInfo = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/TestEnvironmenInfoData), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:22:17 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:22:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - url = Gpk_master: null
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:17 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-06 14:22:19 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-06 14:22:19 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-06 14:22:19 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-06 14:22:19 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:22 - [MESSAGE][PASSED] - Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - common.MasterLogin.Login: common.MasterLogin.Login is PASSED
+
+2018-07-06 14:22:22 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:22:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:22:22 - [TEST_CASE][PASSED] - Test Cases/Common/TestUserLoginData: Test Cases/Common/TestUserLoginData
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - loginInfo = ["username":"", "password":""]: null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - MasterLoginInfo = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "MasterLoginInfo", false): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - username = MasterLoginInfo.getValue(1, 2): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - password = MasterLoginInfo.getValue(2, 2): null
+
+2018-07-06 14:22:22 - [TEST_STEP][PASSED] - Statement - return loginInfo: null
+
+2018-07-06 14:22:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestUserLoginData' successfully
+
+2018-07-06 14:22:22 - [MESSAGE][PASSED] - Keys 'QAautomation' sent to object: 'Object Repository/Account/Login_Page/input_AccountName'
+
+2018-07-06 14:22:22 - [MESSAGE][PASSED] - Keys '123456' sent to object: 'Object Repository/Account/Login_Page/input_Password'
+
+2018-07-06 14:22:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Account/Login_Page/button_Submit' is clicked on
+
+2018-07-06 14:22:25 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-06 14:22:25 - [MESSAGE][PASSED] - common.MasterLogin.Login is PASSED
+
+2018-07-06 14:22:25 - [TEST_STEP][PASSED] - common.MenuIntoPage.getDropdownMenu: common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:22:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_Top' is clicked on
+
+2018-07-06 14:22:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_AccountManagementList' is clicked on
+
+2018-07-06 14:22:26 - [MESSAGE][PASSED] - common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:22:26 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:22:26 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:22:26 - [TEST_STEP][PASSED] - Statement - beforeText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_ThirdPartyAccount)): Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_ThirdPartyAccount' is: 'test-网银'
+
+2018-07-06 14:22:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_ThirdPartyAccount' is: 'test-网银'
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:22:28 - [MESSAGE][PASSED] - Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - setText: Finding Test Object with id 'Object Repository/ThirdPartyPayment/Search_Page/input_ThirdPartyAccount'
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Browser is closed
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-06 14:22:28 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-07-06 14:22:17 - [TEST_CASE][ERROR] - Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin06: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin06 FAILED because (of) Variable 'beforetext' is not defined for test case.]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin07" classname="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin07" status="ERROR">
+         <error type="ERROR" message="Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin07 FAILED because (of) Variable 'beforetext' is not defined for test case."/>
+         <system-out><![CDATA[2018-07-06 14:22:28 - [TEST_CASE][ERROR] - Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin07: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin07 FAILED because (of) Variable 'beforetext' is not defined for test case.
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - urlInfo = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common/TestEnvironmenInfoData), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:22:28 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:22:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - url = Gpk_master: null
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:28 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-06 14:22:30 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-06 14:22:30 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-06 14:22:30 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-06 14:22:30 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:33 - [MESSAGE][PASSED] - Navigate to 'http://master.ky1188.net' successfully
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - common.MasterLogin.Login: common.MasterLogin.Login is PASSED
+
+2018-07-06 14:22:33 - [TEST_CASE][PASSED] - Test Cases/Common/TestEnvironmenInfoData: Test Cases/Common/TestEnvironmenInfoData
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Gpk_Info = ["Gpk_admin":"", "Gpk_master":"", "Gpk_agent":"", "Gpk_protal":"", "Gpk_mobile":"", "Release_admin":"", "Release_master":"", ... ]: null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Url_Info = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "TestEnvironmenInfo", false): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Gpk_admin = Url_Info.getValue(2, 2): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Gpk_master = Url_Info.getValue(3, 2): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Gpk_agent = Url_Info.getValue(4, 2): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Gpk_protal = Url_Info.getValue(5, 2): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Gpk_mobile = Url_Info.getValue(6, 2): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Release_admin = Url_Info.getValue(2, 3): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Release_master = Url_Info.getValue(3, 3): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Release_agent = Url_Info.getValue(4, 3): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Release_protal = Url_Info.getValue(5, 3): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - Release_mobile = Url_Info.getValue(6, 3): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - return Gpk_Info: null
+
+2018-07-06 14:22:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestEnvironmenInfoData' successfully
+
+2018-07-06 14:22:33 - [TEST_CASE][PASSED] - Test Cases/Common/TestUserLoginData: Test Cases/Common/TestUserLoginData
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - loginInfo = ["username":"", "password":""]: null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - MasterLoginInfo = com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "MasterLoginInfo", false): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - username = MasterLoginInfo.getValue(1, 2): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - password = MasterLoginInfo.getValue(2, 2): null
+
+2018-07-06 14:22:33 - [TEST_STEP][PASSED] - Statement - return loginInfo: null
+
+2018-07-06 14:22:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/TestUserLoginData' successfully
+
+2018-07-06 14:22:33 - [MESSAGE][PASSED] - Keys 'QAautomation' sent to object: 'Object Repository/Account/Login_Page/input_AccountName'
+
+2018-07-06 14:22:34 - [MESSAGE][PASSED] - Keys '123456' sent to object: 'Object Repository/Account/Login_Page/input_Password'
+
+2018-07-06 14:22:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Account/Login_Page/button_Submit' is clicked on
+
+2018-07-06 14:22:37 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-06 14:22:37 - [MESSAGE][PASSED] - common.MasterLogin.Login is PASSED
+
+2018-07-06 14:22:37 - [TEST_STEP][PASSED] - common.MenuIntoPage.getDropdownMenu: common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:22:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_Top' is clicked on
+
+2018-07-06 14:22:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Shared/menu_AccountManagementList' is clicked on
+
+2018-07-06 14:22:37 - [MESSAGE][PASSED] - common.MenuIntoPage.getDropdownMenu is PASSED
+
+2018-07-06 14:22:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:22:38 - [MESSAGE][PASSED] - Object: 'Object Repository/ThirdPartyPayment/Index_Page/button_Search' is clicked on
+
+2018-07-06 14:22:38 - [TEST_STEP][PASSED] - Statement - beforeText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_Operator)): Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_Operator' is: '[系统]'
+
+2018-07-06 14:22:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/ThirdPartyPayment/Index_Page/text_Operator' is: '[系统]'
+
+2018-07-06 14:22:39 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:22:39 - [MESSAGE][PASSED] - Object 'Object Repository/ThirdPartyPayment/Search_Page/text_Title' is clickable
+
+2018-07-06 14:22:39 - [TEST_STEP][PASSED] - setText: Finding Test Object with id 'Object Repository/ThirdPartyPayment/Search_Page/text_Operator'
+
+2018-07-06 14:22:39 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-07-06 14:22:39 - [TEST_STEP][PASSED] - Statement - Tag = testCaseContext.getTestCaseVariables().values(): null
+
+2018-07-06 14:22:39 - [TEST_STEP][PASSED] - Statement - If (Tag[0] != "Data"): Browser is closed
+
+2018-07-06 14:22:39 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-06 14:22:39 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-07-06 14:22:28 - [TEST_CASE][ERROR] - Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin07: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin07 FAILED because (of) Variable 'beforetext' is not defined for test case.]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-06 14:20:58 - [TEST_SUITE][ERROR] - TC_Online Payment Bulletin: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin03 FAILED because (of) Variable 'afterText' is not defined for test case.]]></system-out>
+      <system-err><![CDATA[2018-07-06 14:20:58 - [TEST_SUITE][ERROR] - TC_Online Payment Bulletin: Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin03 FAILED because (of) Variable 'afterText' is not defined for test case.]]></system-err>
+   </testsuite>
+</testsuites>

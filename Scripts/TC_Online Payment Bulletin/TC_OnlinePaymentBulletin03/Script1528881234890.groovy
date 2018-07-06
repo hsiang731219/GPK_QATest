@@ -27,8 +27,8 @@ CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 2)
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/button_Search'))
 
-'线上支付看板--搜寻'
-WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 2)
+'线上支付看板--搜寻--等待彈窗出現'
+WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 5)
 
 WebUI.delay(2)
 
@@ -41,10 +41,10 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/button_MembersLevelClearAll'))
 
 '點擊選擇abby-use會員等級'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)'))
+WebUI.check(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)'))
 
 '取得所選的會員等級文字'
-beforetext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)'))
+beforeText = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use)'))
 
 WebUI.delay(2)
 
@@ -65,8 +65,8 @@ CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Reposito
     2)
 
 '取得线上支付明细「會員等級」'
-aftertext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_MemberLevel'))
+afterText = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_MemberLevel'))
 
 '比較會員等級是否相同'
-WebUI.verifyEqual(beforetext, aftertext)
+WebUI.verifyEqual(afterText, beforeText)
 

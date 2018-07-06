@@ -25,16 +25,19 @@ CustomKeywords.'common.MasterLogin.Login'()
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 2)
 
 '取得欲查詢的會員帳號'
-beforetext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_Member'))
+beforeText = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_Member'))
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/button_Search'))
 
-'线上支付看板--搜寻'
-WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 2)
+'线上支付看板--搜寻--等待彈窗出現'
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 5)
+
+WebUI.delay(2)
 
 '輸入會員帳號'
-WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_MemberName'), beforetext)
+WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/input_MemberName'), beforeText)
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
@@ -43,8 +46,8 @@ WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/butt
 CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('ThirdPartyPayment/Index_Page/link_ID'), 1)
 
 '取得线上支付明细「會員帳號」'
-aftertext = WebUI.getText(findTestObject('ThirdPartyPayment/Detail_Page/text_PaymentMember'))
+afterText = WebUI.getText(findTestObject('ThirdPartyPayment/Detail_Page/text_PaymentMember'))
 
 '比較會員帳號是否相同'
-WebUI.verifyEqual(beforetext, aftertext)
+WebUI.verifyEqual(afterText, beforeText)
 

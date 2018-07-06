@@ -28,7 +28,7 @@ CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 2)
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/button_Search'))
 
 '线上支付看板--搜寻'
-WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 5)
 
 WebUI.delay(2)
 
@@ -46,11 +46,11 @@ WebUI.delay(2)
 after = WebUI.getText(findTestObject('ThirdPartyPayment/Index_Page/text_Amount'))
 
 '轉換查詢結果第一筆餘額扣除$字元'
-aftertext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(after)
+afterText = CustomKeywords.'extension.DataConversion.CurrencyToInt'(after)
 
 '比較結果是否大於輸入的1'
-WebUI.verifyGreaterThanOrEqual(aftertext, '1')
+WebUI.verifyGreaterThanOrEqual(afterText, '1')
 
 '比較結果是否小於輸入的3'
-WebUI.verifyLessThanOrEqual(aftertext, '3')
+WebUI.verifyLessThanOrEqual(afterText, '3')
 

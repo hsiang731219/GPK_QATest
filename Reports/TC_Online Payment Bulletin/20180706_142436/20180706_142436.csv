@@ -1,0 +1,119 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TC_Online Payment Bulletin,Chrome 67.0.3396.99,,2018-07-06 14:24:37,2018-07-06 14:26:23,1m - 45.945s,PASSED
+,,,,,,
+Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin01,Chrome 67.0.3396.99,,2018-07-06 14:24:37,2018-07-06 14:24:55,17.272s,PASSED
+Start listener action : BeforeTestCase,Chrome 67.0.3396.99,,2018-07-06 14:24:37,2018-07-06 14:24:45,7.599s,PASSED
+common.MasterLogin.Login,Chrome 67.0.3396.99,,2018-07-06 14:24:45,2018-07-06 14:24:49,3.794s,PASSED
+common.MenuIntoPage.getDropdownMenu,Chrome 67.0.3396.99,\u5E33\u52D9\u7BA1\u7406 -> \u7DDA\u4E0A\u652F\u4ED8\u770B\u677F,2018-07-06 14:24:49,2018-07-06 14:24:49,0.247s,PASSED
+waitForElementPresent,Chrome 67.0.3396.99,,2018-07-06 14:24:49,2018-07-06 14:24:51,1.513s,PASSED
+Statement - beforeText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_ID)),Chrome 67.0.3396.99,\u53D6\u5F97\u6B32\u67E5\u8A62\u7684\u300C\u8A02\u55AE\u865F\u300D,2018-07-06 14:24:51,2018-07-06 14:24:51,0.058s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:24:51,2018-07-06 14:24:51,0.141s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,\u7EBF\u4E0A\u652F\u4ED8\u770B\u677F--\u641C\u5BFB--\u7B49\u5F85\u5F48\u7A97\u51FA\u73FE,2018-07-06 14:24:51,2018-07-06 14:24:51,0.063s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-06 14:24:51,2018-07-06 14:24:53,2.002s,PASSED
+setText,Chrome 67.0.3396.99,\u8F38\u5165\u8A02\u55AE\u865F,2018-07-06 14:24:53,2018-07-06 14:24:53,0.189s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:24:53,2018-07-06 14:24:53,0.129s,PASSED
+extension.UIMethod.clickUsingJS,Chrome 67.0.3396.99,\u9EDE\u64CA\u641C\u5C0B\u7D50\u679CID,2018-07-06 14:24:53,2018-07-06 14:24:53,0.066s,PASSED
+Statement - getPaymentId = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Detail_Page/text_PaymentID)),Chrome 67.0.3396.99,\u53D6\u5F97\u7EBF\u4E0A\u652F\u4ED8\u660E\u7EC6\u300C\u8A02\u55AE\u865F\u300D,2018-07-06 14:24:53,2018-07-06 14:24:54,0.661s,PASSED
+"Statement - afterText = CustomKeywords.extension.DataConversion.GetStringSpilt(getPaymentId, ""¡G"", 0)",Chrome 67.0.3396.99,\u8F49\u63DB\u53EA\u53D6\u5192\u865F\u5F8C\u7684\u6587\u5B57,2018-07-06 14:24:54,2018-07-06 14:24:54,0.007s,PASSED
+verifyEqual,Chrome 67.0.3396.99,\u6BD4\u8F03\u8A02\u55AE\u865F\u662F\u5426\u76F8\u540C,2018-07-06 14:24:54,2018-07-06 14:24:54,0.008s,PASSED
+Start listener action : AfterTestCase,Chrome 67.0.3396.99,,2018-07-06 14:24:54,2018-07-06 14:24:55,0.665s,PASSED
+,,,,,,
+Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin02,Chrome 67.0.3396.99,,2018-07-06 14:24:55,2018-07-06 14:25:09,14.360s,PASSED
+Start listener action : BeforeTestCase,Chrome 67.0.3396.99,,2018-07-06 14:24:55,2018-07-06 14:25:00,4.828s,PASSED
+common.MasterLogin.Login,Chrome 67.0.3396.99,,2018-07-06 14:25:00,2018-07-06 14:25:03,3.636s,PASSED
+common.MenuIntoPage.getDropdownMenu,Chrome 67.0.3396.99,\u5E33\u52D9\u7BA1\u7406 -> \u7DDA\u4E0A\u652F\u4ED8\u770B\u677F,2018-07-06 14:25:03,2018-07-06 14:25:04,0.244s,PASSED
+Statement - beforeText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_Member)),Chrome 67.0.3396.99,\u53D6\u5F97\u6B32\u67E5\u8A62\u7684\u6703\u54E1\u5E33\u865F,2018-07-06 14:25:04,2018-07-06 14:25:05,1.698s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:25:05,2018-07-06 14:25:05,0.122s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,\u7EBF\u4E0A\u652F\u4ED8\u770B\u677F--\u641C\u5BFB--\u7B49\u5F85\u5F48\u7A97\u51FA\u73FE,2018-07-06 14:25:05,2018-07-06 14:25:05,0.045s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-06 14:25:05,2018-07-06 14:25:07,2.002s,PASSED
+setText,Chrome 67.0.3396.99,\u8F38\u5165\u6703\u54E1\u5E33\u865F,2018-07-06 14:25:07,2018-07-06 14:25:08,0.200s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:25:08,2018-07-06 14:25:08,0.159s,PASSED
+extension.UIMethod.clickUsingJS,Chrome 67.0.3396.99,\u9EDE\u64CA\u641C\u5C0B\u7D50\u679CID,2018-07-06 14:25:08,2018-07-06 14:25:08,0.071s,PASSED
+Statement - afterText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ThirdPartyPayment/Detail_Page/text_PaymentMember)),Chrome 67.0.3396.99,\u53D6\u5F97\u7EBF\u4E0A\u652F\u4ED8\u660E\u7EC6\u300C\u6703\u54E1\u5E33\u865F\u300D,2018-07-06 14:25:08,2018-07-06 14:25:08,0.558s,PASSED
+verifyEqual,Chrome 67.0.3396.99,\u6BD4\u8F03\u6703\u54E1\u5E33\u865F\u662F\u5426\u76F8\u540C,2018-07-06 14:25:08,2018-07-06 14:25:08,0.001s,PASSED
+Start listener action : AfterTestCase,Chrome 67.0.3396.99,,2018-07-06 14:25:08,2018-07-06 14:25:09,0.663s,PASSED
+,,,,,,
+Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin03,Chrome 67.0.3396.99,,2018-07-06 14:25:09,2018-07-06 14:25:30,21.372s,PASSED
+Start listener action : BeforeTestCase,Chrome 67.0.3396.99,,2018-07-06 14:25:09,2018-07-06 14:25:14,4.541s,PASSED
+common.MasterLogin.Login,Chrome 67.0.3396.99,,2018-07-06 14:25:14,2018-07-06 14:25:17,3.693s,PASSED
+common.MenuIntoPage.getDropdownMenu,Chrome 67.0.3396.99,\u5E33\u52D9\u7BA1\u7406 -> \u7DDA\u4E0A\u652F\u4ED8\u770B\u677F,2018-07-06 14:25:17,2018-07-06 14:25:18,0.243s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:25:18,2018-07-06 14:25:18,0.612s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,\u7EBF\u4E0A\u652F\u4ED8\u770B\u677F--\u641C\u5BFB--\u7B49\u5F85\u5F48\u7A97\u51FA\u73FE,2018-07-06 14:25:18,2018-07-06 14:25:18,0.044s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-06 14:25:18,2018-07-06 14:25:20,2.002s,PASSED
+click,Chrome 67.0.3396.99,\u9EDE\u64CA\u6703\u54E1\u7B49\u7D1A,2018-07-06 14:25:20,2018-07-06 14:25:20,0.143s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-06 14:25:20,2018-07-06 14:25:22,2.001s,PASSED
+click,Chrome 67.0.3396.99,\u9EDE\u64CA\u6E05\u9664\u6240\u6709\u6703\u54E1\u7B49\u7D1A,2018-07-06 14:25:22,2018-07-06 14:25:23,0.138s,PASSED
+click,Chrome 67.0.3396.99,\u9EDE\u64CA\u9078\u64C7abby-use\u6703\u54E1\u7B49\u7D1A,2018-07-06 14:25:23,2018-07-06 14:25:23,0.108s,PASSED
+Statement - beforeText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Search_Page/Choose_MembersLevel/checkbox_MmeberLevel(abby-use))),Chrome 67.0.3396.99,\u53D6\u5F97\u6240\u9078\u7684\u6703\u54E1\u7B49\u7D1A\u6587\u5B57,2018-07-06 14:25:23,2018-07-06 14:25:23,0.045s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-06 14:25:23,2018-07-06 14:25:25,2.000s,PASSED
+click,Chrome 67.0.3396.99,\u95DC\u9589\u9078\u53D6\u6703\u54E1\u7B49\u7D1A,2018-07-06 14:25:25,2018-07-06 14:25:25,0.129s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-06 14:25:25,2018-07-06 14:25:27,2.002s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:25:27,2018-07-06 14:25:27,0.129s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-06 14:25:27,2018-07-06 14:25:27,0.128s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-06 14:25:27,2018-07-06 14:25:29,2.002s,PASSED
+extension.UIMethod.clickUsingJS,Chrome 67.0.3396.99,\u9EDE\u64CA\u641C\u5C0B\u7D50\u679CID,2018-07-06 14:25:29,2018-07-06 14:25:29,0.043s,PASSED
+Statement - afterText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_MemberLevel)),Chrome 67.0.3396.99,\u53D6\u5F97\u7EBF\u4E0A\u652F\u4ED8\u660E\u7EC6\u300C\u6703\u54E1\u7B49\u7D1A\u300D,2018-07-06 14:25:29,2018-07-06 14:25:30,0.618s,PASSED
+verifyEqual,Chrome 67.0.3396.99,\u6BD4\u8F03\u6703\u54E1\u7B49\u7D1A\u662F\u5426\u76F8\u540C,2018-07-06 14:25:30,2018-07-06 14:25:30,0.001s,PASSED
+Start listener action : AfterTestCase,Chrome 67.0.3396.99,,2018-07-06 14:25:30,2018-07-06 14:25:30,0.662s,PASSED
+,,,,,,
+Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin04,Chrome 67.0.3396.99,,2018-07-06 14:25:30,2018-07-06 14:25:43,12.321s,PASSED
+Start listener action : BeforeTestCase,Chrome 67.0.3396.99,,2018-07-06 14:25:30,2018-07-06 14:25:35,4.396s,PASSED
+common.MasterLogin.Login,Chrome 67.0.3396.99,,2018-07-06 14:25:35,2018-07-06 14:25:39,3.547s,PASSED
+common.MenuIntoPage.getDropdownMenu,Chrome 67.0.3396.99,\u5E33\u52D9\u7BA1\u7406 -> \u7DDA\u4E0A\u652F\u4ED8\u770B\u677F,2018-07-06 14:25:39,2018-07-06 14:25:39,0.242s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:25:39,2018-07-06 14:25:39,0.632s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,\u7EBF\u4E0A\u652F\u4ED8\u770B\u677F--\u641C\u5BFB--\u7B49\u5F85\u5F48\u7A97\u51FA\u73FE,2018-07-06 14:25:39,2018-07-06 14:25:39,0.048s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-06 14:25:39,2018-07-06 14:25:41,2.002s,PASSED
+Statement - LastMonthNumberOne = CustomKeywords.extension.UIMethod.setLastDayMonth(),Chrome 67.0.3396.99,\u9078\u53D6\u4E0A\u500B\u67081\u865F,2018-07-06 14:25:41,2018-07-06 14:25:41,0.018s,PASSED
+setText,Chrome 67.0.3396.99,\u8F38\u5165\u4E0A\u500B\u67081\u865F,2018-07-06 14:25:41,2018-07-06 14:25:42,0.333s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:25:42,2018-07-06 14:25:42,0.150s,PASSED
+Statement - beforeText = CustomKeywords.extension.DataConversion.yearmonthdate(LastMonthNumberOne),Chrome 67.0.3396.99,\u8F49\u63DB\u4E0A\u500B\u67081\u865F\u70BA\u6578\u503C,2018-07-06 14:25:42,2018-07-06 14:25:42,0.002s,PASSED
+Statement - after = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_StatusUpdateDate)),Chrome 67.0.3396.99,,2018-07-06 14:25:42,2018-07-06 14:25:42,0.068s,PASSED
+"Statement - afterDate = CustomKeywords.extension.DataConversion.GetStringSpilt(after, "" "", 1)",Chrome 67.0.3396.99,,2018-07-06 14:25:42,2018-07-06 14:25:42,0.000s,PASSED
+Statement - afterText = CustomKeywords.extension.DataConversion.yearmonthdate(afterDate),Chrome 67.0.3396.99,\u8F49\u63DB\u4E0A\u500B\u67081\u865F\u70BA\u6578\u503C,2018-07-06 14:25:42,2018-07-06 14:25:42,0.000s,PASSED
+verifyGreaterThanOrEqual,Chrome 67.0.3396.99,\u6BD4\u8F03\u7B2C\u4E00\u7B46\u8CC7\u6599\u7684\u7533\u8ACB\u65E5\u671F\u662F\u5426\u5927\u65BC\u9078\u64C7\u7684\u4E0A\u500B\u67081\u865F,2018-07-06 14:25:42,2018-07-06 14:25:42,0.005s,PASSED
+Start listener action : AfterTestCase,Chrome 67.0.3396.99,,2018-07-06 14:25:42,2018-07-06 14:25:43,0.754s,PASSED
+,,,,,,
+Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin05,Chrome 67.0.3396.99,,2018-07-06 14:25:43,2018-07-06 14:25:59,16.381s,PASSED
+Start listener action : BeforeTestCase,Chrome 67.0.3396.99,,2018-07-06 14:25:43,2018-07-06 14:25:49,5.806s,PASSED
+common.MasterLogin.Login,Chrome 67.0.3396.99,,2018-07-06 14:25:49,2018-07-06 14:25:52,3.753s,PASSED
+common.MenuIntoPage.getDropdownMenu,Chrome 67.0.3396.99,\u5E33\u52D9\u7BA1\u7406 -> \u7DDA\u4E0A\u652F\u4ED8\u770B\u677F,2018-07-06 14:25:52,2018-07-06 14:25:53,0.250s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:25:53,2018-07-06 14:25:54,0.844s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,\u7EBF\u4E0A\u652F\u4ED8\u770B\u677F--\u641C\u5BFB,2018-07-06 14:25:54,2018-07-06 14:25:54,0.041s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-06 14:25:54,2018-07-06 14:25:56,2.000s,PASSED
+setText,Chrome 67.0.3396.99,\u8F38\u5165\u8D77\u59CB\u91D1\u984D,2018-07-06 14:25:56,2018-07-06 14:25:56,0.172s,PASSED
+setText,Chrome 67.0.3396.99,\u8F38\u5165\u7D50\u675F\u91D1\u984D,2018-07-06 14:25:56,2018-07-06 14:25:56,0.166s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:25:56,2018-07-06 14:25:56,0.158s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-06 14:25:56,2018-07-06 14:25:58,2.001s,PASSED
+Statement - after = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ThirdPartyPayment/Index_Page/text_Amount)),Chrome 67.0.3396.99,,2018-07-06 14:25:58,2018-07-06 14:25:59,0.395s,PASSED
+Statement - afterText = CustomKeywords.extension.DataConversion.CurrencyToInt(after),Chrome 67.0.3396.99,\u8F49\u63DB\u67E5\u8A62\u7D50\u679C\u7B2C\u4E00\u7B46\u9918\u984D\u6263\u9664$\u5B57\u5143,2018-07-06 14:25:59,2018-07-06 14:25:59,0.004s,PASSED
+verifyGreaterThanOrEqual,Chrome 67.0.3396.99,\u6BD4\u8F03\u7D50\u679C\u662F\u5426\u5927\u65BC\u8F38\u5165\u76841,2018-07-06 14:25:59,2018-07-06 14:25:59,0.001s,PASSED
+verifyLessThanOrEqual,Chrome 67.0.3396.99,\u6BD4\u8F03\u7D50\u679C\u662F\u5426\u5C0F\u65BC\u8F38\u5165\u76843,2018-07-06 14:25:59,2018-07-06 14:25:59,0.008s,PASSED
+Start listener action : AfterTestCase,Chrome 67.0.3396.99,,2018-07-06 14:25:59,2018-07-06 14:25:59,0.657s,PASSED
+,,,,,,
+Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin06,Chrome 67.0.3396.99,,2018-07-06 14:25:59,2018-07-06 14:26:11,12.086s,PASSED
+Start listener action : BeforeTestCase,Chrome 67.0.3396.99,,2018-07-06 14:25:59,2018-07-06 14:26:04,4.942s,PASSED
+common.MasterLogin.Login,Chrome 67.0.3396.99,,2018-07-06 14:26:04,2018-07-06 14:26:08,3.548s,PASSED
+common.MenuIntoPage.getDropdownMenu,Chrome 67.0.3396.99,\u5E33\u52D9\u7BA1\u7406 -> \u7DDA\u4E0A\u652F\u4ED8\u770B\u677F,2018-07-06 14:26:08,2018-07-06 14:26:08,0.236s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:26:08,2018-07-06 14:26:09,0.716s,PASSED
+Statement - beforeText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_ThirdPartyAccount)),Chrome 67.0.3396.99,\u53D6\u5F97\u6B32\u67E5\u8A62\u7684\u300C\u5546\u6236\u300D,2018-07-06 14:26:09,2018-07-06 14:26:10,0.859s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,\u7EBF\u4E0A\u652F\u4ED8\u770B\u677F--\u641C\u5BFB,2018-07-06 14:26:10,2018-07-06 14:26:10,0.063s,PASSED
+setText,Chrome 67.0.3396.99,\u8F38\u5165\u5546\u6236,2018-07-06 14:26:10,2018-07-06 14:26:10,0.188s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:26:10,2018-07-06 14:26:10,0.124s,PASSED
+extension.UIMethod.clickUsingJS,Chrome 67.0.3396.99,\u9EDE\u64CA\u641C\u5C0B\u7D50\u679CID,2018-07-06 14:26:10,2018-07-06 14:26:10,0.048s,PASSED
+Statement - afterText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Detail_Page/text_ThirdPartyAccount)),Chrome 67.0.3396.99,\u53D6\u5F97\u7EBF\u4E0A\u652F\u4ED8\u660E\u7EC6\u300C\u5546\u6236\u300D,2018-07-06 14:26:10,2018-07-06 14:26:11,0.637s,PASSED
+verifyEqual,Chrome 67.0.3396.99,\u6BD4\u8F03\u5546\u6236\u662F\u5426\u76F8\u540C,2018-07-06 14:26:11,2018-07-06 14:26:11,0.002s,PASSED
+Start listener action : AfterTestCase,Chrome 67.0.3396.99,,2018-07-06 14:26:11,2018-07-06 14:26:11,0.638s,PASSED
+,,,,,,
+Test Cases/TC_Online Payment Bulletin/TC_OnlinePaymentBulletin07,Chrome 67.0.3396.99,,2018-07-06 14:26:11,2018-07-06 14:26:23,11.768s,PASSED
+Start listener action : BeforeTestCase,Chrome 67.0.3396.99,,2018-07-06 14:26:11,2018-07-06 14:26:16,4.563s,PASSED
+common.MasterLogin.Login,Chrome 67.0.3396.99,,2018-07-06 14:26:16,2018-07-06 14:26:19,3.555s,PASSED
+common.MenuIntoPage.getDropdownMenu,Chrome 67.0.3396.99,\u5E33\u52D9\u7BA1\u7406 -> \u7DDA\u4E0A\u652F\u4ED8\u770B\u677F,2018-07-06 14:26:19,2018-07-06 14:26:20,0.242s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:26:20,2018-07-06 14:26:20,0.632s,PASSED
+Statement - beforeText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Index_Page/text_Operator)),Chrome 67.0.3396.99,\u53D6\u5F97\u6B32\u67E5\u8A62\u7684\u300C\u64CD\u4F5C\u4EBA\u54E1\u300D,2018-07-06 14:26:20,2018-07-06 14:26:21,0.993s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,\u7EBF\u4E0A\u652F\u4ED8\u770B\u677F--\u641C\u5BFB,2018-07-06 14:26:21,2018-07-06 14:26:21,0.035s,PASSED
+setText,Chrome 67.0.3396.99,\u8F38\u5165\u64CD\u4F5C\u4EBA\u54E1,2018-07-06 14:26:21,2018-07-06 14:26:22,0.211s,PASSED
+click,Chrome 67.0.3396.99,\u641C\u5C0B,2018-07-06 14:26:22,2018-07-06 14:26:22,0.116s,PASSED
+extension.UIMethod.clickUsingJS,Chrome 67.0.3396.99,\u9EDE\u64CA\u641C\u5C0B\u7D50\u679CID,2018-07-06 14:26:22,2018-07-06 14:26:22,0.050s,PASSED
+Statement - afterText = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/ThirdPartyPayment/Detail_Page/text_Operator)),Chrome 67.0.3396.99,\u53D6\u5F97\u7EBF\u4E0A\u652F\u4ED8\u660E\u7EC6\u300C\u64CD\u4F5C\u4EBA\u54E1\u300D,2018-07-06 14:26:22,2018-07-06 14:26:22,0.631s,PASSED
+verifyEqual,Chrome 67.0.3396.99,\u6BD4\u8F03\u64CD\u4F5C\u4EBA\u54E1\u662F\u5426\u76F8\u540C,2018-07-06 14:26:22,2018-07-06 14:26:22,0.000s,PASSED
+Start listener action : AfterTestCase,Chrome 67.0.3396.99,,2018-07-06 14:26:22,2018-07-06 14:26:23,0.643s,PASSED

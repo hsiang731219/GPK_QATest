@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Verify Master online payment kanban query function (application date)</description>
    <name>TC_OnlinePaymentBulletin04</name>
    <tag></tag>
    <comment></comment>
