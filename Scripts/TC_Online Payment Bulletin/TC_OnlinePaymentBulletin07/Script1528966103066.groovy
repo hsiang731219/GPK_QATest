@@ -28,24 +28,23 @@ CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 2)
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/button_Search'))
 
 '取得欲查詢的「操作人員」'
-beforetext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_Operator'))
+beforeText = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/text_Operator'))
 
 '线上支付看板--搜寻'
-WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 2)
+WebUI.waitForElementClickable(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'), 5)
 
 '輸入操作人員'
-WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Operator'), beforetext)
+WebUI.setText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Operator'), beforeText)
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/button_Search'))
 
 '點擊搜尋結果ID'
-CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 
-    2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/ThirdPartyPayment/Index_Page/link_ID'), 2)
 
 '取得线上支付明细「操作人員」'
-aftertext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Detail_Page/text_Operator'))
+afterText = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Detail_Page/text_Operator'))
 
 '比較操作人員是否相同'
-WebUI.verifyEqual(beforetext, aftertext)
+WebUI.verifyEqual(afterText, beforeText)
 
