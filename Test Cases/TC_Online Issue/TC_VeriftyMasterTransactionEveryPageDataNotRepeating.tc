@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>線上問題:交易紀錄查詢後每頁都呈現第一頁的資料</description>
+   <description>Online Issue: The first page of information is displayed on each page after the transaction record is queried.</description>
    <name>TC_VeriftyMasterTransactionEveryPageDataNotRepeating</name>
    <tag></tag>
    <comment></comment>

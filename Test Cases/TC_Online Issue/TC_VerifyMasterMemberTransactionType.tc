@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>線上問題:交易記錄查詢類型確認缺少
-目前類型有：
-公司入款,线上支付,线上取款,人工存提,优惠活动,返水,派彩,时时返水,其他</description>
+   <description>Online Issue: transaction record query type confirmation missing
+The current types are:
+Company deposit, online payment, online withdrawal, manual deposit, preferential activities, return water, pay color, always return to water, other</description>
    <name>TC_VerifyMasterMemberTransactionType</name>
    <tag></tag>
    <comment></comment>
