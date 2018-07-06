@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Online Issue: online payment search - status is not brought to the parameter (taken successful)</description>
    <name>TC_VerifyOnlinePaymentBulletinWithStatus(Sucess)</name>
    <tag></tag>
    <comment></comment>
