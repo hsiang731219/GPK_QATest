@@ -33,11 +33,11 @@ WebUI.delay(2)
 '搜寻线上支付看板'
 WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_Title'))
 
-'點選狀態(取消)'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/checkbox_StatusAll'))
+'點選狀態_all'
+WebUI.uncheck(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/checkbox_StatusAll'))
 
 '勾選「已取消」'
-WebUI.click(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/checkbox_StatusCancel'))
+WebUI.check(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/checkbox_StatusCancel'))
 
 '得到「已取消」文字'
 beforetext = WebUI.getText(findTestObject('Object Repository/ThirdPartyPayment/Search_Page/text_StatusOfCancel'))

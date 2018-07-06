@@ -6,16 +6,16 @@
    <elementGuidId>50d89d7e-81a9-424a-a218-816af89ce7c6</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[6]/div/div/label[5]/span</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#searchModal > div > div > div.modal-body > form > div:nth-child(6) > div > div > label:nth-child(5) > span</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[6]/div/div/label[5]/input[count(. | //input[@type = 'checkbox']) = count(//input[@type = 'checkbox'])]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[6]/div/div/label[5]/span</value>
+         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[7]/div/div/label[5]/input[count(. | //input[@type = 'checkbox']) = count(//input[@type = 'checkbox'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -32,7 +32,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[6]/div/div/label[5]/input</value>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[7]/div/div/label[5]/input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
