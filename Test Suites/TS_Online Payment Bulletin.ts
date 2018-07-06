@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TC_Online Payment Bulletin</name>
+   <name>TS_Online Payment Bulletin</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <lastRun>2018-07-06T14:24:36</lastRun>
