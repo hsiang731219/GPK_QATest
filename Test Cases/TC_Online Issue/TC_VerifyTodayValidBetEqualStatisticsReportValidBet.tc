@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>線上問題:首頁的今日有效投注金額顯示為0與統計報表中的有效投注金額不一致</description>
+   <description>Online Issue: The current effective bet amount on the home page is displayed as 0 and is not consistent with the valid bet amount in the statistical report.</description>
    <name>TC_VerifyTodayValidBetEqualStatisticsReportValidBet</name>
    <tag></tag>
    <comment></comment>
