@@ -4,8 +4,8 @@
    <name>TS_Online Issue</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-06-20T10:20:35</lastRun>
-   <mailRecipient></mailRecipient>
+   <lastRun>2018-07-09T11:58:49</lastRun>
+   <mailRecipient>hsiang1219@hotmail.com.tw;</mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
