@@ -25,25 +25,30 @@ CustomKeywords.'common.MasterLogin.Login'()
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 1)
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Index_Page/button_Search'))
 
 WebUI.delay(2)
 
 '點擊取消全部狀態'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Satus'))
+
+//WebUI.uncheck(findTestObject('VerifyDesposit/Search_Page/checkbox_Satus'))
+
+WebUI.uncheck(findTestObject('VerifyDesposit/Search_Page/checkbox_Applying'))
+WebUI.uncheck(findTestObject('VerifyDesposit/Search_Page/checkbox_Deposited'))
 
 '點擊點擊「已取消」'
-WebUI.check(findTestObject('VerifyDesposit/Search_Page/checkbox_Cancel'))
+//WebUI.check(findTestObject('VerifyDesposit/Search_Page/checkbox_Cancel'))
 
-//WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Cancel'))
-beforetext = WebUI.getText(findTestObject('VerifyDesposit/Search_Page/checkbox_Cancel'))
+expectedResult = WebUI.getText(findTestObject('VerifyDesposit/Search_Page/label_Cancel'))
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
-
-aftertext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Status'))
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/button_Search'))
 
 WebUI.delay(3)
 
-WebUI.verifyEqual(beforetext, aftertext)
+actualResult = WebUI.getText(findTestObject('VerifyDesposit/Index_Page/text_Status'))
+
+WebUI.delay(3)
+
+WebUI.verifyEqual(actualResult, expectedResult)
 

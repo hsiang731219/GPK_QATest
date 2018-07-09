@@ -27,29 +27,29 @@ CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 1)
 WebUI.waitForElementPresent(findTestObject('VerifyDesposit/Index_Page/text_BankAccountName'), 0)
 
 '取得公司帳戶(銀行 - 收款人)'
-before = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_BankAccountName'))
+getCompanyAccount = WebUI.getText(findTestObject('VerifyDesposit/Index_Page/text_BankAccountName'))
 
 '取得「銀行收款人」名稱'
-beforetext = CustomKeywords.'extension.DataConversion.GetStringSpilt'(before, ' ', 0)
+expectedResult = CustomKeywords.'extension.DataConversion.GetStringSpilt'(getCompanyAccount, ' ', 0)
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Index_Page/button_Search'))
 
 WebUI.delay(2)
 
 '輸入銀行收款人名稱'
-WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_BankPayee'), beforetext)
+WebUI.setText(findTestObject('VerifyDesposit/Search_Page/input_BankPayee'), expectedResult)
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/button_Search'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'))
+WebUI.click(findTestObject('VerifyDesposit/Index_Page/link_ID'))
 
-after = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Detail_Page/text_Bank Account Name'))
+getDetailInfo = WebUI.getText(findTestObject('VerifyDesposit/Detail_Page/text_Bank Account Name'))
 
-aftertext = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, ' ', 0)
+actualResult = CustomKeywords.'extension.DataConversion.GetStringSpilt'(getDetailInfo, ' ', 0)
 
-WebUI.verifyEqual(beforetext, aftertext)
+WebUI.verifyEqual(actualResult, expectedResult)
 
