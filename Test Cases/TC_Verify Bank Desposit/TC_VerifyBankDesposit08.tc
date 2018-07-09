@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Verify Master of the company's deposit review function (processing staff)</description>
    <name>TC_VerifyBankDesposit08</name>
    <tag></tag>
    <comment></comment>

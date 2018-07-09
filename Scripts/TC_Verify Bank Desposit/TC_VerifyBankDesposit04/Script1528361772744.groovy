@@ -25,44 +25,41 @@ CustomKeywords.'common.MasterLogin.Login'()
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 1)
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Index_Page/button_Search'))
 
 WebUI.delay(2)
 
 '點擊申請日期'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_ApplicationDateBegin'))
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/input_ApplicationDateBegin'))
 
 '選取上個月一號'
-date = CustomKeywords.'extension.UIMethod.setLastDayMonth'()
+setDate = CustomKeywords.'extension.UIMethod.setLastDayMonth'()
 
 '輸入上個月一號'
-WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_ApplicationDateBegin'), date)
+WebUI.setText(findTestObject('VerifyDesposit/Search_Page/input_ApplicationDateBegin'), setDate)
 
 '轉換上個月1號為數值'
-before = CustomKeywords.'extension.DataConversion.yearmonthdate'(date)
+expectedResult = CustomKeywords.'extension.DataConversion.yearmonthdate'(setDate)
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
-
-beforetext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(before)
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/button_Search'))
 
 WebUI.delay(2)
 
 '點擊搜尋結果ID'
-CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'), 
-    2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('VerifyDesposit/Index_Page/link_ID'), 2)
 
 '取得會員申請時間'
-detaildate = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Detail_Page/text_ApplicationTime'))
+getDetailDate = WebUI.getText(findTestObject('VerifyDesposit/Detail_Page/text_ApplicationTime'))
 
 '取得會員申請時間(只取日期)'
-after = CustomKeywords.'extension.DataConversion.GetStringSpilt'(detaildate, ' ', 1)
+getDate = CustomKeywords.'extension.DataConversion.GetStringSpilt'(getDetailDate, ' ', 1)
 
 '轉換日期為數值'
-aftertext = CustomKeywords.'extension.DataConversion.yearmonthdate'(after)
+actualResult = CustomKeywords.'extension.DataConversion.yearmonthdate'(getDate)
 
 WebUI.delay(2)
 
 '比較查詢結果的申請日期是否大於選擇的上個月1號'
-WebUI.verifyGreaterThanOrEqual(aftertext, beforetext)
+WebUI.verifyGreaterThanOrEqual(actualResult, expectedResult)
 

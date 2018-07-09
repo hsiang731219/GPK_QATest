@@ -24,22 +24,22 @@ CustomKeywords.'common.MasterLogin.Login'()
 '帳務管理 -> 公司入款审核'
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 1)
 
-beforetext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Operator'))
+expectedResult = WebUI.getText(findTestObject('VerifyDesposit/Index_Page/text_Operator'))
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Index_Page/button_Search'))
 
 WebUI.delay(2)
 
 '輸入處理人員'
-WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_Operator'), beforetext)
+WebUI.setText(findTestObject('VerifyDesposit/Search_Page/input_Operator'), expectedResult)
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/button_Search'))
 
 WebUI.delay(2)
 
-aftertext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Operator'))
+actualResult = WebUI.getText(findTestObject('VerifyDesposit/Index_Page/text_Operator'))
 
-WebUI.verifyEqual(beforetext, aftertext)
+WebUI.verifyEqual(actualResult, expectedResult)
 

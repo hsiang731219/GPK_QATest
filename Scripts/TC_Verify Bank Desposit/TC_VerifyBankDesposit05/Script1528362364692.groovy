@@ -26,33 +26,35 @@ CustomKeywords.'common.MasterLogin.Login'()
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 1)
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Index_Page/button_Search'))
 
 WebUI.delay(2)
 
 '輸入起始金額'
-WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_Amountbegin'), '1')
+WebUI.setText(findTestObject('VerifyDesposit/Search_Page/input_Amountbegin'), '1')
 
 '輸入結束金額'
-WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_AmountEnd'), '5')
+WebUI.setText(findTestObject('VerifyDesposit/Search_Page/input_AmountEnd'), '5')
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/button_Search'))
 
 WebUI.delay(2)
 
-money = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Amount'))
+getSearchAmount = WebUI.getText(findTestObject('VerifyDesposit/Index_Page/text_Amount'))
 
 '轉換查詢結果第一筆餘額扣除$字元'
-aftertext = CustomKeywords.'extension.DataConversion.CurrencyToInt'(money)
-
-System.out.println(aftertext)
+actualResult = CustomKeywords.'extension.DataConversion.CurrencyToInt'(getSearchAmount)
 
 WebUI.delay(1)
 
-'比較結果是否大於輸入的1'
-WebUI.verifyGreaterThanOrEqual(aftertext, '1')
+'比較結果是否大於輸入的1 &　小於輸入的5　=> 皆通過整條案例才算過'
 
-'比較結果是否小於輸入的5'
-WebUI.verifyLessThanOrEqual(aftertext, '5')
+WebUI.verifyEqual(WebUI.verifyGreaterThanOrEqual(actualResult, '1'), WebUI.verifyLessThanOrEqual(actualResult, '5'))
+
+//'比較結果是否大於輸入的1'
+//WebUI.verifyGreaterThanOrEqual(actualResult, '1')
+
+//'比較結果是否小於輸入的5'
+//WebUI.verifyLessThanOrEqual(actualResult, '5')
 

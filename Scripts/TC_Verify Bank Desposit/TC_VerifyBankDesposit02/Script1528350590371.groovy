@@ -25,30 +25,29 @@ CustomKeywords.'common.MasterLogin.Login'()
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 1)
 
 '取得欲查詢會員帳號'
-beforetext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Member'))
+expectedResult = WebUI.getText(findTestObject('VerifyDesposit/Index_Page/text_Member'))
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Index_Page/button_Search'))
 
 WebUI.delay(2)
 
 '輸入會員帳號'
-WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_AccountName'), beforetext)
+WebUI.setText(findTestObject('VerifyDesposit/Search_Page/input_AccountName'), expectedResult)
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/button_Search'))
 
 WebUI.delay(2)
 
 '點擊搜尋結果ID'
-CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'), 
-    2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('VerifyDesposit/Index_Page/link_ID'), 2)
 
 '取得會員帳號'
-aftertext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Member'))
+actualResult = WebUI.getText(findTestObject('VerifyDesposit/Detail_Page/text_Member'))
 
 WebUI.delay(2)
 
 '比較查詢的會員帳號是否相同'
-WebUI.verifyEqual(beforetext, aftertext)
+WebUI.verifyEqual(actualResult, expectedResult)
 

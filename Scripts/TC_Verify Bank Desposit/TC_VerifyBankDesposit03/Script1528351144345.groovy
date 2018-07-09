@@ -25,36 +25,36 @@ CustomKeywords.'common.MasterLogin.Login'()
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 1)
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Index_Page/button_Search'))
 
 WebUI.delay(2)
 
 '點選會員等級'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/Choose_MembersLevel/button_MembersLevelSelect'))
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/Choose_MembersLevel/button_MembersLevelSelect'))
 
 WebUI.delay(2)
 
 '「清空」所有會員等級'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/Choose_MembersLevel/button_MembersLevelCearAll'))
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/Choose_MembersLevel/button_MembersLevelCearAll'))
 
 '勾選「abby-use」'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/Choose_MembersLevel/label_MembersLevel(abby-use)'))
+WebUI.check(findTestObject('VerifyDesposit/Search_Page/Choose_MembersLevel/label_MembersLevel(abby-use)'))
 
 '得到「abby-use」文字'
-beforetext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Search_Page/Choose_MembersLevel/label_MembersLevel(abby-use)'))
+expectedResult = WebUI.getText(findTestObject('VerifyDesposit/Search_Page/Choose_MembersLevel/label_MembersLevel(abby-use)'))
 
 '關閉选取会员等级頁面'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/Choose_MembersLevel/button_MembersLevelClose'))
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/Choose_MembersLevel/button_MembersLevelClose'))
 
 WebUI.delay(2)
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/button_Search'))
 
 WebUI.delay(2)
 
-aftertext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_MembersLevel'))
+actualResult = WebUI.getText(findTestObject('VerifyDesposit/Index_Page/text_MembersLevel'))
 
 '驗證「選取的會員等級」與「結果的會員等級」是否相同'
-WebUI.verifyEqual(beforetext, aftertext)
+WebUI.verifyEqual(actualResult, expectedResult)
 

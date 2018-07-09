@@ -24,32 +24,33 @@ CustomKeywords.'common.MasterLogin.Login'()
 '帳務管理 -> 公司入款审核'
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 1)
 
-beforetext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_ID'))
+'取得列表首個序號'
+expectedResult = WebUI.getText(findTestObject('VerifyDesposit/Index_Page/text_ID'))
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Index_Page/button_Search'))
 
 WebUI.delay(2)
 
 '輸入訂單號'
-WebUI.setText(findTestObject('Object Repository/VerifyDesposit/Search_Page/input_ID'), beforetext)
+WebUI.setText(findTestObject('VerifyDesposit/Search_Page/input_ID'), expectedResult)
 
 '搜尋'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
+WebUI.click(findTestObject('VerifyDesposit/Search_Page/button_Search'))
 
 WebUI.delay(2)
 
 '點擊搜尋結果ID'
-CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('Object Repository/VerifyDesposit/Index_Page/link_ID'), 
-    2)
+CustomKeywords.'extension.UIMethod.clickUsingJS'(findTestObject('VerifyDesposit/Index_Page/link_ID'), 2)
 
-after = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Detail_Page/text_ID'))
+'取得搜尋後的序號'
+getTextID = WebUI.getText(findTestObject('VerifyDesposit/Detail_Page/text_ID'))
 
 '轉換只取冒號後的文字'
-aftertext = CustomKeywords.'extension.DataConversion.GetStringSpilt'(after, '：', 2)
+actualResult = CustomKeywords.'extension.DataConversion.GetStringSpilt'(getTextID, '：', 2)
 
 WebUI.delay(2)
 
 '比較訂單號是否相同'
-WebUI.verifyEqual(beforetext, aftertext)
+WebUI.verifyEqual(actualResult, expectedResult)
 

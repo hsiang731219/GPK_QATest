@@ -30,19 +30,23 @@ WebUI.click(findTestObject('Object Repository/VerifyDesposit/Index_Page/button_S
 WebUI.delay(2)
 
 '點擊取消全部狀態'
-WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Satus'))
+//WebUI.uncheck(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Satus'))
+WebUI.uncheck(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Applying'))
+WebUI.uncheck(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Cancel'))
+
+WebUI.delay(1)
 
 '點擊「已存入」'
-WebUI.check(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Deposited'))
+//WebUI.check(findTestObject('Object Repository/VerifyDesposit/Search_Page/checkbox_Deposited'))
 
-beforetext = WebUI.getText(findTestObject('VerifyDesposit/Search_Page/checkbox_Deposited'))
+expectedResult = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Search_Page/label_Deposited'))
 
 '搜尋'
 WebUI.click(findTestObject('Object Repository/VerifyDesposit/Search_Page/button_Search'))
 
-aftertext = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Status'))
+actualResult = WebUI.getText(findTestObject('Object Repository/VerifyDesposit/Index_Page/text_Status'))
 
 WebUI.delay(3)
 
-WebUI.verifyEqual(beforetext, aftertext)
+WebUI.verifyEqual(actualResult, expectedResult)
 
