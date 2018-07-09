@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>text_RebatsSetting</name>
+   <tag></tag>
+   <elementGuidId>8604caa4-274b-4c5f-a580-82caf40c6a04</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/root-component/div/div/div[2]/blockquote/ul/li[6]/div/a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/root-component/div/div/div[2]/blockquote/ul/li[6]/div/a</value>
+   </webElementProperties>
+</WebElementEntity>

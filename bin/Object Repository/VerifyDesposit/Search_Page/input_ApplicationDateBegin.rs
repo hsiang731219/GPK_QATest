@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_ApplicationDateBegin</name>
+   <tag></tag>
+   <elementGuidId>43b62500-d7a4-4041-81ee-e4cf0b6f5559</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[4]/div/div/input[1][count(. | //input[@type = 'text' and @ng-model = 'self.query.ApplyDateBegin']) = count(//input[@type = 'text' and @ng-model = 'self.query.ApplyDateBegin'])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;searchModal&quot;]/div/div/div[2]/form/div[4]/div/div/input[1]</value>
+   </webElementProperties>
+</WebElementEntity>

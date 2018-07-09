@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>交易紀錄類型</description>
+   <name>TransactionType</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>52dc1606-f546-4c43-8846-8ee79ba6dba6</testCaseGuid>
+   <variable>
+      <defaultValue>'Data'</defaultValue>
+      <description></description>
+      <id>40b24535-50ac-43d5-91e8-65c0cc272e94</id>
+      <masked>false</masked>
+      <name>Tag</name>
+   </variable>
+</TestCaseEntity>

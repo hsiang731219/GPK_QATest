@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>会员等级管理</description>
+   <name>link_MemberLevelManagement</name>
+   <tag></tag>
+   <elementGuidId>b13330c3-6597-4002-aa4b-32db5c7aeb77</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li:nth-child(3)>ul>li:nth-child(3)>a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_BalanceEnd</name>
+   <tag></tag>
+   <elementGuidId>e539da2d-7cb3-4b68-b9d8-d7a34e1e590e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/root-component/div/div/div[2]/div[1]/div/div[2]/form/div[3]/div/div/input[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/root-component/div/div/div[2]/div[1]/div/div[2]/form/div[3]/div/div/input[2]</value>
+   </webElementProperties>
+</WebElementEntity>

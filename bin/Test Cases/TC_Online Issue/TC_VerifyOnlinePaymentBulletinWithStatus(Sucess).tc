@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_VerifyOnlinePaymentBulletinWithStatus(Sucess)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d22eb9a9-e32e-4e85-be31-9033075e2870</testCaseGuid>
+</TestCaseEntity>

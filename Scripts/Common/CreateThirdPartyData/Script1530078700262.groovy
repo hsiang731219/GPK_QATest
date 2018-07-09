@@ -1,12 +1,10 @@
 import com.kms.katalon.core.testdata.ExcelData
 import com.kms.katalon.core.testdata.reader.ExcelFactory
 
-import common.IndexOfThirdPartyTC
+import custom.IndexOfThirdPartyTC
 
 '建立單一實例物件'
-IndexOfThirdPartyTC instance = IndexOfThirdPartyTC.getInstance()
-'取得Test Case設定的編號'
-int i = instance.getIndexTC()
+int i = IndexOfThirdPartyTC.getIndexTC()
 
 def createThirdPartyInfo = [ 'name' : '',
 	'type' : '' ,

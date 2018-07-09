@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>登入管端帳號密碼</description>
+   <name>TestUserLoginData</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>507726d5-cb53-40f2-ad48-ec9cec633b1e</testCaseGuid>
+   <variable>
+      <defaultValue>'Data'</defaultValue>
+      <description></description>
+      <id>93a13a4f-2d27-4d64-9679-410e46834c28</id>
+      <masked>false</masked>
+      <name>Tag</name>
+   </variable>
+</TestCaseEntity>

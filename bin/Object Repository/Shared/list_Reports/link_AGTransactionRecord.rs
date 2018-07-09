@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>AG交易记录汇出</description>
+   <name>link_AGTransactionRecord</name>
+   <tag></tag>
+   <elementGuidId>b2f787f4-16a7-4860-b9e0-9c3d92de7a15</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li:nth-child(4)>ul>li:nth-child(8)>a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Verify Withdrawal Application05</name>
+   <tag>驗證管端取款申請審核查詢功能(金額)</tag>
+   <comment></comment>
+   <testCaseGuid>61ad8d16-13bd-4ef5-aaa2-07c52575e9cf</testCaseGuid>
+</TestCaseEntity>

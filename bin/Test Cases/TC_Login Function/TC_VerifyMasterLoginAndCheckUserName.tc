@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>驗證登錄後首頁的用戶帳號</description>
+   <name>TC_VerifyMasterLoginAndCheckUserName</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f2ad5888-2eec-4fe3-8175-882f293a1eba</testCaseGuid>
+</TestCaseEntity>

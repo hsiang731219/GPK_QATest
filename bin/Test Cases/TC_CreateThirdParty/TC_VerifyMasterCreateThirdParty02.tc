@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>驗證管端新增線上支付商戶(商戶類型-點卡)</description>
+   <name>TC_VerifyMasterCreateThirdParty02</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be5d08a0-382c-44d2-8dc5-5d0ee2db84a2</testCaseGuid>
+</TestCaseEntity>

@@ -3,20 +3,20 @@
    <description></description>
    <name>input_type</name>
    <tag></tag>
-   <elementGuidId>7fbb745f-db12-4d37-a87e-85da009f4f58</elementGuidId>
+   <elementGuidId>8101cc49-a837-473e-825f-7373b9f49d80</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//input[@type = 'search' and @placeholder = '选择类型...']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/root-component/div/div/form/fieldset[2]/div[1]/div/div/input[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>//*[@id=&quot;ui-select-choices-row-0-0&quot;]/span</value>
-   </webElementProperties>
 </WebElementEntity>
