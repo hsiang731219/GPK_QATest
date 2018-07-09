@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_type</name>
+   <name>table_accountNumber_eBank</name>
    <tag></tag>
-   <elementGuidId>8101cc49-a837-473e-825f-7373b9f49d80</elementGuidId>
+   <elementGuidId>6b89533d-aa8a-4180-8076-40d197d0d5ef</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@type = 'search' and @placeholder = '选择类型...']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value>//span[(text() = '123' or . = '123')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/root-component/div/div/form/fieldset[2]/div[1]/div/div/input[1]</value>
+         <value>//*[@id=&quot;table1&quot;]/tbody/tr[2]/td/div/span/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

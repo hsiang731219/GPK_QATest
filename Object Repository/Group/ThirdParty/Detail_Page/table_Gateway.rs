@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_type</name>
+   <name>table_Gateway</name>
    <tag></tag>
-   <elementGuidId>8101cc49-a837-473e-825f-7373b9f49d80</elementGuidId>
+   <elementGuidId>fd2c0f00-153f-44c7-bfee-462f9df6dd53</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@type = 'search' and @placeholder = '选择类型...']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value>//span[(text() = 'http://' or . = 'http://')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/root-component/div/div/form/fieldset[2]/div[1]/div/div/input[1]</value>
+         <value>//*[@id=&quot;table1&quot;]/tbody/tr[4]/td/div/span/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

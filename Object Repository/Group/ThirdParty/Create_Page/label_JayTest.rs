@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_type</name>
+   <name>label_JayTest</name>
    <tag></tag>
-   <elementGuidId>8101cc49-a837-473e-825f-7373b9f49d80</elementGuidId>
+   <elementGuidId>addd3f13-4359-4894-b2a7-66f7a8a0f56c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@type = 'search' and @placeholder = '选择类型...']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/root-component/div/div/form/fieldset[2]/div[1]/div/div/input[1]</value>
+         <value>/html/body/root-component/div/div/form/fieldset[4]/div[2]/div/div/div[16]/label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

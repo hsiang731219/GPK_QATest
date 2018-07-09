@@ -4,12 +4,10 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import common.IndexOfThirdPartyTC
+import custom.IndexOfThirdPartyTC
 
-'建立單一實例物件'
-IndexOfThirdPartyTC instance = IndexOfThirdPartyTC.getInstance()
-'從Excel的編號設定給單一實例'
-instance.setIndexTC(6)
+'設置在Excel的資料位置'
+IndexOfThirdPartyTC.setIndexTC(6)
 
 def Info= WebUI.callTestCase(findTestCase('Common/CreateThirdPartyData'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -21,54 +19,54 @@ CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(3, 3)
 
 
 '點擊新增線上支付商戶'
-WebUI.click(findTestObject('ThirdParty/Index_Page/a_Create'))
+WebUI.click(findTestObject('Group/ThirdParty/Index_Page/a_Create'))
 
 '輸入名稱'
-WebUI.setText(findTestObject('ThirdParty/Create_Page/input_name'), Info.name)
+WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_name'), Info.name)
 
 '點擊類型'
-WebUI.click(findTestObject('ThirdParty/Create_Page/select_Type'))
+WebUI.click(findTestObject('Group/ThirdParty/Create_Page/select_Type'))
 
 WebUI.delay(2)
 
 '輸入類型'
-WebUI.setText(findTestObject('ThirdParty/Create_Page/input_type'), Info.type)
+WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_type'), Info.type)
 
 '點擊顯示的類型商戶'
-WebUI.click(findTestObject('ThirdParty/Create_Page/span_inner'))
+WebUI.click(findTestObject('Group/ThirdParty/Create_Page/span_inner'))
 
 '輸入商戶號'
-WebUI.setText(findTestObject('ThirdParty/Create_Page/input_PaymentInfo1'), Info.accountNumber)
+WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_accountNumber_eBank'), Info.accountNumber)
 
 '輸入APPID'
-WebUI.setText(findTestObject('ThirdParty/Create_Page/input_PaymentInfo2'), Info.APPID)
+WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_APPID_WapAlipay'), Info.APPID)
 
 '輸入下單Key'
-WebUI.setText(findTestObject('ThirdParty/Create_Page/input_PaymentInfo3'), Info.OrderKey)
+WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_OrderKay_WapAlipay'), Info.OrderKey)
 
 '輸入回調Key'
-WebUI.setText(findTestObject('ThirdParty/Create_Page/input_PaymentInfo4'), Info.CallbackKey)
+WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_CallbackKey_WapAlipay'), Info.CallbackKey)
 
 '輸入跳板網址'
-WebUI.setText(findTestObject('ThirdParty/Create_Page/input_PaymentInfo5'), Info.gateway)
+WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_Gateway_WapAlipay'), Info.gateway)
 
 '輸入下限金額'
-WebUI.setText(findTestObject('ThirdParty/Create_Page/input_DepositMin'), Info.depositMin)
+WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_DepositMin'), Info.depositMin)
 
 '輸入上限金額'
-WebUI.setText(findTestObject('ThirdParty/Create_Page/input_DepositMax'), Info.depositMax)
+WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_DepositMax'), Info.depositMax)
 
 '輸入總存款'
-WebUI.setText(findTestObject('ThirdParty/Create_Page/input_DepositTotal'), Info.depositTotal)
+WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_DepositTotal'), Info.depositTotal)
 
 '勾選會員等級'
-WebUI.check(findTestObject('ThirdParty/Create_Page/label_MemberLevel'))
+WebUI.check(findTestObject('Group/ThirdParty/Create_Page/label_JayTest'))
 
 '儲存會員等級的文字'
-String memberLevel_1 = WebUI.getText(findTestObject('ThirdParty/Create_Page/label_MemberLevel'))
+String memberLevel_1 = WebUI.getText(findTestObject('Group/ThirdParty/Create_Page/label_JayTest'))
 
 '點擊送出'
-WebUI.click(findTestObject('ThirdParty/Create_Page/button_Submit'))
+WebUI.click(findTestObject('Group/ThirdParty/Create_Page/button_Submit'))
 
 '等待Alert'
 WebUI.waitForAlert(5)
@@ -80,39 +78,37 @@ WebUI.acceptAlert()
  * 驗證是否與輸入資料的相同
  */
 '類型'
-WebUI.verifyElementText(findTestObject('ThirdParty/ThirdParty_Exist/table_Text1'), Info.type)
+WebUI.verifyEqual(WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/table_Type_eBank')), Info.type)
 
 '商戶號'
-WebUI.verifyElementText(findTestObject('ThirdParty/ThirdParty_Exist/table_Text2'), Info.accountNumber)
+WebUI.verifyEqual(WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/table_accountNumber_eBank')), Info.accountNumber)
 
 'APPID'
-WebUI.verifyElementText(findTestObject('ThirdParty/ThirdParty_Exist/table_Text3'), Info.APPID)
+WebUI.verifyEqual(WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/table_APPID_WapAlipay')), Info.APPID)
 
 '下單Key'
-WebUI.verifyElementText(findTestObject('ThirdParty/ThirdParty_Exist/table_Text4'), Info.OrderKey)
+WebUI.verifyElementText(findTestObject('Group/ThirdParty/Detail_Page/table_OrderKey_WapAlipay'), Info.OrderKey)
 
 '回調Key'
-WebUI.verifyElementText(findTestObject('ThirdParty/ThirdParty_Exist/table_Text5'), Info.CallbackKey)
+WebUI.verifyElementText(findTestObject('Group/ThirdParty/Detail_Page/table_CallbackKey_WapAlipay'), Info.CallbackKey)
 
 '跳板網址'
-WebUI.verifyElementText(findTestObject('ThirdParty/ThirdParty_Exist/table_Text6'), Info.gateway)
+WebUI.verifyElementText(findTestObject('Group/ThirdParty/Detail_Page/table_Gateway_WapAlipay'), Info.gateway)
 
-'單次存款限額有包含上限'
-String depositMinMax = WebUI.getText(findTestObject('ThirdParty/ThirdParty_Exist/text_DepositMinMax'))
-boolean isContainsMax = depositMinMax.contains(Info.depositMax)
-WebUI.verifyEqual(isContainsMax, true)
+'單次存款限額進行格式轉換後驗證上限'
+String depositMinMax = WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/text_DepositMinMax'))
+WebUI.verifyEqual(CustomKeywords.'extension.DataConversion.GetStringSpilt'(depositMinMax,'~',2), ' $ '+Info.depositMax)
 
-'总存款限额'
-String depositTotal = WebUI.getText(findTestObject('ThirdParty/ThirdParty_Exist/text_DepositTotal'))
-boolean isContainsTotal = depositTotal.contains(Info.depositTotal)
-WebUI.verifyEqual(isContainsTotal, true)
+'总存款限额進行格式轉換後驗證'
+String depositTotal = WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/text_DepositTotal'))
+WebUI.verifyEqual(CustomKeywords.'extension.DataConversion.GetStringSpilt'(depositTotal,' ',2), Info.depositTotal)
 
 '會員等級的文字是否與新增的相同'
-String memberLevel_2 = WebUI.getText(findTestObject('ThirdParty/ThirdParty_Exist/label_MemberLevel'))
+String memberLevel_2 = WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/label_MemberLevel'))
 WebUI.verifyEqual(memberLevel_2, memberLevel_1)
 
 '刪除此商戶號'
-WebUI.click(findTestObject('ThirdParty/ThirdParty_Exist/button_Remove'))
+WebUI.click(findTestObject('Group/ThirdParty/Detail_Page/button_Remove'))
 
 '等待Alert'
 WebUI.waitForAlert(5)
@@ -121,4 +117,4 @@ WebUI.waitForAlert(5)
 WebUI.acceptAlert()
 
 '驗證有無出現刪除的div提示'
-WebUI.verifyElementPresent(findTestObject('ThirdParty/ThirdParty_Exist/div_IsDeleted'), 3)
+WebUI.verifyElementPresent(findTestObject('Group/ThirdParty/Detail_Page/div_IsDeleted'), 30)

@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_type</name>
+   <name>input_gateway_eBank</name>
    <tag></tag>
-   <elementGuidId>8101cc49-a837-473e-825f-7373b9f49d80</elementGuidId>
+   <elementGuidId>c930d5c3-1a47-4df2-b40e-fd71d4203323</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//input[@type = 'search' and @placeholder = '选择类型...']</value>
-      </entry>
       <entry>
          <key>CSS</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/root-component/div/div/form/fieldset[2]/div[1]/div/div/input[1]</value>
+         <value>/html/body/root-component/div/div/form/fieldset[2]/div[4]/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

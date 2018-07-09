@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_type</name>
+   <name>input_name</name>
    <tag></tag>
-   <elementGuidId>8101cc49-a837-473e-825f-7373b9f49d80</elementGuidId>
+   <elementGuidId>b8d8e69d-6212-47ef-8982-dac489f247bf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@type = 'search' and @placeholder = '选择类型...']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <value>//input[@type = 'text' and @placeholder = '例：商户1']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/root-component/div/div/form/fieldset[2]/div[1]/div/div/input[1]</value>
+         <value>/html/body/root-component/div/div/form/fieldset[1]/div/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
