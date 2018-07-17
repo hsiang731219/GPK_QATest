@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Search for Transaction Records12</name>
+   <tag>驗證管端交易紀錄查詢功能(類型-返水)</tag>
+   <comment></comment>
+   <testCaseGuid>b2c31e0e-dc88-4f27-96a9-e35ed16cf53e</testCaseGuid>
+</TestCaseEntity>

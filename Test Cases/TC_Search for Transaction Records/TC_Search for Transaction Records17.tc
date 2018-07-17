@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Search for Transaction Records17</name>
+   <tag>驗證管端交易紀錄查詢功能(實際存提_否)</tag>
+   <comment></comment>
+   <testCaseGuid>bf16893f-7e53-4cc2-87a9-a967c012825e</testCaseGuid>
+</TestCaseEntity>

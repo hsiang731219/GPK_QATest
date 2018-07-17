@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Search for Transaction Records13</name>
+   <tag>驗證管端交易紀錄查詢功能(類型-派彩)</tag>
+   <comment></comment>
+   <testCaseGuid>d44a337d-ac44-4880-b545-e4e6c87ef60b</testCaseGuid>
+</TestCaseEntity>
