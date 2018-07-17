@@ -66,10 +66,10 @@ WebUI.setText(findTestObject('Object Repository/Member/Deposit_Page/textarea_Por
 '填寫備註'
 WebUI.setText(findTestObject('Member/Deposit_Page/textarea_DepositMemo'), '')
 
-WebUiBuiltInKeywords.click(findTestObject('Member/Deposit_Page/button_Submit'))
-
 '輸入存款密碼'
-WebUiBuiltInKeywords.setText(findTestObject('Member/Deposit_Page/input_DepositPassword'), Info.depositpassword)
+WebUI.setText(findTestObject('Member/Deposit_Page/input_DepositPassword'), Info.depositpassword)
+
+WebUI.click(findTestObject('Member/Deposit_Page/button_Submit'))
 
 WebUI.acceptAlert()
 
