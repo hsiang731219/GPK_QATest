@@ -59,3 +59,13 @@ def static "extension.DataConversion.yearmonthdate"(
     (new extension.DataConversion()).yearmonthdate(
         	point)
 }
+
+def static "custom.SearchAllThirdPartyList.printThirdPartyList"() {
+    (new custom.SearchAllThirdPartyList()).printThirdPartyList()
+}
+
+def static "custom.SearchAllThirdPartyList.selectThirdPartyType"(
+    	String typeName	) {
+    (new custom.SearchAllThirdPartyList()).selectThirdPartyType(
+        	typeName)
+}
