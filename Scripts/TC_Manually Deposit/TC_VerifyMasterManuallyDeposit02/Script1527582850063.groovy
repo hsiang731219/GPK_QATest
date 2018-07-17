@@ -82,6 +82,6 @@ GetAfterPoint = CustomKeywords.'extension.DataConversion.CurrencyToInt'(WebUI.ge
 
 GetAfterTransactionType = WebUI.getText(findTestObject('MemberTransaction/Index_Page/text_DepositAndWithdrawType'))
 
-WebUI.verifyEqual(GetAfterTransactionType, Info.type1)
+WebUI.verifyEqual(GetAfterTransactionType, Info.type2)
 
 WebUI.verifyEqual(GetAfterPoint, GetBeforePoint + Info.amount)
