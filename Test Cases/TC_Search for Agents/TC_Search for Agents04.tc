@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Search for Agents04</name>
+   <tag>驗證管端代理商查詢功能(狀態_停用中)</tag>
+   <comment></comment>
+   <testCaseGuid>804559e8-5fd6-45c3-8466-843060b852f0</testCaseGuid>
+</TestCaseEntity>

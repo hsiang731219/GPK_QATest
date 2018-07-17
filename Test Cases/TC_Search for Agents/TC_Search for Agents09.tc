@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Search for Agents09</name>
+   <tag>驗證管端代理商查詢功能(代理層級_股東)</tag>
+   <comment></comment>
+   <testCaseGuid>66cf8188-1523-4037-96a8-a467205ed86e</testCaseGuid>
+</TestCaseEntity>
