@@ -1,8 +1,18 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.junit.After
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
+
+
 
 import custom.IndexOfThirdPartyTC
 
@@ -16,7 +26,6 @@ CustomKeywords.'common.MasterLogin.Login'()
 
 '點擊系統>線上支付商戶管理'
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(3, 3)
-
 
 '點擊新增線上支付商戶'
 WebUI.click(findTestObject('Group/ThirdParty/Index_Page/a_Create'))
@@ -35,14 +44,35 @@ WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_type'), Info.ty
 '點擊顯示的類型商戶'
 WebUI.click(findTestObject('Group/ThirdParty/Create_Page/span_inner'))
 
-'輸入商戶號'
-WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_accountNumber_eBank'), Info.accountNumber)
+/**
+ * 由於欄位會隨選取的類型有所變動，
+ * 所以選取類型後，在計算出現的欄位數，
+ * 再用for迴圈依序塞值
+ */
+WebDriver driver = DriverFactory.getWebDriver()
 
-'輸入商戶證書'
-WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_merchantCertificate_eBank'), Info.merchantCertificate)
+WebElement createList = driver.findElement(By.xpath("/html/body/root-component/div/div/form/fieldset[2]"))
 
-'輸入跳板網址'
-WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_gateway_eBank'), Info.gateway)
+//商戶資料的欄位數(扣除類型)
+List<WebElement> createColumns = createList.findElements(By.xpath("//*[@type='text' and @ng-model='col.model']"))
+
+//建立商戶資料欄位，給與createColumns.size()的個數陣列
+def createThirdPartyInfo =[createColumns.size()]
+
+for (int i =0;i<createColumns.size();i++) {
+	//塞值進去，假如有4個欄位，依序是:
+	//1
+	//2
+	//3
+	//4
+	createThirdPartyInfo.add(i, i+1+"")
+	//如果商戶資料欄位是"跳板網址"(通常在最後一欄)，就固定設"http://"
+	if(i==createColumns.size()-1){
+		createThirdPartyInfo.set(i, "http://"+i)
+	}
+	'輸入商戶資料各個欄位'
+	WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_PaymentAccountInfo',[('colum_num'):i+2]), createThirdPartyInfo.get(i))
+}
 
 '輸入下限金額'
 WebUI.setText(findTestObject('Group/ThirdParty/Create_Page/input_DepositMin'), Info.depositMin)
@@ -68,20 +98,22 @@ WebUI.waitForAlert(5)
 '點擊Alert'
 WebUI.acceptAlert()
 
+WebUI.delay(1)
+
 /**
  * 驗證是否與輸入資料的相同
  */
-'類型'
-WebUI.verifyEqual(WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/table_Type_eBank')), String.valueOf(Info.type))
 
-'商戶號'
-WebUI.verifyEqual(WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/table_accountNumber_eBank')), Info.accountNumber)
+WebElement detailList = driver.findElement(By.xpath("//*[@id='table1']"))
+//商戶資料的欄位數
+List<WebElement> detailColumns = detailList.findElements(By.xpath("//*[@id='table1']/tbody/tr/td//*[@class='ng-binding ng-scope']"))
 
-'商戶證書'
-WebUI.verifyEqual(WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/table_merchantCertificate_eBank')), Info.merchantCertificate)
-
-'跳板網址'
-WebUI.verifyEqual(WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/table_Gateway')), Info.gateway)
+for(int i =0;i<detailColumns.size()-1;i++){
+	String s = WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/div_PaymentAccountInfo',[('colum_num'):i+2]))
+	
+	'驗證商戶資料欄位'
+	WebUI.verifyEqual(s, createThirdPartyInfo.get(i))
+}
 
 '單次存款限額進行格式轉換後驗證上限'
 String depositMinMax = WebUI.getText(findTestObject('Group/ThirdParty/Detail_Page/text_DepositMinMax'))
