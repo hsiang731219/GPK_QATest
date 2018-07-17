@@ -27,7 +27,7 @@ def loginInfo = [ 'username' : '' ,
 
 ExcelData MasterLoginInfo = ExcelFactory.getExcelDataWithDefaultSheet("D:/GM Automation Test Data/MasterTestData.xlsx", "MasterLoginInfo", false)
 
-loginInfo.username = MasterLoginInfo.getValue(1, 3)
-loginInfo.password = MasterLoginInfo.getValue(2, 3)
+loginInfo.username = MasterLoginInfo.getValue(1, 2)
+loginInfo.password = MasterLoginInfo.getValue(2, 2)
 
 return loginInfo
