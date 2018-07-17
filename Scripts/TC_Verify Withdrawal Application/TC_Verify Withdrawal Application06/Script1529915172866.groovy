@@ -25,6 +25,19 @@ CustomKeywords.'common.MasterLogin.Login'()
 '帳務管理 -> 取款申請審核'
 CustomKeywords.'common.MenuIntoPage.getDropdownMenu'(2, 3)
 
+'搜尋'
+WebUI.click(findTestObject('VerifyWithdraw/Index_Page/button_Search'))
+
+WebUI.delay(2)
+
+'點選狀態「全部取消」'
+WebUI.click(findTestObject('VerifyWithdraw/Search_Page/checkbox_Applying'))
+
+'搜尋'
+WebUI.click(findTestObject('VerifyWithdraw/Search_Page/button_Search'))
+
+WebUI.delay(2)
+
 WebUI.waitForElementPresent(findTestObject('VerifyWithdraw/Index_Page/text_Operator'), 0)
 
 '取得欲查詢的「操作人員」'
