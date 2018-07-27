@@ -19,6 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+
 CustomKeywords.'common.MasterLogin.Login'()
 
 '帳務管理 -> 公司入款审核'
@@ -38,10 +43,13 @@ WebUI.delay(2)
 WebUI.click(findTestObject('VerifyDesposit/Search_Page/Choose_MembersLevel/button_MembersLevelCearAll'))
 
 '勾選「abby-use」'
-WebUI.check(findTestObject('VerifyDesposit/Search_Page/Choose_MembersLevel/label_MembersLevel(abby-use)'))
+//WebUI.check(findTestObject('VerifyDesposit/Search_Page/Choose_MembersLevel/label_MembersLevel(abby-use)'))
+
+CustomKeywords.'extension.UIMethod.setMemberLevelCheckBoxElement'("abby-use")
 
 '得到「abby-use」文字'
-expectedResult = WebUI.getText(findTestObject('VerifyDesposit/Search_Page/Choose_MembersLevel/label_MembersLevel(abby-use)'))
+//expectedResult = WebUI.getText(findTestObject('VerifyDesposit/Search_Page/Choose_MembersLevel/label_MembersLevel(abby-use)'))
+expectedResult = CustomKeywords.'extension.UIMethod.setMemberLevelText'("abby-use")
 
 '關閉选取会员等级頁面'
 WebUI.click(findTestObject('VerifyDesposit/Search_Page/Choose_MembersLevel/button_MembersLevelClose'))

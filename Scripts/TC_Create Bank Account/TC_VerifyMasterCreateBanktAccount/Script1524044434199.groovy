@@ -66,9 +66,9 @@ verify_BankNumberAccount = WebUI.getText(findTestObject('Group/Account/Detail_Pa
 
 WebUI.verifyEqual('123456789', verify_BankNumberAccount)
 
-WebUI.click(findTestObject('Shared/link_SystmeAndManagementMeenu'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_BankDepositAccountManagment'))
+WebUI.click(findTestObject('Common/list_SystmeAndManagement/link_BankDepositAccountManagment'))
 
 WebUI.waitForElementVisible(findTestObject('Group/Account/Index_Page/a_CreateBankAccount'), 10)
 
