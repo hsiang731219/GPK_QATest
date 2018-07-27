@@ -31,23 +31,23 @@ public class MenuIntoPage {
 	@Keyword
 	def getDropdownMenu(int x , int y) {
 
-		WebUI.click(findTestObject('Shared/menu_Top',[('top_num'):x]))
+		WebUI.click(findTestObject('Common/Manu/menu_Top',[('top_num'):x]))
 
 		if (x == 1) {
 			// 會員與代理商
-			WebUI.click(findTestObject('Shared/menu_MemberAndAgentList',[('list_num'):y+2]))
+			WebUI.click(findTestObject('Common/Manu/menu_MemberAndAgentList',[('list_num'):y+2]))
 
 		} else if(x == 2) {
 			// 帳務管理
-			WebUI.click(findTestObject('Shared/menu_AccountManagementList',[('list_num'):y+2]))
+			WebUI.click(findTestObject('Common/Manu/menu_AccountManagementList',[('list_num'):y+2]))
 
 		} else if(x == 3) {
 			// 系統管理
-			WebUI.click(findTestObject('Shared/menu_SystemAndManagementList',[('list_num'):y+2]))
+			WebUI.click(findTestObject('Common/Manu/menu_SystemAndManagementList',[('list_num'):y+2]))
 
 		} else {
 			//各式報表
-			WebUI.click(findTestObject('Shared/menu_RepotrsList',[('list_num'):y+2]))
+			WebUI.click(findTestObject('Common/Manu/menu_RepotrsList',[('list_num'):y+2]))
 		}
 	}
 

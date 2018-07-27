@@ -25,11 +25,16 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 
-import internal.GlobalVariable
-import java.text.SimpleDateFormat
+
 import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable
+import java.text.SimpleDateFormat
+//import org.openqa.selenium.WebDriver
+import org.openqa.selenium.By as By
+//import org.openqa.selenium.WebElement as WebElement
+//import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 public class UIMethod {
 
@@ -79,4 +84,30 @@ public class UIMethod {
 
 		return sf.format(lastMonth)
 	}
+	
+	 @Keyword
+	 def setMemberLevelCheckBoxElement(String memberlevel)
+	 {
+		 WebDriver driver = DriverFactory.getWebDriver()
+		 List<WebElement> someElements = driver.findElements(By.tagName("label"))
+		 for (WebElement anElement : someElements) 
+		 {
+			if (anElement.getAttribute("title").equals(memberlevel)) 
+			{		
+				def Agent = memberlevel
+
+				WebUI.check(findTestObject('Common/SelectMemberLevel/label_SelectMemberLevel',[('Member_Level'):Agent]))
+			}
+		 }
+		 return
+	 }
+	 
+	 @Keyword
+	 def getMemberLevelText(String memberlevel)
+	 {
+		 def getText = WebUI.getText(findTestObject('Common/SelectMemberLevel/label_SelectMemberLevel',[('Member_Level'):memberlevel]))
+
+		 return getText;
+	 }
+	 
 }

@@ -73,9 +73,9 @@ verify_Memo = WebUI.getText(findTestObject('Group/Account/Detail_Page/div_Memo')
 
 WebUI.verifyEqual('測試新增', verify_Memo)
 
-WebUI.click(findTestObject('Shared/link_SystmeAndManagementMeenu'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Shared/list_SystmeAndManagement/link_BankDepositAccountManagment'))
+WebUI.click(findTestObject('Common/list_SystmeAndManagement/link_BankDepositAccountManagment'))
 
 WebUI.waitForElementVisible(findTestObject('Group/Account/Index_Page/a_CreateBankAccount'), 10)
 

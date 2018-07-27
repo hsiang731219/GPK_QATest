@@ -6,18 +6,12 @@
    <elementGuidId>c411dbcc-7730-45fd-8c49-53b30a0efa49</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//label[@title = 'abby-use' and (text() = '
-                                
-                                abby-use
-                            ' or . = '
-                                
-                                abby-use
-                            ')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#memberModal > div > div > div.modal-body > div.row > div:nth-child(1) > div:nth-child(14) > label</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//label[(text() = '[${test_Agent}]' or . = '[${test_Agent}]')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -40,21 +34,18 @@
       <value>text-ellipsis ng-binding</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>abby-use</value>
+      <value>[${Test_Agent}]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-                                
-                                abby-use
-                            </value>
+      <value>[${test_Agent}]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
